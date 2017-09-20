@@ -1,0 +1,47 @@
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	// Content block thumbnail name
+
+	// Making sure text don't break div structure
+	.btn-block {
+		font-size: 35px;
+	}
+
+	//header_navbar
+	.navbar-nav {
+		>li {
+			>a {
+				padding-bottom: 15px;
+				padding-top: 15px;
+			}
+		}
+	}
+	.navbar-toggle{
+		margin-top: 25px;
+	}
+	//breadcrumb
+	.breadcrumb {
+		padding-left: 15px;
+	}
+	//jumbotron
+	.jumbotron{
+		h2 {
+			font-size: $font-size-h1;
+		}
+	}
+
+
+	#thumbnail-small {
+		.thumbnail-hover {
+			.thumbnail-content-prt {
+				.thumbnail-content {
+					padding: 10px;
+
+				}
+
+			}
+		}
+	}
+
+}

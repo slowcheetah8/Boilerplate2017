@@ -1,0 +1,25 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1300px) {
+
+  // Content block thumbnail name
+
+  // Making sure text don't break div structure
+  .btn-block {
+    font-size: 10px;
+  }
+
+  #toplist-payment-methods {
+    .featured {
+      .list:nth-child(5) {                      // bottom feature #5
+        .btn {
+          margin: 10px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+
+}
+
+

@@ -1,0 +1,9 @@
+.list-group {
+  .list-group-item {
+    font-size: $list-group-size;
+    background-color: $list-group-bg;
+    a {
+      color: $list-group-link-color;
+    }
+  }
+}

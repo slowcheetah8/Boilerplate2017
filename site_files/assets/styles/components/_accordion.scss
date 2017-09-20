@@ -1,0 +1,35 @@
+#accordion {
+  .panel {
+    border: $wrapper-border;
+    box-shadow: $wrapper-box-shadow;
+  }
+
+  .panel-body {
+    padding: $accordion-panel-padding;
+    border-radius: $accordion-body-border-radius;
+
+
+  }
+
+  .panel-heading {
+    a {
+      color: $accordion-title-color;
+      font-size: $accordion-title-size;
+    }
+  }
+
+
+  #headingOne, #headingTwo, #headingThree {
+    background-color: $accordion-button-color;
+    padding: $accordion-button-padding;
+    border-radius: $accordion-title-border-radius;
+  }
+
+  #accordion-content-1, #accordion-content-2, #accordion-content-3 {
+    background-color: #2b542c;
+    p {
+      color: $accordion-content-color;
+    }
+
+  }
+}

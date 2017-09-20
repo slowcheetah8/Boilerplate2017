@@ -1,0 +1,27 @@
+// sidebar toplist
+.recommended {
+  h4 {
+    font-size: $container-title-size;
+    margin: $container-title-margin;
+  }
+
+  .row {
+    margin: $sidebar-margin;
+  }
+  .logo {
+    display: block;
+  }
+  .title {
+    font-size: $casino-title;
+    text-transform: uppercase;
+    display: block;
+    font-weight: $casino-title-weight;
+    line-height: $casino-title-line-height;
+    a {
+      color: $gray-base;
+    }
+  }
+  .play {
+    float: right;
+  }
+}

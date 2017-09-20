@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  {{{headers}}}
+  {{{snip_css}}}
+  </head>
+  <body>
+  {{{snip_header}}}
+
+    <div class="container">
+
+    {{{snip_bread}}}
+
+
+      <div class="row">
+        <div class="col-lg-9 col-md-8 col-sm-12">
+
+          <section class="news">
+
+            <div class="content-wrap">
+              {{{h1}}}
+              {{{text_top}}}
+            </div>
+            <div class="content-wrap">
+
+{{#menulist_news_1_to_500}}
+{{{latest}}}
+
+            <div class="news-list-wrap">
+                <div class="media">
+                {{#maybe_all}}
+                  <div class="media-left media-top">
+                    <a {{{href}}}>
+                      <img class="media-object" src="{{{pageimage_150x100}}}">
+                    </a>
+                  </div>
+                  {{/maybe_all}}
+                  <div class="media-body">
+                    <h4 class="media-heading"><a {{{href}}}>{{{title}}}</a></h4>
+                    {{{date}}} - {{{description}}}
+                  </div>
+                </div>
+            </div>
+
+{{/menulist_news_1_to_500}}
+
+            </div>
+
+          </section>
+
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-12">
+
+          <section class="sidebar">
+
+          {{{snip_sidebar_1}}}
+
+          </section>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+    <div class="footer-wrap">
+
+    <footer>
+
+    {{{snip_footer}}}
+
+    </footer>
+
+    {{{snip_js}}}
+
+  </body>
+</html>

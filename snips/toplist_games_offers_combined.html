@@ -1,0 +1,35 @@
+<div class="row">
+    <div id="toplist-offers-combined">
+
+        <div class="col-md-12">
+            <div class="row heading hidden-xs hidden-sm hidden-md">
+                <div class="col-md-3"></div>
+                <div class="col-md-3">Offers for:</div>
+                <div class="col-md-3">Wagering Requirements</div>
+                <div class="col-md-3">More Information</div>
+            </div>
+
+            {{#list_5_list5}}
+            <div class="row item">
+                <div class="col-md-3">
+                    {{{image_125x125_80x80}}}
+                </div>
+                <div class="col-md-9">
+                    <div class="col-md-4">Slots: ({{{slots_bonus_percentage}}}% ${{{slots_bonus_amount}}})</div>
+                    <div class="col-md-4">40x Bonus + Deposit</div>
+                    <div class="col-md-4"><a {{{page}}}>Click here</a></div>
+                    <div class="col-md-4">Blackjack: ({{{blackjack_bonus_percentage}}}% ${{{blackjack_bonus_amount}}})</div>
+                    <div class="col-md-4">40x Bonus + Deposit</div>
+                    <div class="col-md-4"><a {{{page}}}>Click here</a></div>
+                </div>
+            </div>
+            {{/list_5_list5}}
+            <div class="row footer">
+                <div class="col-md-12">
+                    <span>*Exclusive offer to our readers</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="row">
+	{{#menulist_news_1_to_4}}
+	<div class="col-md-6 col-sm-6 margin-bottom-30">
+		<div class="portlet">
+			<div class="portlet-title">
+				<div class="caption">
+					<h4><a {{{href}}} class="caption-subject text-uppercase">{{{title}}}</a></h4>
+				</div>
+			</div>
+			<div class="portlet-body">
+				{{#maybe_all}}
+				<a {{{href}}}>
+					<img src="{{{pageimage_150x100}}}" alt="{{{alt}}}" class="image-left" />
+				</a>
+				{{/maybe_all}}
+				<span>{{{date}}}</span>
+				<span>{{{description}}}</span>
+			</div>
+		</div>
+	</div>
+	{{/menulist_news_1_to_4}}
+</div>

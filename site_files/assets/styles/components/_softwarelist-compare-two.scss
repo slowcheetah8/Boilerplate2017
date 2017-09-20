@@ -1,0 +1,36 @@
+#softwarelist-compare-two {
+
+  .heading {
+    .row {
+      background-color: #5cb85c;
+      text-align: center;
+      padding: 10px;
+      border-top: $softwarelist-border;
+      border-right: $softwarelist-border;
+      border-left: $softwarelist-border;
+    }
+  }
+  .logo {
+    padding: 10px;
+    background-color: #829be3;
+    border: $softwarelist-border;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .item {
+    .row {
+      border-bottom: $softwarelist-border;
+      border-right: $softwarelist-border;
+      border-left: $softwarelist-border;
+      padding: 10px;
+      &:nth-child(odd) {
+        background-color: whitesmoke;
+      }
+      &:nth-child(even) {
+        background-color: #829be3;
+      }
+    }
+  }
+}

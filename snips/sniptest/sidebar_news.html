@@ -1,0 +1,26 @@
+{{#maybe}}
+
+<div class="wrap">
+
+    <h4>Latest News</h4>
+
+    <ol class="list-unstyled news">
+
+        {{#menulist_news_1_to_5}}
+        {{{latest}}}
+
+        <li>
+
+            <span class="news-title"><a {{{href}}}>{{{title}}}</a></span>
+            <span class="news-date">{{{date}}}</span>
+            <span class="news-description">{{{meta_description}}}</span>
+
+        </li>
+
+        {{/menulist_news_1_to_5}}
+
+    </ol>
+
+</div>
+
+{{/maybe}}

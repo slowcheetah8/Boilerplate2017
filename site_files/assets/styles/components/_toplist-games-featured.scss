@@ -1,0 +1,83 @@
+// the below controls the styling of the featured toplist component
+
+#toplist-games-featured {
+
+  .col-lg-3,
+  .col-md-3,
+  .col-sm-3 {
+    padding: 0;
+  }
+  .col-lg-9,
+  .col-md-9,
+  .col-sm-9 {
+    padding: 0;
+  }
+  padding: 0;
+  display: block;
+
+  .heading {
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+    padding: 6px;
+    background-color: $theme2;
+    text-align: center;
+
+  }
+  .item {
+    .col-lg-1,
+    .col-lg-2,
+    .col-lg-3,
+    .col-md-12,
+    .col-sm-12 {
+      border-bottom:1px solid #333;
+      border-right: 1px solid #333;
+      padding-top: 6px;
+      padding-bottom: 6px;
+
+      text-align: center;
+    }
+    .row {
+      border-left: 1px solid;
+      background-color: lightgrey;
+      &:nth-child(odd) {
+        background-color: whitesmoke;
+      }
+
+    }
+  }
+
+  .featured {
+    border: 1px solid;
+    height: 32px * 10 + 33px;
+    text-align: center;
+    padding: 10px;
+    background-color: #1b6d85;
+    .title {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    img {
+      //margin: 10px;
+    }
+    .list {
+      margin: 10px 10px 10px 10px;
+      background-color: #00b3ee;
+      padding: 40px 0 10px 0;
+      border: 1px solid;
+      font-size: 10px;
+      list-style: none;
+      text-align: center;
+    }
+
+    .btn {
+      margin-top: 5px;
+      background-color: yellow;
+      color: black;
+    }
+
+
+  }
+
+}

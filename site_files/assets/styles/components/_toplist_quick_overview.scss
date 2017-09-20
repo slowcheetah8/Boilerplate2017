@@ -1,0 +1,56 @@
+// the below controls the styling of the overview toplist component
+
+#toplist-overview {
+  .row {
+    background-color: gray;
+  }
+  .row:nth-child(even) {
+    background-color: white;
+  }
+
+  .heading {
+    background-color: $toplist-heading-bg;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    padding: $toplist-heading-padding;
+    //height: $toplist-heading-height;
+    border: $wrapper-border;
+  }
+
+  .item {
+    .row {
+      //padding-top: 0px;
+      text-align: center;
+      padding: 10px 0 10px 0;
+      .down-some {
+        padding-top: 35px;
+        display: block;
+      }
+    }
+
+
+
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+
+  .terms {
+    background-color: $theme3;
+    a {
+      float: right;
+      padding:20px;
+      font-size: 16px;
+    }
+  }
+}
+
+
+
+
+
+

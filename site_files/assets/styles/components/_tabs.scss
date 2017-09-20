@@ -1,0 +1,63 @@
+.content-wrap{
+	.card {
+		background: $tabs-bg-color;
+		box-shadow: $wrapper-box-shadow;
+		margin-bottom: $tabs-margin-bottom;
+	
+		.nav-tabs {
+			border-bottom: $tabs-nav-border-bottom;
+			> li {
+				&.active {
+					> a {
+						border-width: 0;
+						&:focus, &:hover {
+							border-width: 0;
+						}
+					}
+					> a {
+						border: none;
+						color: $tabs-a-hover-color !important;
+						background: transparent;
+					}
+					> a::after {
+						transform: scale(1);
+					}
+				}
+				> a {
+					border: none;
+					color: $tabs-a-color;
+				}
+				> a {
+					&:hover {
+						border: none;
+						color: $tabs-a-hover-color !important;
+						background: transparent;
+					}
+					&::after {
+						content: "";
+						background: $tabs-a-hover-color;
+						height: 2px;
+						position: absolute;
+						width: 100%;
+						left: 0px;
+						bottom: -1px;
+						transition: all 250ms ease 0s;
+						transform: scale(0);
+					}
+				}
+				&:hover > a::after {
+					transform: scale(1);
+				}
+			}
+		}
+		.tab-pane {
+			padding: $tabs-content-inner-padding;
+			font-size: $tabs-content-font-size;
+		}
+
+		.tab-content {
+			padding: $tabs-content-outer-padding;
+		}
+
+	}	
+}

@@ -1,0 +1,14 @@
+.popover {
+	z-index: 9;
+}
+
+.popover-title {
+	background-color: $popover-head-bg-color;
+	font-size: $popover-head-font-size;
+	margin: -2px -1px;
+	border-radius: 3px;
+}
+.popover-content {
+	font-size: $popover-content-font-size;
+}
+

@@ -1,0 +1,20 @@
+.share-group {
+
+	ul {
+		float: right;
+		list-style: none outside none;				// no effect
+		margin: $btn-ul-margin;
+		min-width: $btn-dropdown-width;
+		padding: 0;
+		li {
+
+			i {
+				font-size: $btn-font-size;
+				}
+			display: block;
+
+			list-style: none outside none;			// no effect
+			margin: $btn-dropdown-margin;
+		}
+	}
+}

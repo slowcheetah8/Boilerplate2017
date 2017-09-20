@@ -1,0 +1,14 @@
+<script src="{{{root}}}dist/js/scripts.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // -----------------------------------------------------------------------
+            $.each($('#navbar').find('li'), function() {
+                $(this).toggleClass('active', 
+                    window.location.pathname.indexOf($(this).find('a').attr('href')) > -1);
+            }); 
+            // -----------------------------------------------------------------------
+            $('[data-toggle="tooltip"]').tooltip();
+			      $('[data-toggle="popover"]').popover();
+			      $('.carousel .item:first-child').addClass('active');
+        });
+    </script>

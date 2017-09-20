@@ -1,0 +1,36 @@
+.navbar-wrapper {
+	width: 100%;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 20;
+	height: $navbar-wrapper-height;
+}
+.navbar-inverse {
+	height: auto;
+	background-color: $navbar-bg-color;
+}
+.navbar {
+	li {
+		&:hover {
+			background-color: $navbar-bg-hover-color;
+		}
+	}
+}
+.navbar-nav {
+	>li {
+		>a {
+			padding-bottom: $navbar-item-padding-bottom;
+			padding-top: $navbar-item-padding-top;
+		;
+		}
+	}
+}
+.navbar-brand {
+	float: left;
+	font-size: 18px;
+	height: 84px;
+	line-height: 20px;
+	padding: 8px;
+}

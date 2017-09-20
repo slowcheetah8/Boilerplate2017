@@ -1,0 +1,39 @@
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+	// Content block thumbnail name
+
+	// Making sure text don't break div structure
+	.btn-block {
+		font-size: 25px;
+	}
+	
+	//news list
+	.news-list-wrap{
+		img{
+			width: 100px;
+		}
+	}
+	//item page
+	.item {
+		.wrap{
+			padding:30px;
+		}
+		.logo-wrap{
+			width: 210px;
+			height: 210px;
+			padding: 18px;
+		}
+	}
+	//popover
+	.popover-custom {
+		position: relative;
+		.btn {
+			font-size: 14px;
+		}
+		.popover.right{
+			top: 41px !important;
+			left: 0 !important;
+		}
+	}
+}

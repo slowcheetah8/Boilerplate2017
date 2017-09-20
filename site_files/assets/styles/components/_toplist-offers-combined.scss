@@ -1,0 +1,44 @@
+#toplist-offers-combined {
+
+  .heading {
+    background-color: $offers-combined-header-bg;
+    font-size: $offers-combined-header-size;
+    text-align: center;
+
+    .col-md-3 {
+
+      padding: 15px;
+    }
+  }
+
+  .item {
+    background-color: whitesmoke;
+
+
+    .col-md-4 {
+      padding: 15px 0 15px 0;
+      text-align: center;
+      font-size: $offers-combined-item-font-size;
+      &:nth-of-type(n+4) {
+        background-color: lightgrey;
+      }
+    }
+
+    .col-md-3 {                             // LOGO
+      text-align: center;
+      padding: 5px;
+
+    }
+
+    .col-md-9 {
+      padding: 0;
+    }
+
+  }
+  .footer {
+    padding: 15px;
+    background-color: $offers-combined-header-bg;
+
+  }
+
+}

@@ -1,0 +1,136 @@
+#toplist-payment-methods {
+  padding: 0;
+  display: block;
+  .heading {
+    //border: 1px solid #333;
+    padding: $payment-methods-heading-padding;
+    background-color: $theme2;
+    text-align: center;
+    font-size: $payment-methods-heading-size;
+
+
+  }
+  .item {
+    //border-left: 1px solid;
+    display: block;
+
+    .row {
+      padding: 25px 0 25px 0;
+    }
+
+    .col-lg-2,
+    .col-md-2,
+    .col-sm-2,
+    .col-lg-1,
+    .col-md-1,
+    .col-sm-1,
+    .col-lg-4,
+    .col-md-4,
+    .col-md-4 {
+
+      text-align: center;
+      font-size: $payment-methods-font-size;
+      &:nth-of-type(9) {
+        i {
+          color: gold;
+        }
+      }
+      &:nth-of-type(1) {
+        a {
+          font-size: $payment-methods-a-size;
+        }
+      }
+
+    }
+    .row:nth-child(even) {
+      background-color: lightgrey;
+    }
+    .row:nth-child(odd) {
+      background-color: whitesmoke;
+    }
+
+
+
+
+  }
+  .featured {
+    text-align: center;
+    //height: auto;
+    background-color: $payment-methods-feature-bg;
+    padding: 0;
+
+
+    .list:nth-child(1) {                      // bottom feature #1
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .list:nth-child(2) {                      // bottom feature #2
+      color: lightgrey;
+      padding: 10px 30px 10px 30px;
+      text-align: left;
+      i {
+        color: gold;
+      }
+      span {
+        font-size: 11px;
+      }
+    }
+    .list:nth-child(3) {                      // bottom feature #3
+      margin: auto;
+      color: lightgrey;
+      padding: 20px;
+      span {
+        &:nth-of-type(1){
+          font-size: 15px;
+          font-weight: 500;
+          display: block;
+          text-align: center;
+        }
+        &:nth-of-type(2){
+          font-size: $payment-methods-feature-bonus-size;
+          font-weight: 500;
+          display: block;
+          text-align: center;
+
+        }
+        &:nth-of-type(3){
+          font-size: $payment-methods-feature-bonus-sub-size;
+          font-weight: 500;
+          display: block;
+          text-align: center;
+          margin-top: -10px;
+         }
+
+      }
+    }
+    .list:nth-child(4) {                      // bottom feature #4
+      padding: 40px 0px 20px 0px;
+      color: lightgrey;
+      display: block;
+      span {
+        display: block;
+        font-size: 15px;
+      }
+    }
+
+    .list:nth-child(5) {                      // bottom feature #5
+      text-align: center;
+      padding: 30px 0 30px 0;
+      display: block;
+
+      .review {
+        padding-top: 5px;
+        font-size: 11px;
+        font-weight: 900;
+        display: block;
+        text-transform: uppercase;
+      }
+      .btn {
+        margin: 10px;
+        font-size: 15px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,38 @@
+.alert {
+	margin: 20px 0 40px;
+}
+.imgpadding {
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+.btn {
+	text-transform: uppercase;
+}
+.container {
+	max-width: 100%;
+}
+
+
+//images align start
+.image-left{
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.image-right {
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+//images align end
+
+
+.content-wrap {
+	background-color: $wrapper-bg;
+	width: 100%;
+	border-radius: 4px;
+	box-shadow: $wrapper-box-shadow;
+	padding: 20px 30px;
+	margin: 16px 0;
+	height: auto;
+}
