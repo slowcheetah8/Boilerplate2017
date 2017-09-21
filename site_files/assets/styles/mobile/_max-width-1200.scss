@@ -19,6 +19,22 @@
     }
   }
 
+  #toplist-games-payout {
+    .item {
+      border-left: $games-payout-border;
+    }
+  }
+
+  #toplist-overview {
+    .row {
+      div {
+        span{
+          display: block;
+        }
+      }
+    }
+  }
+
 
 }
 

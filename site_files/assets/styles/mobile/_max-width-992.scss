@@ -101,5 +101,26 @@
 		}
 	}
 
+	#toplist-games-payout {
+		.featured {
+			.list {
+
+			}
+		}
+	}
+
+	#toplist-security-overview {
+		.item {
+			.row {
+				div {
+					border-left: $wrapper-border;
+					&:nth-of-type(1) {
+						border-top: $wrapper-border;
+					}
+				}
+			}
+		}
+	}
+
 
 }

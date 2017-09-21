@@ -15,18 +15,26 @@
     overflow: hidden;
     text-align: center;
     padding: $toplist-heading-padding;
-    //height: $toplist-heading-height;
-    border: $wrapper-border;
+    border-top: $wrapper-border;
+    border-left: $wrapper-border;
+    border-right: $wrapper-border;
   }
 
   .item {
     .row {
-      //padding-top: 0px;
+      border-top: $wrapper-border;
+      border-left: $wrapper-border;
+      border-right: $wrapper-border;
       text-align: center;
       padding: 10px 0 10px 0;
       .down-some {
         padding-top: 35px;
         display: block;
+      }
+      div:nth-of-type(6) {
+        .btn {
+          font-size: 11px;
+        }
       }
     }
 
@@ -41,6 +49,7 @@
 
   .terms {
     background-color: $theme3;
+    border: $wrapper-border;
     a {
       float: right;
       padding:20px;

@@ -139,10 +139,23 @@
       <div class="content-wrap">
         <h1 id="par-10">Tooltips</h1>
         <p>These are 4 different snips with a differently orientated tooltip for each</p>
-        {{{snip_tooltip_top}}}
-        {{{snip_tooltip_bottom}}}
-        {{{snip_tooltip_right}}}
-        {{{snip_tooltip_left}}}
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="col-lg-3">
+              {{{snip_tooltip_top}}}
+            </div>
+            <div class="col-lg-3">
+              {{{snip_tooltip_bottom}}}
+            </div>
+            <div class="col-lg-3">
+              {{{snip_tooltip_right}}}
+            </div>
+            <div class="col-lg-3">
+              {{{snip_tooltip_left}}}
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="content-wrap">
@@ -173,15 +186,45 @@
         <h1 id="par-15">Supported Platforms</h1>
         <p>A snip to display the supported platforms of a given casino.</p>
         {{#list_1_list1}}
-        {{{snip_supported_platforms}}}
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="col-lg-6">
+              <p>Text Version</p>
+              {{{snip_supported_platforms}}}
+            </div>
+            <div class="col-lg-6">
+              <p>Icon Version</p>
+              {{{snip_supported_platforms_icons}}}
+            </div>
+          </div>
+        </div>
         {{/list_1_list1}}
+
+
+
+
       </div>
 
       <div class="content-wrap">
         <h1 id="par-16">Star Ratings</h1>
         <p>There are 3 different star rating snips.</p>
         {{#list_1_list1}}
-        {{{snip_star_rating_sm}}}
+        <div class="row">
+          <div class="col-lg-12 star-showcase">
+            <div class="col-lg-4">
+              <p>Small</p>
+              {{{snip_star_rating_sm}}}
+            </div>
+            <div class="col-lg-4">
+              <p>Medium</p>
+              {{{snip_star_rating_md}}}
+            </div>
+            <div class="col-lg-4">
+              <p>Large</p>
+              {{{snip_star_rating_lg}}}
+            </div>
+          </div>
+        </div>
         {{/list_1_list1}}
       </div>
 
@@ -200,9 +243,24 @@
       <div class="content-wrap">
         <h1 id="par-19">Deposit Methods</h1>
         <p>A list of deposit methods offered by casino.</p>
-        {{#list_1_list1}}
-        {{{snip_deposit_methods}}}
-        {{/list_1_list1}}
+        <div class="row">
+          {{#list_1_list1}}
+          <div class="col-lg-12">
+            <div class="col-lg-6">
+              {{{snip_deposit_methods}}}
+            </div>
+            <div class="col-lg-6">
+              {{{snip_deposit_methods_icons}}}
+            </div>
+          </div>
+          {{/list_1_list1}}
+        </div>
+
+
+
+
+
+
       </div>
 
 

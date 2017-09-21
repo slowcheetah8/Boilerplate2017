@@ -113,7 +113,7 @@
     }
     .list:nth-child(3) {                      // bottom feature #3
       color: $best-bonus-feature-text-color;
-      padding: 40px;
+      padding: 50px 0;
       span:nth-of-type(1) {
         display: block;
         padding: 10px;
@@ -129,7 +129,7 @@
 
     }
     .list:nth-child(4) {                      // bottom feature #4
-      padding: 10px;
+      padding: 50px 0;
       img {
         border: 1px solid #333;
       }
