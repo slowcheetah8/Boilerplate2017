@@ -1,0 +1,63 @@
+    <div id="toplist-overview">
+        <div class="col-md-12 hidden-xs">
+            <div class="row">
+                <div class="heading">
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <span></span>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <span>Casino & Rating</span>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <span>Bonus</span>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 " id="percentage">
+                        <span>Software</span>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <span>Payout</span>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 item">
+            {{#list_5_list5}}
+
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <span><a {{{href}}}>{{{image_100x100}}}</a></span>
+
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <span class="align">{{{name}}}</span>
+                    <span class="rating">{{{snip_cs27_rating_stars_md}}}</span>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <span class="align">${{{signup_bonus_amount}}}</span>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <span class="align">{{{software}}}</span>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <span class="align">{{{payout_percent}}}%</span>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <a {{{href}}} class="btn btn-primary">Visit Casino</a><br>
+                    {{#page_yes}} <span class="review"><a {{{page}}}>Read Review</a></span> {{/page_yes}} {{#page_no}} {{/page_no}}
+                </div>
+            </div>
+            {{/list_5_list5}}
+        </div>
+
+        <div class="col-md-12">
+            <div class="row terms">
+                <div>
+                    <span><a href="#"><i class="fa fa-asterisk" aria-hidden="true"></i>&nbsp; Terms & Conditions Apply</a></span>
+                </div>
+            </div>
+        </div>
+    </div>

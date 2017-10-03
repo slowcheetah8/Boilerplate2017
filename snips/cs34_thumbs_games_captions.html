@@ -1,0 +1,23 @@
+<div class="row">
+	{{#gamelist_6}}
+	{{{game_type_slots}}}
+	<div class="col-sm-6 col-md-4" id="thumbnails-content">
+		<div class="thumbnail">
+
+			<div class="thumbnail-hover">
+				<a {{{page}}}>{{{image_250x150}}}</a>
+				<div class="thumbnail-content-prt text-center">
+					<div class="thumbnail-content">
+						<a {{{href}}} class="btn btn-primary">Play Now</a><br>
+						<a {{{page}}}>Read Review</a>
+					</div>
+				</div>
+			</div>
+			<div class="caption">
+				<a {{{page}}} class="h3 btn-block">{{{name}}}</a>
+				{{{snip_cs28_rating_stars_sm}}}
+			</div>
+		</div>
+	</div>
+	{{/gamelist_6}}
+</div>

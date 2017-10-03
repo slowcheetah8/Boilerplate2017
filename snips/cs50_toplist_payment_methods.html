@@ -1,0 +1,137 @@
+
+    <div id="toplist-payment-methods">
+
+        <div class="row">
+
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <span class="pull-right more"><a {{{href}}}>Click here for more options <i class="fa fa-caret-right"></i></a></span>
+                <div class="col-lg-12 col-md-12 col-sm-12 hidden-sm heading">
+
+
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <span></span>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1">
+                            <span>Visa</span>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1">
+                            <span>Ukash</span>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1">
+                            <span>Paypal</span>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1">
+                            <span>Click2Pay</span>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1">
+                            <span>Skrill</span>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1">
+                            <span>Mastercard</span>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1">
+                            <span>Wirecard</span>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <span>Visit</span>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-12 item">
+
+                    {{#list_8_list8}}
+                    {{{rating_sort}}}
+
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <span><a {{{href}}}>{{{name}}}</a></span>
+                            <span>{{{snip_cs28_rating_stars_sm}}}</span>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-12">
+                            <span class="hidden-md hidden-lg">
+                                Visa
+                            </span>
+                            <span>
+                                {{#payment_visa_yes}}<i class="fa fa-check-square" style="color:green"></i>{{/payment_visa_yes}}
+                                {{#payment_visa_no}}<i class="fa fa-window-close-o" style="color:red"></i>{{/payment_visa_no}}
+                            </span>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-12">
+                          <span class="hidden-md hidden-lg">
+                              Ukash
+                          </span>
+                          <span>
+                              {{#payment_ukash_yes}}<i class="fa fa-check-square" style="color:green"></i>{{/payment_ukash_yes}}
+                              {{#payment_ukash_no}}<i class="fa fa-window-close-o" style="color:red"></i>{{/payment_ukash_no}}
+                          </span>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-12">
+                            <span class="hidden-md hidden-lg">
+                                Paypal
+                            </span>
+                            <span>
+                                {{#payment_paypal_yes}}<i class="fa fa-check-square" style="color:green"></i>{{/payment_paypal_yes}}
+                                {{#payment_paypal_no}}<i class="fa fa-window-close-o" style="color:red"></i>{{/payment_paypal_no}}
+                            </span>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-12">
+                            <span class="hidden-md hidden-lg">
+                                Click2Pay
+                            </span>
+                            <span>
+                                {{#payment_click2pay_yes}}<i class="fa fa-check-square" style="color:green"></i>{{/payment_click2pay_yes}}
+                                {{#payment_click2pay_no}}<i class="fa fa-window-close-o" style="color:red"></i>{{/payment_click2pay_no}}
+                            </span>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-12">
+                            <span class="hidden-md hidden-lg">
+                                Skrill
+                            </span>
+                            <span>
+                                {{#payment_skrill_yes}}<i class="fa fa-check-square" style="color:green"></i>{{/payment_skrill_yes}}
+                                {{#payment_skrill_no}}<i class="fa fa-window-close-o" style="color:red"></i>{{/payment_skrill_no}}
+                            </span>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-12">
+                          <span class="hidden-md hidden-lg">
+                              Mastercard
+                          </span>
+                          <span>
+                              {{#payment_mastercard_yes}}<i class="fa fa-check-square" style="color:green"></i>{{/payment_mastercard_yes}}
+                              {{#payment_mastercard_no}}<i class="fa fa-window-close-o" style="color:red"></i>{{/payment_mastercard_no}}
+                          </span>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-12">
+                          <span class="hidden-md hidden-lg">
+                              Wirecard
+                          </span>
+                          <span>
+                              {{#payment_wirecard_yes}}<i class="fa fa-check-square" style="color:green"></i>{{/payment_wirecard_yes}}
+                              {{#payment_wirecard_no}}<i class="fa fa-window-close-o" style="color:red"></i>{{/payment_wirecard_no}}
+                          </span>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12">
+                            <span><a class="btn btn-primary">Play Now</a></span>
+                            {{#page_yes}} <span class="review"><a {{{page}}}>Read Review</a></span> {{/page_yes}} {{#page_no}} {{/page_no}}
+                        </div>
+
+                    </div>
+
+                    {{/list_8_list8}}
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>

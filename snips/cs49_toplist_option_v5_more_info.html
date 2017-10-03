@@ -1,0 +1,82 @@
+<section id="toplist-collapse">
+
+  <div class="row">
+            <div class="col-xs-12">
+              <div class="toplist">
+                <div class="heading-wrap hidden-xs">
+                  <div class="col-lg-2 col-md-12 col-sm-12"></div>
+                  <div class="col-lg-2 col-md-12 col-sm-12"></div>
+                  <div class="col-lg-3 col-md-12 col-sm-12">Bonus</div>
+                  <div class="col-lg-1 col-md-12 col-sm-12">Payout</div>
+                  <div class="col-lg-2 col-md-12 col-sm-12">Platforms</div>
+                  <div class="col-lg-2 col-md-12 col-sm-12"></div>
+                </div>
+                {{#list_5}}
+                <div class="col-md-12 item">
+                  <div class="row">
+
+                    <div class="wrap">
+                      <span class="count">{{{numbered}}}</span>
+                      <div class="toplist-preview hidden-xs pull-right">
+                        <a href="javascript:;" role="button" data-toggle="collapse" data-target="#{{{numbered}}}" class="collapsed" aria-expanded="false">
+                        <i class="fa fa-search" aria-hidden="true"></i> More Info</a>
+                      </div>
+                      <div class="col-lg-2 col-md-12 col-sm-12">
+                        <div class="logo-bg-color text-center">
+                          <a {{{href}}}>{{{image_125x125_50x50}}}</a>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-12 col-sm-12 toplist-rating">
+                        <span>{{{name}}}</span><br/>
+                        {{{snip_cs27_rating_stars_md}}}<br/>
+
+                      </div>
+                      <div class="col-lg-3 col-md-12 col-sm-12 toplist-bonus">
+                        <span class="font-bold text-uppercase">Bonus De {{{signup_bonus_percent}}}% jusqu'à concurrence de</span><br>
+                        <span class="bonus-amount">{{{signup_bonus_amount}}}&euro;</span><br/>
+                        {{#maybe_all}}<span class="font18">+{{{free_spins_amount}}} Tours Gratuits Sur La {{{free_spins_game}}}</span>{{/maybe_all}}
+                      </div>
+                      <div class="col-lg-1 col-md-12 col-sm-12">
+                        <span class="payout-per">{{{payout_percent}}}%</span>
+                      </div>
+                      <div class="col-lg-2 col-md-12 col-sm-12">
+                        {{{snip_cs31_item_supported_platforms_icons}}}
+                      </div>
+                      <div class="col-lg-2 col-md-12 col-sm-12">
+                        <span><a {{{href}}} class="btn btn-primary">Visit <i class="fa fa-angle-right" aria-hidden="true"></i></a></span>
+                        {{#maybe_all}}<a {{{page}}} class="text-underline font-semibold padd-top-10">Read Review</a>{{/maybe_all}}
+                      </div>
+                    </div>
+
+
+                  </div>
+
+
+
+                  <div id="{{{numbered}}}" class="collapse" aria-expanded="false" style="height: 0px;">
+                    <div class="row">
+                      <div class="more-detail-content">
+                        <div class="col-md-6 col-sm-6 col-xs-12 text-left">
+                          {{{short_review_text}}}
+                          <div class="platforms-icon">
+                            {{{snip_cs31_item_supported_platforms_icons}}}
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-5 col-xs-12 text-right pull-right">
+                            <div class="mrg-bott-10">{{{website_screenshot_500x500}}}</div>
+                            <a {{{href}}} class="btn btn-danger btn-block btn-16">Réclamez Le Bonus {{{name}}} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="toplist-cross">
+                          <a href="javascript:;" role="button" data-toggle="collapse" data-target="#{{{numbered}}}" class="collapsed" aria-expanded="false">x</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {{/list_5}}
+              </div>
+            </div>
+          </div>
+
+
+</section>
