@@ -1,0 +1,20 @@
+#news-list-full-width {
+
+    .news-list-wrap {
+      background-color: gray;
+      padding: 10px;
+      .media {
+        div {
+          a {
+            img {
+              //width: 100%;
+            }
+          }
+        }
+        .media-body {
+
+        }
+      }
+    }
+
+}

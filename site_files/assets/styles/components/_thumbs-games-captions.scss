@@ -1,0 +1,62 @@
+#thumbnails-content {
+
+  .btn-block {
+    text-align: center;
+  }
+
+  .thumbnail {
+    background-color: $games-captions-card-color;
+    padding: 5px;
+    height: $games-captions-card-height;
+    .thumbnail-content {
+      a {
+        font-size: $games-captions-size;
+
+      }
+    }
+    &:hover {
+      background: $games-captions-card-hover-color;
+
+    }
+    .thumbnail-hover {
+      position: relative;
+
+      a {
+        img {
+          width: 100%;
+        }
+      }
+      &:hover {
+				a {
+					img {
+						filter: brightness(30%);
+					}
+				}
+			}
+
+      .thumbnail-content-prt {
+        display: none;
+        position: absolute;
+        margin: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        .thumbnail-content{
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+      &:hover .thumbnail-content-prt {
+        display: table;
+      }
+    }
+  }
+  .caption {
+    a {
+      text-align: left;
+      font-size: $games-captions-size;
+      font-weight: $games-captions-font-weight;
+    }
+  }
+
+}

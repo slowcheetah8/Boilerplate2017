@@ -1,26 +1,26 @@
 
 #item-header-mast {
 	.item {
-		margin: 16px 0;
+		//margin: 16px 0;
 		.wrap {
 			.row {
-				border-radius: $banner-border-radius;
-				background-color: $banner-bg;
+				border-radius: $mast-v1-border-radius;
+				background-color: $mast-v1-bg;
 				width: 100%;
 				margin: 0;
 				border: none;
 				overflow: auto;
 				text-align: center;
-				padding: $banner-padding;
+				padding: $mast-v1-padding;
 				height: auto;
 				#logo-wrap {
 					width: 260px;
 					height: 260px;
-					background-color: $banner-logo-bg-color;
+					background-color: $mast-v1-logo-bg-color;
 					display: block;
-					border-radius: $banner-logo-bg-radius;
+					border-radius: $mast-v1-logo-bg-radius;
 					padding: 40px;
-					margin: auto;
+					//margin: auto;
 					text-align: center;
 					span {
 						&:nth-of-type(1) {
@@ -30,7 +30,7 @@
 						}
 						&:nth-of-type(2) {
 							i {
-								color: gold;
+								color: $mast-v1-rating-color;
 							}
 						}
 					}
@@ -40,8 +40,8 @@
 					span {
 						&:nth-of-type(1) {						// Caption title
 							display: block;
-							font-size: $banner-title-size;
-							font-weight: 800;
+							font-size: $mast-v1-title-size;
+							font-weight: $mast-v1-title-weight;
 							padding: 15px;
 							color: whitesmoke;
 
@@ -49,7 +49,7 @@
 						&:nth-of-type(2) {						// Caption paragraph / description
 							display: block;
 							font-size: 15px;
-							color: $banner-description-color;
+							color: $mast-v1-description-color;
 						}
 						&:nth-of-type(3) {						// Bonus heading
 							display: block;
@@ -57,9 +57,9 @@
 							text-transform: uppercase;
 							width: 100%;
 							margin-top: 20px;
-							font-size: $banner-bonus-heading-size;
-							font-weight: 600;
-							color: $banner-bonus-heading-color;
+							font-size: $mast-v1-bonus-heading-size;
+							font-weight: 400;
+							color: $mast-v1-bonus-heading-color;
 						}
 						&:nth-of-type(4) {						// Bonus
 							text-align: center;
@@ -67,14 +67,14 @@
 							text-transform: uppercase;
 							width: 100%;
 							margin-top: 4px;
-							font-size: $banner-bonus-size;
-							font-weight: 600;
-							color: $banner-bonus-color;
+							font-size: $mast-v1-bonus-size;
+							font-weight: $mast-v1-bonus-weight;
+							color: $mast-v1-bonus-color;
 						}
 						&:nth-of-type(5) {						// Play now button
 							text-align: center;
 							display: block;
-							width: $banner-bonus-button-width;
+							//width: $mast-v1-bonus-button-width;
 							margin: auto;
 							padding: 15px;
 						}
@@ -87,4 +87,3 @@
 
 	}
 }
-

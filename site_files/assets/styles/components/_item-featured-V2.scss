@@ -1,51 +1,13 @@
-// the below controls the styling of the payout toplist component
 
-#toplist-games-payout {
-  .col-lg-3 {
-    padding: 0;
-  }
-  .col-lg-9 {
+#item-featured-v2 {
+
+  .col-lg-3, .col-md-12, .col-sm-12 {
     padding: 0;
   }
 
-
-  .heading {
-    border: $games-payout-border;
-    padding: 15px 0;
-    background-color: $games-payout-heading-bg;
-    text-align: left;
-    font-size: $games-payout-item-font-size;
-    color: $games-payout-heading-text-color;
-  }
-  .item {
-
-    .row {
-      background-color: $games-payout-row-color-odd;
-      font-size: $games-payout-item-font-size;
-      padding: 10px;
-      &:nth-child(even) {
-        background-color: $games-payout-row-color-even;
-      }
-      div {
-        padding-left: 20px;
-        span {
-          display: block;
-        }
-        i {
-          color: $games-payout-rating-color;
-        }
-        &:nth-of-type(5) {
-          padding-left: 0;
-        }
-      }
-
-
-    }
-  }
 
   .featured {
-    border: $games-payout-border;
-    height: (62px * 7) + 51;
+    height: 68px * 6 + 51;
     text-align: center;
     padding: 10px;
     background-color: $games-payout-featured-bg;
@@ -61,7 +23,7 @@
           top: 10px;
           span:nth-of-type(1) {
             img {
-              width: $games-payout-logo-width;
+              width: 100%;
               z-index: 10;
             }
             display: block;
@@ -89,6 +51,7 @@
         }
         &:nth-of-type(5) {
           top: 30px;
+          padding: 10px;
           .btn {
             background-color: whitesmoke;
           }
@@ -103,9 +66,7 @@
 
     .list {
       margin: 10px 10px 10px 10px;
-      //background-color: darken($games-payout-heading-bg, 5%);
       padding: 20px;
-      border: $games-payout-border;
       font-size: 10px;
       list-style: none;
       margin-bottom: 30px;

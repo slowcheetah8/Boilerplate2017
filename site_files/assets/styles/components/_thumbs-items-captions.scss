@@ -1,0 +1,72 @@
+#thumbnail-casino {
+
+	.thumbnail {
+		box-shadow: $wrapper-box-shadow;
+		border: $thumbs-items-border;
+		background-color: $thumbs-items-bg-color;
+		height: 350px;
+		width: 100%;
+		color: $thumbs-items-text-color;
+		padding: 0;
+
+		.space-ten {
+			padding: $thumbs-items-bottom-space;
+		}
+		.thumbnail-casino-hover {
+			position: relative;
+			&:hover {
+				a {
+					img {
+						filter: brightness(30%);
+					}
+				}
+			}
+
+			.thumbnail-casino-content-prt {
+				display: none;
+				position: absolute;
+				//margin: auto;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				.thumbnail-casino-content{
+					display: table-cell;
+					vertical-align: middle;
+					.btn{
+						min-width: 124px;
+					}
+				}
+			}
+			&:hover .thumbnail-casino-content-prt {
+				display: table;
+
+			}
+		}
+
+		.caption {												// section below screenshot
+			span {
+				&:nth-of-type(1) {								// Casino name
+					font-size: $thumbs-items-item-name-size;
+					font-weight: 700;
+					display: block;
+					//padding-bottom: 15px;
+					a {
+						color: $thumbs-items-text-color;
+					}
+				}
+				&:nth-of-type(2) {								// star rating
+					display: block;
+					padding-bottom: 20px;
+					i {
+						color: $thumbs-items-rating-color;
+					}
+
+				}
+				&:nth-of-type(3) {								// bonus
+					font-size: $thumbs-items-bonus-size;
+					text-align: center;
+				}
+			}
+		}
+	}
+}

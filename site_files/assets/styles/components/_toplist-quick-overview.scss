@@ -2,22 +2,25 @@
 
 #toplist-overview {
   .row {
-    background-color: gray;
+    background-color: $toplist-overview-row-color-even;
   }
-  .row:nth-child(even) {
-    background-color: white;
+  .row:nth-of-type(even) {
+    background-color: $toplist-overview-row-color-odd;
   }
 
+
   .heading {
-    background-color: $toplist-heading-bg;
+    background-color: $toplist-overview-heading-bg;
     width: 100%;
-    margin: 0;
     overflow: hidden;
     text-align: center;
-    padding: $toplist-heading-padding;
     border-top: $wrapper-border;
     border-left: $wrapper-border;
     border-right: $wrapper-border;
+    padding: $toplist-overview-header-padding;
+    font-size: $toplist-overview-heading-font-size;
+    color: $toplist-overview-heading-text-color;
+
   }
 
   .item {
@@ -27,13 +30,19 @@
       border-right: $wrapper-border;
       text-align: center;
       padding: 10px 0 10px 0;
-      .down-some {
+      .align {
         padding-top: 35px;
         display: block;
       }
+      div:nth-of-type(2) {
+        span {
+          padding-bottom: 10px;
+        }
+      }
       div:nth-of-type(6) {
+        padding-top: 20px;
         .btn {
-          font-size: 11px;
+          margin-bottom: 10px;
         }
       }
     }
@@ -48,18 +57,16 @@
 
 
   .terms {
-    background-color: $theme3;
+    background-color: $toplist-overview-heading-bg;
     border: $wrapper-border;
     a {
       float: right;
       padding:20px;
       font-size: 16px;
+      color: $toplist-overview-heading-text-color;
+    }
+    i {
+      color: $toplist-overview-heading-text-color;
     }
   }
 }
-
-
-
-
-
-

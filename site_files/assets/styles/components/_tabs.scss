@@ -3,7 +3,7 @@
 		background: $tabs-bg-color;
 		box-shadow: $wrapper-box-shadow;
 		margin-bottom: $tabs-margin-bottom;
-	
+
 		.nav-tabs {
 			border-bottom: $tabs-nav-border-bottom;
 			> li {
@@ -25,7 +25,7 @@
 				}
 				> a {
 					border: none;
-					color: $tabs-a-color;
+					color: $tabs-link-color;
 				}
 				> a {
 					&:hover {
@@ -57,7 +57,8 @@
 
 		.tab-content {
 			padding: $tabs-content-outer-padding;
+			color: $tabs-content-text-color;
 		}
 
-	}	
+	}
 }

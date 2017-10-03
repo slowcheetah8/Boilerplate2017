@@ -1,11 +1,21 @@
 #supported-platforms {
 
   span {
-    padding: 20px;
+    //padding: 20px;
     display: block;
-    font-size: 20px;
+    font-size: $supported-platforms-font-size;
     i {
-      font-size: 60px;
+      font-size: $supported-platforms-icon-size;
+      background-color: #fff;
+      border-radius: 4px;
+      border: $supported-platforms-border;
+      font-size: $supported-platforms-font-size;
+      color: $supported-platforms-icon-color;
+      padding: 5px 4px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      width: 30px;
+      text-align: center;
     }
   }
 }

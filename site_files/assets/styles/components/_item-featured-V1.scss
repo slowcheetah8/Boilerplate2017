@@ -1,51 +1,61 @@
 #toplist-featured-standalone {
 
   .featured {
+    position: relative;
     text-align: center;
     //height: auto;
-    background-color: #252525;
-    padding: 0;
+    background-color: $item-featured-v1-bg-color;
+    padding: 10px;
     border-left: 1px solid;
     border-right: 1px solid;
     border-bottom: 1px solid;
 
     .list:nth-child(1) {                      // bottom feature #1
       text-align: center;
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding: $item-featured-v1-logo-padding;
+      img {
+        width: 100%;
+      }
     }
     .list:nth-child(2) {                      // bottom feature #2
 
-      color: lightgrey;
-      padding: 10px 30px 10px 30px;
+      color: $item-featured-v1-rating-color;
+      padding: $item-featured-v1-rating-padding;
       text-align: left;
+      span:nth-of-type(1) {
+        font-size: $item-featured-v1-rating-title-size;
+        display: block;
+      }
       i {
         color: gold;
       }
       span {
-        font-size: 11px;
+        font-size: $item-featured-v1-rating-font-size;
       }
     }
     .list:nth-child(3) {                      // bottom feature #3
       margin: auto;
-      color: lightgrey;
-      padding: 20px;
+      color: $item-featured-v1-bonus-font-color;
+      padding: $item-featured-v1-bonus-padding;
+      //top: 20px;
+
+
       span {
         &:nth-of-type(1){
-          font-size: 15px;                    // TODO $toplist-bonus-top
+          font-size: $item-featured-v1-bonus-top-size;
           font-weight: 500;
           display: block;
           text-align: center;
         }
         &:nth-of-type(2){
-          font-size: 35px;                    // TODO $toplist-bonus
+          font-size: $item-featured-v1-bonus-mid-size;
           font-weight: 500;
           display: block;
           text-align: center;
 
         }
         &:nth-of-type(3){
-          font-size: 28px;                    // TODO $toplist-bonus-sub
+          font-size: $item-featured-v1-bonus-bottom-size;
           font-weight: 500;
           display: block;
           text-align: center;
@@ -55,20 +65,19 @@
       }
     }
     .list:nth-child(4) {                      // bottom feature #4
-      padding: 40px 0px 20px 0px;
-      color: lightgrey;
+      padding: $item-featured-v1-software-padding;
+      color: $item-featured-v1-software-color;
       display: block;
       span {
         display: block;
-        font-size: 15px;
+        font-size: $item-featured-v1-software-font-size;
       }
     }
 
     .list:nth-child(5) {                      // bottom feature #5
       text-align: center;
-      padding: 30px 0 30px 0;
+      padding: $item-featured-v1-review-padding;
       display: block;
-
       .review {
         padding-top: 5px;
         font-size: 11px;

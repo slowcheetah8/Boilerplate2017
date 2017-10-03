@@ -2,34 +2,45 @@
 
   .heading {
     .row {
-      background-color: #5cb85c;
+      background-color: $softwarelist-overview-heading-bg-color;
       text-align: center;
       padding: 10px;
-      border-top: $softwarelist-border;
-      border-right: $softwarelist-border;
-      border-left: $softwarelist-border;
+      border-top: $softwarelist-overview-border;
+      border-right: $softwarelist-overview-border;
+      border-left: $softwarelist-overview-border;
+      div {
+        span {
+          a {
+            color: $softwarelist-overview-heading-link-color;
+            font-size: $softwarelist-overview-heading-link-size;
+          }
+        }
+      }
     }
   }
   .logo {
     padding: 10px;
-    background-color: #829be3;
-    border: $softwarelist-border;
+    background-color: $softwarelist-overview-image-bg-color;
+    border: $softwarelist-overview-border;
     img {
       width: 100%;
       height: auto;
+      box-shadow: $wrapper-box-shadow;
     }
   }
   .item {
     .row {
-      border-bottom: $softwarelist-border;
-      border-right: $softwarelist-border;
-      border-left: $softwarelist-border;
+      border-bottom: $softwarelist-overview-border;
+      border-right: $softwarelist-overview-border;
+      border-left: $softwarelist-overview-border;
+      color: $softwarelist-overview-item-font-color;
+      font-size: $softwarelist-overview-item-text-size;
       padding: 10px;
       &:nth-child(odd) {
-      background-color: whitesmoke;
+      background-color: $softwarelist-overview-row-color-odd;
       }
       &:nth-child(even) {
-        background-color: #829be3;
+        background-color: $softwarelist-overview-row-color-even;
       }
     }
   }

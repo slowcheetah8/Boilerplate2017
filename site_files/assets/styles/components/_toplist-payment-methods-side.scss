@@ -1,0 +1,33 @@
+#payment-methods-side {
+
+  div {
+    padding: 0;
+    .heading {
+      background-color: $payment-methods-side-heading-bg;
+      padding: $payment-methods-side-heading-padding;
+      color: $payment-methods-side-heading-text-color;
+      font-size: $payment-methods-side-heading-text-size;
+    }
+    .item {
+      .row {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 15px;
+
+        &:nth-of-type(even) {
+          background-color: lightgray;
+        }
+
+        div:nth-of-type(1) {
+          span {
+            display: block;
+          }
+        }
+
+      }
+    }
+  }
+
+
+
+}

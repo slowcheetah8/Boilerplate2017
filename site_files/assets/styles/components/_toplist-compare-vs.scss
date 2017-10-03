@@ -1,0 +1,107 @@
+#toplist-compare-two {
+  position: relative;
+
+  .heading {
+    .row {
+      background-color: $toplist-compare-item-heading-color;
+      color: $toplist-compare-item-heading-text-color;
+      text-align: center;
+      padding: 10px;
+      margin-top: 10px;
+      border: $toplist-compare-border;
+      div {
+        span {
+          font-size: $toplist-compare-header-size;
+          display: block;
+        }
+      }
+    }
+  }
+  .logo {
+    background-color: $toplist-compare-item-color;
+    padding: 20px;
+    border-left: $toplist-compare-border;
+    border-right: $toplist-compare-border;
+    img {
+      width: 100%;
+      height: auto;
+      box-shadow: 0 3px 2px 0 rgba(0,0,0,.3);
+    }
+  }
+  .item {
+    .row {
+      padding: 10px;
+      text-align: center;
+      background-color: $toplist-compare-item-color;
+      color: $toplist-compare-item-text-color;
+      border-left: $toplist-compare-border;
+      border-right: $toplist-compare-border;
+      border-bottom: $toplist-compare-border;
+      &:nth-of-type(1) {
+        div {
+          span {
+            font-size: $toplist-compare-font-size;
+          }
+        }
+      }
+      &:nth-of-type(2) {
+        div {
+          span {
+            font-size: $toplist-compare-font-size;
+          }
+        }
+      }
+      &:nth-of-type(3) {
+        div {
+          span {
+            font-size: $toplist-compare-font-size;
+          }
+        }
+      }
+      &:nth-of-type(4) {
+        div {
+          span {
+            padding: 5px;
+            display: block;
+          }
+        }
+      }
+      &:nth-of-type(even) {
+        background-color: $toplist-compare-row-even;
+      }
+
+
+
+    }
+  }
+  .footer {
+    background-color: $toplist-compare-footer-bg;
+    color: $toplist-compare-footer-text-color;
+    font-size: $toplist-compare-footer-font-size;
+    padding: 30px;
+    text-align: center;
+    margin: 10px 0 10px 0;
+    border: $toplist-compare-border;
+
+  }
+  .outer {
+    border: 1px solid #333;
+    background-color: $toplist-compare-outer-bg;
+    position: relative;
+    //border: 1px solid;
+    .vs {
+      position: absolute;
+      z-index: 10;
+      font-size: $toplist-compare-vs-text-size;
+      color: $toplist-compare-vs-text-color;
+      left: calc(50% - #{$toplist-compare-vs-width / 2});
+      top: calc(50% - #{$toplist-compare-vs-width / 2});
+      width: $toplist-compare-vs-width;
+      text-align: center;
+      background-color: $theme1;
+      padding: 5px;
+      border-radius: 50%;
+    }
+  }
+
+}

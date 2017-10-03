@@ -2,7 +2,7 @@
 // GetBootstrap Sass & Mixins
 @import "bootstrap";
 @import "customvars";
-@import "customvars_temp";
+@import "functions";
 
 @import "common/global";
 
@@ -12,37 +12,45 @@
 @import "components/titles";
 @import "components/grid";
 @import "components/bread";
-@import "components/item-banner";
+@import "components/item-mast-v1";
 @import "components/jumbotron";
-@import "components/thumbnails-games";
-@import "components/thumbnails-content-games";
-@import "components/thumbnails-content-casinos";
+@import "components/thumbs-games";
+@import "components/thumbs-games-captions";
+@import "components/thumbs-items-captions";
 @import "components/star-rating";
 @import "components/tabs";
 @import "components/news-list";
 @import "components/price-tables";
 @import "components/social-share";
-@import "components/tumbler-list";
+@import "components/toplist-v4-tumbler";
 @import "components/list-group";
 @import "components/carousel";
 @import "components/popover";
-@import "components/accordion";
+@import "components/accordion-default";
 @import "components/toplist-recommended";
 @import "components/sidemenu";
-@import "components/toplist-main";
-@import "components/toplist_quick_overview";
-@import "components/toplist-games-featured";
+@import "components/toplist-v1";
+@import "components/toplist-quick-overview";
+@import "components/toplist-games-featured-right";
 @import "components/toplist-games-payout";
 @import "components/toplist-security-overview";
 @import "components/toplist-payment-methods";
-@import "components/toplist-compare-two-casinos";
-@import "components/toplist-best-bonus";
+@import "components/toplist-compare-vs";
+@import "components/toplist-featured-top";
 @import "components/toplist-offers-combined";
-@import "components/toplist-featured-standalone";
+@import "components/item-featured-V1";
 @import "components/softwarelist-quick-overview";
 @import "components/softwarelist-compare-two";
 @import "components/supported-platforms";
 @import "components/showcase";
+@import "components/sidebar-components";
+@import "components/modal";
+@import "components/item-overview";
+@import "components/item-screenshots";
+@import "components/news-list-full-width";
+@import "components/toplist-payment-methods-side";
+@import "components/item-featured-V2";
+@import "components/toplist-collapse";
 
 @import "layouts/header";
 @import "layouts/sidebar";
@@ -55,4 +63,3 @@
 @import "mobile/max-width-768";
 @import "mobile/max-width-480";
 @import "mobile/max-width-320";
-

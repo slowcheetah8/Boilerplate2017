@@ -1,19 +1,39 @@
 #softwarelist-compare-two {
-
+  position: relative;
+  .vs {
+    position: absolute;
+    font-size: $software-vs-vs-font-size;
+    text-align: center;
+    height: $software-vs-vs-width;
+    width: $software-vs-vs-width;
+    background-color: $software-vs-vs-bg-color;
+    color: $software-vs-vs-text-color;
+    z-index: 10;
+    left: calc(50% - #{$software-vs-vs-width / 2});
+    top: calc(50% - #{$software-vs-vs-width / 2});
+    //padding: 10px;
+    border-radius: 50%;
+    border: $software-vs-border;
+    padding: 8px 0;
+  }
   .heading {
     .row {
-      background-color: #5cb85c;
+      background-color: $software-vs-heading-bg-color;
       text-align: center;
       padding: 10px;
-      border-top: $softwarelist-border;
-      border-right: $softwarelist-border;
-      border-left: $softwarelist-border;
+      border-top: $software-vs-border;
+      border-right: $software-vs-border;
+      border-left: $software-vs-border;
+      a {
+        color: $software-vs-heading-link-color;
+        font-size: $software-vs-link-size;
+      }
     }
   }
   .logo {
     padding: 10px;
     background-color: #829be3;
-    border: $softwarelist-border;
+    border: $software-vs-border;
     img {
       width: 100%;
       height: auto;
@@ -21,16 +41,17 @@
     }
   }
   .item {
+    margin-bottom: 50px;    // this margin makes space for the 'vs' when stacked on small screens
     .row {
-      border-bottom: $softwarelist-border;
-      border-right: $softwarelist-border;
-      border-left: $softwarelist-border;
+      border-bottom: $software-vs-border;
+      border-right: $software-vs-border;
+      border-left: $software-vs-border;
       padding: 10px;
       &:nth-child(odd) {
-        background-color: whitesmoke;
+        background-color: $software-vs-row-bg-odd;
       }
       &:nth-child(even) {
-        background-color: #829be3;
+        background-color: $software-vs-row-bg-even;
       }
     }
   }

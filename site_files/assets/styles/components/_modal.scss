@@ -1,0 +1,19 @@
+#myModal {
+  .modal-dialog {
+    .modal-content {
+      .modal-header {
+        .modal-title {
+          color: $modal-header-color;
+        }
+      }
+      .modal-body {
+        p {
+          color: $modal-body-p-color;
+        }
+      }
+      .modal-footer {
+
+      }
+    }
+  }
+}

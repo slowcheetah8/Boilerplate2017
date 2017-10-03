@@ -1,71 +1,436 @@
 //
 // Color scheme
-$theme1: #FF372A;
-$theme2: #446eff;
-$theme3: #f1f8ea;
+$theme1: #252525;
+$theme2: #ccc9c5;
+$theme3: yellow;
 $theme4: #d5dee2;
 $theme5: #ffffff;
 $theme6: #ffffff;
 
-$bg-main: rgba(24, 118, 48, 0.2);                     // main background color for site
-$wrapper-bg: $theme4;                                 // content wrapper background
-$focus-bg-color: $theme3;                             // background color for high focus areas
-
-
-// wrapper border color for all components
-$wrapper-border: 1px solid #191919;
-// wrapper border shadow for all components
-$wrapper-box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, .5);
 
 
 
+$bg-main: #e5e5e5;                                  // main background color for site
+$wrapper-bg: white;                                 // content wrapper background
+$focus-bg-color: $theme3;                           // background color for high focus areas
+
+// default theme properties
+$dark-text-color: black;                            // dark text color for light backgrounds
+$light-text-color: white;                           // light text color for dark backgrounds
+$star-rating-color: red;                            // star ratings color
+$toplist-headings-bg: $theme1;                      // background for toplist headings
+$toplist-features-color: lighten($theme1, 10%);     // background for all the features attached to toplists
+$wrapper-border: none;
+$wrapper-box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
 
 
-// Breadcrumbs properties
-$breadcrumb-padding-left: 50px;                       // space to the left of the breadcrumbs
-$breadcrumb-bg: none;                                 // background for breadcrumbs; default none
-$breadcrumb-font-size: 13px;                          // breadcrumb font size
-$breadcrumb-margin-bottom: 0px;                       // add space below breadcrumbs via margin
-$breadcrumb-padding-bottom: 0px;                      // add space below breadcrumbs via padding
+// Navbar/header properties
+$navbar-bg-color: #121212;                          // navbar bg color
+$navbar-bg-hover-color: #3b3b3b;                    // navbar li hover
+$navbar-wrapper-height: 93px;
+$navbar-item-padding-top: 32px;
+$navbar-item-padding-bottom: 32px;
+
+
+
+// Carousel properties | _carousel.scss | cs2
+$carousel-caption-bg: rgba(0, 0, 0, 0.7);             // Caption background / opacity
+$carousel-title-color: white;                         // Casino title color
+$carousel-title-size: 30px;                           // Casino title size
+$carousel-bonus-color: white;                         // Bonus color
+$carousel-bonus-size: 20px;                           // Bonus font size
+$carousel-bonus-weight: 800;                          // Bonus font weight
+$carousel-description-size: 16px;                     // Description font size
+$carousel-description-color: white;                   // Description font color
+
+
+// Pricing table properties | _price-tables.scss | cs3
+$price-table-text-color: $dark-text-color;                        // font color of text
+$price-table-margin-top: 35px;                        // top margin of tables
+$price-table-heading-padding: 10px;                   // padding around logo
+$price-table-heading-bg-color: #EEE;                  // background color around logo
+$price-table-row-padding: 15px;                       //
+$price-table-row-bg-color: #fff;
+$price-table-row-bg-color-nth: #F8F8F8;
+$price-table-star-color: #fff;
+
+
+// Software VS | _softwarelist-compare-two.scss | cs4
+$software-vs-border: 1px solid #8d8d8d;
+$software-vs-vs-bg-color: $theme1;                      // background color of the VS div
+$software-vs-vs-text-color: $light-text-color;
+$software-vs-vs-width: 60px;
+$software-vs-vs-font-size: 30px;
+$software-vs-heading-bg-color: $theme1;
+$software-vs-heading-link-color: $light-text-color;
+$software-vs-link-size: 20px;
+$software-vs-row-bg-odd: whitesmoke;
+$software-vs-row-bg-even: #829be3;
+
+
+
+// Breadcrumbs properties | _breadcrumbs.scss
+$breadcrumbs-padding-left: 50px;                       // space to the left of the breadcrumbs
+$breadcrumbs-bg: none;                                 // background for breadcrumbs; default none
+$breadcrumbs-font-size: 13px;                          // breadcrumb font size
+$breadcrumbs-margin-bottom: 0px;                       // add space below breadcrumbs via margin
+$breadcrumbs-padding-bottom: 0px;                      // add space below breadcrumbs via padding
+
+
+// Footer properties | _footer.scss | cs7
+$footer-bg-color: #1d1d1d;                          // footer
+$footer-sub-bg-color: $navbar-bg-color;             // footer-sub bg color
+$footer-margin-top: 30px;                           // space above footer
+$footer-links-height: 140px;                        // height of area for footer links
+$footer-links-padding: 40px;                        // adjust padding for footer links
+$footer-links-color: #ddc9aa;
+$footer-links-font-size: 12px;
+$footer-links-spacing: 2px;                         // add a bit of spacing between footer link items
+$footer-sub-min-height: 80px;                       // minimum height for footer-sub
+$footer-sub-margin-top: 40px;                       // add space above of footer-sub outside
+$footer-sub-font-size: 13px;
+$footer-sub-padding-top: 20px;                      // add space above text in footer-sub
+
+
+
+// Social share button | _social-share.scss | cs10
+$share-share-width: 51px;                       // fill width of dropdown menu
+$share-font-color: #FFFFFF!important;
+$share-ul-margin: 0;                            // drop down directly below share button
+$share-dropdown-width: 61px;                    // dropdown container width
+$share-font-size: 16px;
+$share-dropdown-margin: 3px 0 3px 4px;
+$share-twitter-bg-color: #3399CC;
+$share-facebook-bg-color: #3D5B96;
+$share-google-bg-color: #DD3F34;
+$share-linkedin-bg-color: #1884BB;
+$share-pinterest-bg-color: #CC1E2D;
+$share-mail-bg-color: #FFC90E;
+
+
+// Item: Overview V1 | cs12
+$item-overview-font-size: 15px;
+$item-overview-font-color: $dark-text-color;
+
+
+
+
+// Item Header Mast V1 | _item-mast-v1.scss | cs15
+$mast-v1-bg: $theme1;                                  // background color
+$mast-v1-border-radius: 10px;                           // border radius of container
+$mast-v1-padding: 50px;                                // padding inside the banner
+$mast-v1-rating-size: 20px;                            // determines the size of the star rating
+$mast-v1-logo-bg-color: rgba(0,0,0,0.3);               // color of the logo background
+$mast-v1-logo-bg-radius: 50%;                          // circle by default; tweak lower for square
+$mast-v1-title-size: 33px;                             // Cation title font size
+$mast-v1-title-weight: 400;
+$mast-v1-description-color: black;
+$mast-v1-bonus-size: 22px;                             // size of bonus text
+$mast-v1-bonus-color: $light-text-color;                         // color of bonus text
+$mast-v1-bonus-heading-size: 18px;                     // size of bonus heading
+$mast-v1-bonus-heading-color: $light-text-color;                 // color of bonus heading
+$mast-v1-bonus-button-width: 60%;                      // width of the button
+$mast-v1-bonus-weight: 500;
+$mast-v1-rating-color: red;
+
+
+// Softwarelist Overview | _softwarelist-quick-overview.scss |cs16
+$softwarelist-overview-heading-bg-color: $toplist-headings-bg;
+$softwarelist-overview-heading-link-size: 15px;
+$softwarelist-overview-heading-link-color: white;
+$softwarelist-overview-border: 1px solid #333;
+$softwarelist-overview-image-bg-color: white;
+$softwarelist-overview-row-color-odd: whitesmoke;
+$softwarelist-overview-row-color-even: $theme2;
+$softwarelist-overview-item-text-size: 15px;
+$softwarelist-overview-item-font-color: dark-text-color;
+
+
+// List Group | _list-group.scss | cs17
+$list-group-size: 15px;                               // Font size of the menu item
+$list-group-bg: $theme2;                              // Background color for menu item
+$list-group-text-color: $dark-text-color;
+
+
+// Modal Demo | _modal.scss
+$modal-header-color: $dark-text-color;
+$modal-body-p-color: $dark-text-color;
+
+
+
+// News list | _news-list.scss | cs19
+$news-list-bg: $theme2;                                   // news-list background color
+$news-list-padding: 30px;                                 // inner padding of news-list card
+$news-list-border: $wrapper-border;                       // default wrapper border - adjust to 'none' for no border
+$news-list-title-padding: 0;                              // padding to align news title
+$news-list-title-min-height: 40px;
+$news-list-title-border-bottom: 1px solid $theme1;        // line separating title from body
+$news-list-title-margin-bottom: 28px;                     // creates space between separator and body
+$news-list-title-size: 18px;                              // size of the title
+$news-list-title-weight: 600;                             // give the title more or less weight
+$news-list-title-color: #aaa;                             // color of the title
+$news-list-date-weight: 600;                              // give more or less weight to the date
+$news-list-date-size: 11px;                               // size of the date
+$news-list-date-margin-bottom: 10px;                      // space between date and text below it
+$news-list-body-font-size: 18px;                          // size of the text in the body
+
+
+// Popover properties | _popover.scss | cs21
+$popover-btn-color: $theme2;
+$popover-head-bg-color: $theme3;
+$popover-head-font-size: 14px;
+$popover-content-font-size: 14px;
+
+
+// Star ratings | _star-rating.scss | cs26 - cs28
+$starratingfontsize-lg: ($font-size-base + 2px);
+$starratingfontsize-md: $font-size-base;
+$starratingfontsize-sm: ($font-size-base - 2px);
+
+
+
+// Sidebar properties
+$container-title-margin: 20px 14px;                   // container title margins
+$sidebar-margin: 5px 0;                              // top margin between .recommended list items
+$sidebar-margin-wrap: 16px 0;                         // align sidebar wrapper with content wrapper
+$sidebar-border-radius: 4px;                          // sidebar border radius
+$sidebar-padding: 10px 6px;                           // padding on sidebar content
+// News list in Sidebar
+$list-padding: 10px;                                  // padding for the news list
+$list-padding-item: 20px 10px;                        // padding for individual news items
+$news-title-size: 16px;                               // size of the title / link
+$news-title-weight: 600;                              // make the title appear bolder or lighter
+$news-date-size: 11px;                                // date size
+$news-date-weight: 200;                               // date weight
+$news-description-size: 13px;                         // description size
+$news-description-margin-top: 5px;                    // gap between description and date
+$news-description-margin-bottom: 15px;                // gap below description
+
+
+
+// Item Supported Platforms | _supported-platforms.scss | cs30 - cs31
+$supported-platforms-font-size: 20px;
+$supported-platforms-icon-size: 20px;
+$supported-platforms-icon-color: #a0a0a0;
+$supported-platforms-border: 1px solid #dcdcdc;
+
+
+
+
+// Tabs properties | _tabs.scss | cs32
+$tabs-bg-color: $theme2;
+$tabs-link-color: $dark-text-color;
+$tabs-content-text-color: $dark-text-color;
+$tabs-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
+$tabs-margin-bottom: 30px;
+$tabs-nav-border-bottom: 2px solid #DDD;            // divider between header and content
+$tabs-nav-font-color: #666;
+$tabs-a-hover-color: #4285F4;                       // link color on hover
+$tabs-content-inner-padding: 15px 0;
+$tabs-content-outer-padding: 20px;
+$tabs-content-font-size: 16px;
+
+
+
+// Thumbs Items Captions | _thumbs-items-captions.scss | cs33
+$thumbs-items-item-name-size: 15px;
+$thumbs-items-bg-color: $theme2;
+$thumbs-items-bottom-space: 10px 0;
+$thumbs-items-rating-align: 10px;
+$thumbs-items-bonus-size: 15px;
+$thumbs-items-rating-color: red;
+$thumbs-items-text-color: $dark-text-color;
+$thumbs-items-border: 1px solid #333;
+
+// Thumbs Games Captions | _thumbs-games-captions.scss | cs34
+$games-captions-size: 15px;                                   // Font size of game name
+$games-captions-font-weight: 700;
+$games-captions-link-color: $gray-darker;                     // dark text on light background
+$games-captions-card-color: $theme2;                          //
+$games-captions-card-hover-color: darken($theme2, 30%);
+$games-captions-card-height: auto;
+$games-captions-text-color: $dark-text-color;
 
 
 
 
 
-//Accordion properties
-$accordion-button-color: $theme3;                     // button color
+
+// Thumbs Games | _thumbs-games.scss | cs35
+$thumbs-games-link-color: $light-text-color;
+$thumbs-games-link-font-weight: 600;                     // font weight for title / link
+$thumbs-games-link-size: 15px;
+$thumbs-games-bg-color: $theme2;
+$thumbs-games-caption-bg: rgba(0, 0, 0, 0.7);                    //
+
+
+
+
+// Toplist: Featured Top | _toplist-featured-top.scss | cs36
+$toplist-feature-top-feature-text-color: $light-text-color;
+$toplist-feature-top-heading-bg: $toplist-headings-bg;
+$toplist-feature-top-feature-bg: $toplist-features-color;
+$toplist-feature-top-headin-size: 15px;
+$toplist-feature-top-headin-text: $light-text-color;
+$toplist-feature-top-row-text-color: $dark-text-color;
+$toplist-feature-top-row-text-size: 15px;                     // item font size
+$toplist-feature-top-align: 30px;                             // this adds padding top the top of the elements that need to align with logo
+$toplist-feature-top-border: 1px solid #333;                  // replace with 'none' for no border
+$toplist-feature-top-rating-color: $star-rating-color;
+
+
+
+// Toplist: Compare Vs | _toplist-compare-vs.scss | cs37
+$toplist-compare-header-size: 20px;
+$toplist-compare-item-heading-text-color: $light-text-color;
+$toplist-compare-item-heading-color: $toplist-headings-bg;        // heading background color | default $theme1
+$toplist-compare-item-color: $theme2;                             //
+$toplist-compare-font-size: 15px;
+$toplist-compare-outer-bg: #f9f9f9;
+$toplist-compare-footer-bg: $theme2;
+$toplist-compare-footer-text-color: $dark-text-color;
+$toplist-compare-footer-font-size: 15px;
+$toplist-compare-item-text-color: $dark-text-color;
+$toplist-compare-border: 1px solid black;                        // replace with 'none' for no border
+$toplist-compare-row-even: darken($theme2, 10%);
+$toplist-compare-vs-text-size: 40px;
+$toplist-compare-vs-text-color: $light-text-color;
+$toplist-compare-vs-width: 70px;
+
+
+
+
+
+// Item: Featured V1 | _item-featured-V1.scss | cs38
+$item-featured-v1-bg-color: $toplist-features-color;
+$item-featured-v1-logo-padding: none;
+$item-featured-v1-rating-title-size: 15px;
+$item-featured-v1-rating-color: $light-text-color;
+$item-featured-v1-rating-font-size: 11px;
+$item-featured-v1-rating-padding: 10px;
+$item-featured-v1-bonus-top-size: 15px;
+$item-featured-v1-bonus-mid-size: 30px;
+$item-featured-v1-bonus-bottom-size: 28px;
+$item-featured-v1-bonus-font-color: $light-text-color;
+$item-featured-v1-bonus-padding: 10px 20px;
+$item-featured-v1-software-font-size: 15px;
+$item-featured-v1-software-padding: 20px;
+$item-featured-v1-software-color: $light-text-color;
+$item-featured-v1-review-padding: 20px 0;
+
+
+
+// Toplist Payout Games Featured Left | _toplist-games-payout.scss | cs42
+$games-payout-heading-bg: $toplist-headings-bg;
+$games-payout-heading-text-color: $light-text-color;
+$games-payout-item-font-size: 15px;
+$games-payout-row-color-odd: lightgray;
+$games-payout-row-color-even: whitesmoke;
+$games-payout-featured-bg: $toplist-features-color;
+$games-payout-border: none;
+$games-payout-rating-color: $star-rating-color;
+$games-payout-featured-text-color: $light-text-color;
+$games-payout-logo-width: 125px;
+$games-payout-feature-bonus-size: 17px;
+
+// Toplist Games Count Featured Right | _toplist-games-featured-right.scss | cs43
+$games-count-heading-bg: $toplist-headings-bg;
+$games-count-heading-text-color: $light-text-color;
+$games-count-item-font-size: 15px;
+$games-count-row-color-odd: lightgray;
+$games-count-row-color-even: whitesmoke;
+$games-count-featured-bg: $toplist-features-color;
+$games-count-featured-text-color: $light-text-color;
+$games-count-border: none;
+$games-count-rating-color: red;
+
+
+// Toplist Option V1 | _toplist-v1.scss | cs45
+
+$toplist-heading-bg: $toplist-headings-bg;
+$toplist-heading-text-color: $light-text-color;
+$toplist-body-bg: whitesmoke;
+$toplist-title-color: #222;
+$toplist-v1-rating-color: $star-rating-color;
+$toplist-heading-height: 60px;
+$toplist-heading-size: 15px;
+$toplist-heading-weight: 400;
+$toplist-heading-padding: 20px 10px;
+$toplist-heading-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
+$toplist-body-padding: 20px 10px;
+$toplist-body-min-height: 90px;
+$toplist-body-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
+$toplist-title-size: 15px;
+$toplist-title-padding-top: 14px;
+$toplist-bonus-font-size: 15px;
+$toplist-bonus-padding: 14px 10px 0 0;
+$toplist-percent-font-size: 15px;
+$toplist-percent-padding: 14px 0 0 0;
+$toplist-payout-font-size: 15px;
+$toplist-payout-padding: 14px 0 0 0;
+$toplist-button-padding: 14px 0 0 0;
+$toplist-footer-font-size: 15px;
+$toplist-footer-icon-color: #0986f0 !important;
+$toplist-footer-icon-margin-left: 5px;
+
+
+
+// Toplist Option V4 Tumbler | _toplist-v4-tumbler.scss | cs48
+$tumbler-rating-color: $star-rating-color;
+$tumbler-bonus-size: 15px;
+$tumbler-bg-color: $theme2;
+
+
+
+// Toplist Collapse | _toplist-collapse.scss | cs49
+$toplist-collapse-item-bg: whitesmoke;
+$toplist-collapse-border: 1px solid #333;
+$toplist-collapse-heading-text-color: $dark-text-color;
+
+
+// Toplist Payment Methods with Featured Item | _toplist-payment-methods.scss | cs50 - cs51
+$payment-methods-heading-padding: 15px;               // padding amount on heading
+$payment-methods-heading-size: 15px;                  // size of the heading text
+$payment-methods-heading-bg: $theme1;
+$payment-methods-heading-text-color: $light-text-color;
+$payment-methods-a-size: 15px;                        // size of the casino link
+$payment-methods-font-size: 15px;                     // size of the rest of the fonts per item row
+
+
+
+
+// Toplist Quick Overview | _toplist-quick-overview.scss | cs52
+$toplist-overview-heading-bg: $theme1;
+$toplist-overview-heading-text-color: $light-text-color;
+$toplist-overview-header-padding: 15px;
+$toplist-overview-heading-font-size: 15px;
+$toplist-overview-row-color-odd: whitesmoke;
+$toplist-overview-row-color-even: lightgray;
+$toplist-overview-rating-color: red;
+
+
+
+//Accordion properties | _accordion-default.scss | cs54
+$accordion-button-color: $theme1;                     // button color
 $accordion-panel-bg: $theme2;                         // background color inside panel
-$accordion-title-color: #555;                         // font color on button
+$accordion-title-color: $light-text-color;                         // font color on button
 $accordion-title-size: 20px;                          // font size on button
 $accordion-button-padding: 25px;                      // adjust button size with padding
 $accordion-panel-padding: 40px 40px;                  // spacing inside panel content
 $accordion-body-border-radius: 4px;
 $accordion-title-border-radius: 4px;                  // border radius for title button
 $accordion-border: none;                              // border for entire accordion panel
-$accordion-content-color: white;                      // content font color
+$accordion-content-color: $dark-text-color;                      // content font color
 
 
 
-
-
-
-
-// Jumbotron properties
-$jumbotron-bg: $theme3;                               // background for the container
+// Jumbotron properties | _jumbotron-scss | cs56 - cs57
+$jumbotron-bg: $theme2;                               // background for the container
+$jumbotron-text-color: $dark-text-color;
 $jumbotron-title-size: 56px;                          // size of the title message
 $jumbotron-p-size: 15px;                              // size of the paragraph text
 $jumbotron-bonus-size: 25px;
 $jumbotron-padding: 50px;
-
-
-
-
-
-// List Group | Menu
-$list-group-size: 20px;                               // Font size of the menu item
-$list-group-bg: $theme3;                              // Background color for menu item
-$list-group-link-color: $gray-dark;                        // menu item / Link color
-
 
 
 
@@ -83,298 +448,6 @@ $casino-title-line-height: 1.7em;                     // line height for spacing
 
 
 
-// Sidebar properties
-$container-title-margin: 20px 14px;                   // container title margins
-$sidebar-margin: 5px 0;                              // top margin between .recommended list items
-$sidebar-margin-wrap: 16px 0;                         // align sidebar wrapper with content wrapper
-$sidebar-border-radius: 4px;                          // sidebar border radius
-$sidebar-padding: 10px 6px;                           // padding on sidebar content
-
-
-
-
-
-
-
-
-// News list in Sidebar
-$list-padding: 10px;                                  // padding for the news list
-$list-padding-item: 20px 10px;                        // padding for individual news items
-$news-title-size: 16px;                               // size of the title / link
-$news-title-weight: 600;                              // make the title appear bolder or lighter
-$news-date-size: 11px;                                // date size
-$news-date-weight: 200;                               // date weight
-$news-description-size: 13px;                         // description size
-$news-description-margin-top: 5px;                    // gap between description and date
-$news-description-margin-bottom: 15px;                // gap below description
-
-
-
-
-
-
-
-
-
-
-// Item Banner | template_item.html | _item-scss
-$banner-bg: $theme2;                                  // background color
-$banner-border-radius: 10px;                           // border radius of container
-$banner-padding: 50px;                                // padding inside the banner
-$banner-rating-size: 20px;                            // determines the size of the star rating
-$banner-logo-bg-color: rgba(0,0,0,0.3);               // color of the logo background
-$banner-logo-bg-radius: 50%;                          // circle by default; tweak lower for square
-$banner-title-size: 33px;                             // Cation title font size
-$banner-description-color: black;
-$banner-bonus-size: 22px;                             // size of bonus text
-$banner-bonus-color: #333371;                         // color of bonus text
-$banner-bonus-heading-size: 18px;                     // size of bonus heading
-$banner-bonus-heading-color: #73cb51;                 // color of bonus heading
-$banner-bonus-button-width: 60%;                      // width of the button
-
-
-
-
-
-
-
-
-
-
-// Thumbnails games
-$center-block-padding: 10px;                          // padding around casino title / link
-$center-block-border-radius: 5px;                    // border radius for title background
-$thumbnail-link-font-weight: 600;                     // font weight for title / link
-$thumbnail-bg: rgba(0, 0, 0, 0.7);                    //
-$thumbnail-games-font-size: 20px;
-
-
-
-
-
-
-
-
-// Thumbnails (casinos) properties
-$casino-card-bottom-space: 10px 0;
-$star-rating-align: 10px;
-$thumbnail-bonus-size: 20px;
-$thumbnail-casino-size: 16px;
-
-
-
-
-
-
-
-
-
-// Carousel properties
-$carousel-caption-bg: rgba(0, 0, 0, 0.7);             // Caption background / opacity
-$carousel-title-color: white;                         // Casino title color
-$carousel-title-size: 30px;                           // Casino title size
-$carousel-bonus-color: white;                         // Bonus color
-$carousel-bonus-size: 20px;                           // Bonus font size
-$carousel-bonus-weight: 800;                          // Bonus font weight
-$carousel-description-size: 16px;                     // Description font size
-$carousel-description-color: white;                   // Description font color
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Pricing table properties
-$price-table-text-color: #666;                        // font color of text
-$price-table-margin-top: 35px;                        // top margin of tables
-$price-table-heading-padding: 10px;                   // padding around logo
-$price-table-heading-bg-color: #EEE;                  // background color around logo
-$price-table-row-padding: 15px;                       //
-$price-table-row-bg-color: #fff;
-$price-table-row-bg-color-nth: #F8F8F8;
-$price-table-star-color: #fff;
-$price-table-button-corner-radius: 0px;
-
-
-
-
-
-
-
-
-
-
-
-
-// News list | Portlet
-$news-list-bg: $theme3;                                   // news-list background color
-$news-list-padding: 30px;                                 // inner padding of news-list card
-$news-list-border: $wrapper-border;                       // default wrapper border - adjust to 'none' for no border
-$news-list-title-padding: 0;                              // padding to align news title
-$news-list-title-min-height: 40px;
-$news-list-title-border-bottom: 1px solid $theme1;        // line separating title from body
-$news-list-title-margin-bottom: 28px;                     // creates space between separator and body
-$news-list-title-size: 18px;                              // size of the title
-$news-list-title-weight: 600;                             // give the title more or less weight
-$news-list-title-color: #aaa;                             // color of the title
-$news-list-date-weight: 600;                              // give more or less weight to the date
-$news-list-date-size: 11px;                               // size of the date
-$news-list-date-margin-bottom: 10px;                      // space between date and text below it
-$news-list-body-font-size: 18px;                          // size of the text in the body
-
-
-
-
-
-
-
-
-
-
-// Social share button
-$btn-share-width: 51px;                       // fill width of dropdown menu
-$btn-font-color: #FFFFFF!important;
-$btn-ul-margin: 0;                            // drop down directly below share button
-$btn-dropdown-width: 61px;                    // dropdown container width
-$btn-font-size: 16px;
-$btn-dropdown-margin: 3px 0 3px 4px;
-$btn-twitter-bg-color: #3399CC;
-$btn-facebook-bg-color: #3D5B96;
-$btn-google-bg-color: #DD3F34;
-$btn-linkedin-bg-color: #1884BB;
-$btn-pinterest-bg-color: #CC1E2D;
-$btn-mail-bg-color: #FFC90E;
-
-
-
-
-
-
-
-
-
-
-// Tumblers
-$tumbler-rating-color: gold;
-$tumbler-bonus-size: 15px;
-$tumbler-bg-color: white;
-
-
-
-
-
-
-
-
-
-
-// Toplist Main properties
-//
-// Colors
-$toplist-heading-bg: $theme3;
-$toplist-body-bg: $theme2;
-$toplist-title-color: #222;
-$toplist-heading-color: #131313;
-$toplist-ranking-color: #121212;
-// Heading
-$toplist-heading-height: 60px;
-$toplist-heading-size: 10px;
-$toplist-heading-weight: 400;
-$toplist-heading-padding: 20px 10px;
-$toplist-heading-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
-// Body
-$toplist-body-padding: 20px 10px;
-$toplist-body-min-height: 90px;
-$toplist-body-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
-// Title
-$toplist-title-size: 16px;
-$toplist-title-padding-top: 14px;
-// Ranking
-$toplist-ranking-font-size: 13px;
-$toplist-ranking-height: 20px;
-// Bonus tab
-$toplist-bonus-text-align: center;
-$toplist-bonus-width: 100%;
-$toplist-bonus-font-size: 22px;
-$toplist-bonus-padding: 14px 10px 0 0;
-// Percent tab
-$toplist-percent-font-size: 16px;
-$toplist-percent-padding: 14px 0 0 0;
-// Payout tab
-$toplist-payout-font-size: 16px;
-$toplist-payout-padding: 14px 0 0 0;
-// Button tab
-$toplist-button-padding: 14px 0 0 0;
-// Toplist footer (.more)
-$toplist-footer-bg-color: #3b3b3b;
-$toplist-footer-padding: 30px 0 0 0;
-$toplist-footer-font-size: 16px;
-$toplist-footer-icon-color: #0986f0 !important;
-$toplist-footer-icon-margin-left: 5px;
-
-
-
-
-
-
-
-
-
-// Toplist Best Bonus with Feature Item
-$best-bonus-feature-bg: #285128;
-$best-bonus-feature-text-color: white;
-$best-bonus-headin-size: 20px;
-$best-bonus-row-text-color: black;
-$best-bonus-row-text-size: 15px;
-
-
-
-
-
-
-
-// Software List Overview
-$softwarelist-border: 1px solid #8d8d8d;
-
-
-
-
-
-
-
-
-// Toplist Compare 2 Casinos
-$compare-header-size: 30px;
-$compare-font-size: 20px;
-
-
-
-
-
-
-// Toplist Payment Methods with Featured Item
-$payment-methods-a-size: 15px;                        // size of the casino link
-$payment-methods-font-size: 15px;                     // size of the rest of the fonts per item row
-$payment-methods-heading-padding: 15px;               // padding amount on heading
-$payment-methods-heading-size: 13px;                  // size of the heading text
-$payment-methods-feature-bg: #252525;                 // color of the feature background
-$payment-methods-feature-bonus-size: 35px;            // size of the bonus offer in item feature
-$payment-methods-feature-bonus-sub-size: 28px;        // size of the bonus offer sub (below bonus)
-
-
-
-
-
-
-
 
 
 // Toplist Games Offers Combined
@@ -384,117 +457,12 @@ $offers-combined-item-font-size: 15px;                // Font size of the item r
 
 
 
-// Toplist Games Payout
-$games-payout-border: 1px solid #333;
+
+// Item featured v2 | _item-featured-V2.scss | cs61
 
 
-
-
-
-// Popover properties
-
-$popover-btn-color: $theme2;
-$popover-head-bg-color: $theme3;
-$popover-head-font-size: 14px;
-$popover-content-font-size: 14px;
-$pop-btn-font-color: #242424;
-
-
-
-
-
-
-
-
-
-
-
-// Tabs properties
-$tabs-bg-color: $theme3 none repeat scroll 0% 0%;
-$tabs-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
-$tabs-margin-bottom: 30px;
-$tabs-nav-border-bottom: 2px solid #DDD;            // divider between header and content
-$tabs-nav-font-color: #666;
-$tabs-a-color: #404040;                                // text/link color in header
-$tabs-a-hover-color: #4285F4;                       // link color on hover
-$tabs-content-inner-padding: 15px 0;
-$tabs-content-outer-padding: 20px;
-$tabs-content-font-size: 16px;
-
-
-
-
-
-
-
-
-
-
-// Navbar/header properties
-$navbar-bg-color: #121212;                          // navbar bg color
-$navbar-bg-hover-color: #3b3b3b;                    // navbar li hover
-$navbar-wrapper-height: 93px;
-$navbar-item-padding-top: 32px;
-$navbar-item-padding-bottom: 32px;
-
-
-
-
-
-
-
-
-
-
-
-// Footer properties
-$footer-bg-color: #1d1d1d;                          // footer
-$sub-footer-bg-color: $navbar-bg-color;             // footer-sub bg color
-$footer-margin-top: 30px;                           // space above footer
-$footer-links-height: 140px;                        // height of area for footer links
-$footer-links-padding: 40px;                        // adjust padding for footer links
-$footer-links-color: #ddc9aa;
-$footer-links-font-size: 12px;
-$footer-links-spacing: 2px;                         // add a bit of spacing between footer link items
-$footer-sub-min-height: 80px;                       // minimum height for footer-sub
-$footer-sub-margin-top: 40px;                       // add space above of footer-sub outside
-$footer-sub-font-size: 13px;
-$footer-sub-padding-top: 20px;                      // add space above text in footer-sub
-
-
-
-
-
-
-
-
-$starratingfontsize_sm: ($font-size-base - 2px);
-$starratingfontsize_md: $font-size-base;
-$starratingfontsize_lg: ($font-size-base + 2px);
-
-
-
-
-
-
-
-
-//price table
-$primary-text-color: #337AB7;
-$success-text-color: #5CB85C;
-$info-text-color: #5BC0DE;
-$warning-text-color: #F0AD4E;
-$danger-text-color: #D9534F;
-$dark-text-color: #444;
-$royal-text-color: #8E74E2;
-$static-text-color: #2BB0A6;
-
-$btn-dark-color: $dark_text_color;
-$btn-dark-hover-color: #222;
-$btn-royal-color: $royal_text_color;
-$btn-royal-hover-color: #7451E8;
-$btn-static-color: $static_text_color;
-$btn-static-hover-color: #07A094;
-
-
-
+// Toplist Payment Methods Feature Side | _toplist-payment-methods-side.scss | cs62
+$payment-methods-side-heading-bg: $toplist-headings-bg;
+$payment-methods-side-heading-padding: 15px;
+$payment-methods-side-heading-text-color: $light-text-color;
+$payment-methods-side-heading-text-size: 15px;

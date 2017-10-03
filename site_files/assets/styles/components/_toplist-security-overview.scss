@@ -1,48 +1,36 @@
 #toplist-security-overview {
-  padding: 0;
-  display: block;
 
-  .col-lg-3,
-  .col-md-3,
-  .col-sm-3 {
-    padding: 0;
-  }
-  .col-lg-9,
-  .col-md-9,
-  .col-sm-9 {
-    padding: 0;
-  }
+
+
+
 
   .heading {
-    border: 1px solid #333;
-    padding: 6px;
-    background-color: $theme2;
-    text-align: center;
-  }
-  .item {
-    .col-lg-4,
-    .col-lg-1,
-    .col-lg-2,
-    .col-md-12,
-    .col-sm-12 {
-      border-right:1px solid #333;
-      border-bottom: 1px solid #333;
-      padding: 10px 0 35px 0;
-      height: 46px;
-      text-align: center;
-      font-size: 11px;
-      background-color: whitesmoke;
-    }
-
+    padding: 10px 0;
+    background-color: $theme1;
+    color: $light-text-color;
+    font-size: 15px;
     .row {
-      div {
-        &:nth-of-type(1) {
-        border-left: $wrapper-border;
-        }
+      div:nth-of-type(1) {
+        padding-left: 30px;
       }
     }
-
-
   }
+
+  .item {
+    .row {
+      padding: 20px 0;
+
+      &:nth-of-type(odd) {
+        background-color: white;
+      }
+      &:nth-of-type(even) {
+        background-color: lightgray;
+      }
+    }
+  }
+
+
+
+
 
 }

@@ -1,0 +1,9 @@
+// this function controls the font color vs bg color
+
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return $dark-text-color;
+  } @else {
+    @return $light-text-color;
+  }
+}

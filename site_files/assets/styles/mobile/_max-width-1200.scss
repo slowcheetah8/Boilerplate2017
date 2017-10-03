@@ -1,5 +1,5 @@
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1300px) {
+@media only screen and (max-width : 1200px) {
 
   // Content block thumbnail name
 
@@ -8,34 +8,169 @@
     font-size: 10px;
   }
 
-  #toplist-payment-methods {
-    .featured {
-      .list:nth-child(5) {                      // bottom feature #5
-        .btn {
-          margin: 10px;
-          font-size: 15px;
-        }
-      }
-    }
-  }
+
 
   #toplist-games-payout {
     .item {
       border-left: $games-payout-border;
+      .row {
+        div {
+          text-align: center;
+          padding: 15px;
+        }
+      }
     }
   }
 
   #toplist-overview {
     .row {
       div {
+        &:nth-of-type(6) {
+          padding-left: 0;
+          .btn {
+            font-size: 11px;
+          }
+        }
+        &:nth-of-type(2) {
+          i {
+            font-size: 11px;
+          }
+        }
         span{
           display: block;
+
         }
       }
     }
   }
 
 
+  #item-header-mast {
+		.item {
+			.wrap {
+				.row {
+          //padding-left: 60px;
+					#logo-wrap {
+						//width: 200px;
+						//height: 200px;
+					}
+					#banner-caption {
+						span {
+							&:nth-of-type(1) {						// Caption title
+							}
+							&:nth-of-type(2) {						// Caption paragraph / description
+							}
+							&:nth-of-type(3) {						// Bonus heading
+								//
+							}
+							&:nth-of-type(4) {						// Bonus
+								//
+							}
+							&:nth-of-type(5) {						// Play now button
+								//width: 90%;
+								a {
+									font-size: 15px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+  #toplist-featured-standalone {
+    .featured {
+      .list:nth-child(1) {
+        img {
+          width: 50%;
+        }
+      }
+      .list:nth-child(2) {
+        text-align: center;
+      }
+    }
+  }
+
+  #toplist-payment-methods {
+    .heading {
+      .row {
+        div {
+          padding: 5px;
+        }
+      }
+    }
+    .item {
+      .row {
+        div:nth-of-type(9) {
+          span {
+            a {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #toplist-best-bonus {
+    .item {
+      .row {
+        //
+      }
+    }
+  }
+  #softwarelist-compare-two {
+    .vs {
+      top: calc(48.5% - #{$software-vs-vs-width / 2});
+    }
+  }
+  #toplist-games-featured {
+    .item {
+      .row {
+        text-align: center;
+        div {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  #toplist-v1 {
+    .toplist {
+      .item {
+        div {
+          &:nth-of-type(2) {
+  					.title {
+  						text-align: center;
+  					}
+  					.rating-outer {
+  						text-align: center;
+  					}
+  				}
+        }
+      }
+    }
+  }
+  #toplist-collapse {
+    .row {
+      .col-xs-12 {
+        .toplist {
+          text-align: center;
+          .item {
+            .row {
+              .wrap {
+                div:nth-of-type(6) {
+                  left: 0;
+                }
+              }
+            }
+          }
+          div {
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+
 }
-
-

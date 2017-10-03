@@ -1,0 +1,98 @@
+// the below controls the styling of the payout toplist component
+
+#toplist-games-featured {
+  .col-lg-3 {
+    padding: 0;
+  }
+  .col-lg-9 {
+    padding: 0;
+  }
+  padding: 0;
+  display: block;
+
+  .heading {
+    border: $games-count-border;
+    padding: 15px 0;
+    background-color: $games-count-heading-bg;
+    text-align: left;
+    font-size: $games-count-item-font-size;
+    color: $games-count-heading-text-color;
+
+    .row {
+      .col-lg-1 {
+        padding: 0;
+      }
+    }
+  }
+  .item {
+
+    .row {
+      background-color: $games-count-row-color-odd;
+      font-size: $games-count-item-font-size;
+      padding: 10px;
+      &:nth-child(even) {
+        background-color: $games-count-row-color-even;
+      }
+      div {
+        i {
+          color: $games-count-rating-color;
+        }
+      }
+
+
+    }
+  }
+
+  .featured {
+    border: $games-count-border;
+    height: (62px * 7) + 51;
+    text-align: center;
+    padding: 10px;
+    background-color: $games-count-featured-bg;
+    color: $games-count-featured-text-color;
+
+    .row {
+      div {
+        &:nth-of-type(1) {
+          padding-bottom: 15px;
+        }
+        &:nth-of-type(2) {
+          span {
+            img {
+              border: $games-count-border;
+
+            }
+          }
+        }
+        &:nth-of-type(3) {
+          ul {
+            img {
+              //padding-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .title {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .list {
+      margin: 10px 10px 10px 10px;
+      background-color: none;
+      padding: 20px;
+      border: $games-count-border;
+      font-size: 13px;
+      list-style: none;
+      margin-bottom: 30px;
+    }
+
+
+
+
+  }
+
+
+}
