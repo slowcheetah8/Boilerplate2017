@@ -1,7 +1,7 @@
 #news-list-full-width {
-
+  margin-top: 60px;
     .news-list-wrap {
-      background-color: gray;
+      background-color: $wrapper-bg;
       padding: 10px;
       .media {
         div {

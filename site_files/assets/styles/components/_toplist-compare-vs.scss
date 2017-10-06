@@ -1,6 +1,18 @@
 #toplist-compare-two {
   position: relative;
-
+  .vs {
+    position: absolute;
+    z-index: 10;
+    font-size: $toplist-compare-vs-text-size;
+    color: $toplist-compare-vs-text-color;
+    left: calc(50% - #{$toplist-compare-vs-width / 2});
+    margin-top: 200px;
+    width: $toplist-compare-vs-width;
+    text-align: center;
+    background-color: $theme1;
+    padding: 5px;
+    border-radius: 50%;
+  }
   .heading {
     .row {
       background-color: $toplist-compare-item-heading-color;
@@ -40,7 +52,9 @@
       &:nth-of-type(1) {
         div {
           span {
-            font-size: $toplist-compare-font-size;
+            font-size: $toplist-compare-bonus-font-size;
+            color: $toplist-compare-bonus-font-color;
+            font-weight: $toplist-compare-bonus-font-weight;
           }
         }
       }
@@ -89,19 +103,7 @@
     background-color: $toplist-compare-outer-bg;
     position: relative;
     //border: 1px solid;
-    .vs {
-      position: absolute;
-      z-index: 10;
-      font-size: $toplist-compare-vs-text-size;
-      color: $toplist-compare-vs-text-color;
-      left: calc(50% - #{$toplist-compare-vs-width / 2});
-      top: calc(50% - #{$toplist-compare-vs-width / 2});
-      width: $toplist-compare-vs-width;
-      text-align: center;
-      background-color: $theme1;
-      padding: 5px;
-      border-radius: 50%;
-    }
+
   }
 
 }

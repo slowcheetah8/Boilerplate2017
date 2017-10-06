@@ -1,100 +1,100 @@
 <div class="row">
 
-{{#list_10_range_1_to_1}}
-{{#query}} accepts_players = true {{/query}}
-{{{rating_sort}}}
+    {{#list_10_range_1_to_1}}
+    {{#query}} accepts_players = true {{/query}}
+    {{{rating_sort}}}
 
-              <div class="col-md-8">
-                  <div class="toplist-wrap">
-                  <span class="toplist-rank-top-rated">Top Rated!</span>
-                      <div class="toplist-text-box">
-                          <span class="toplist-title"><h4><a {{{href}}}>{{{name}}}</a></h4></span>
-                          <span class="toplist-rating">
-                            {{{snip_star_rating}}}
-                          </span>
-                          <span class="toplist-bonus">${{{signup_bonus_amount}}} Free</span>
-                          <span class="toplist-button"><a {{{href}}} class="btn btn-primary btn-lg">Play Now</a></span>
-                          {{#page_yes}} <span class="toplist-review"><a {{{page}}}>Read More</a></span> {{/page_yes}} {{#page_no}} {{/page_no}}
-                      </div>
-                      <div class="toplist-image"><img class="img-responsive" src="{{{plain_website_screenshot_500x500}}}"/></div>
-                  </div>
-              </div>
-
-{{/list_10_range_1_to_1}}
-
-{{#list_10_range_2_to_3}}
-{{#query}} accepts_players = true {{/query}}
-{{{rating_sort}}}
-
-              <div class="col-md-4">
-                  <div class="toplist-wrap">
-                  <span class="toplist-rank">#{{{numbered}}}</span>
-                  <span class="toplist-rating-outer">
+      <div class="col-md-8">
+          <div class="toplist-wrap">
+          <span class="toplist-rank-top-rated">Top Rated!</span>
+              <div class="toplist-text-box">
+                  <span class="toplist-title"><h4><a {{{href}}}>{{{name}}}</a></h4></span>
+                  <span class="toplist-rating">
                     {{{snip_star_rating}}}
                   </span>
-                      <div class="toplist-text-box">
-                          <span class="toplist-title"><h4><a {{{href}}}>{{{name}}}</a></h4></span>
-                          <span class="toplist-bonus">${{{signup_bonus_amount}}} Free</span>
-                          <span class="toplist-button"><a {{{href}}} class="btn btn-primary">Play Now</a></span>
-                          {{#page_yes}} <span class="toplist-review"><a {{{page}}}>Read More</a></span> {{/page_yes}} {{#page_no}} {{/page_no}}
-                      </div>
-                      <div class="toplist-image"><img class="img-responsive" src="{{{plain_website_screenshot_500x500}}}"/></div>
-                  </div>
+                  <span class="toplist-bonus">${{{signup_bonus_amount}}} Free</span>
+                  <span class="toplist-button"><a {{{href}}} class="btn btn-primary btn-lg">Play Now</a></span>
+                  {{#page_yes}} <span class="toplist-review"><a {{{page}}}>Read More</a></span> {{/page_yes}} {{#page_no}} {{/page_no}}
               </div>
+              <div class="toplist-image"><img class="img-responsive" src="{{{plain_website_screenshot_500x500}}}"/></div>
+          </div>
+      </div>
 
-{{/list_10_range_2_to_3}}
+      {{/list_10_range_1_to_1}}
 
-            </div>
+      {{#list_10_range_2_to_3}}
+      {{#query}} accepts_players = true {{/query}}
+      {{{rating_sort}}}
 
-            <div class="row">
-
-{{#list_10_range_4_to_5}}
-{{#query}} accepts_players = true {{/query}}
-{{{rating_sort}}}
-
-              <div class="col-md-6">
-                  <div class="toplist-wrap">
-                  <span class="toplist-rank">#{{{numbered}}}</span>
-                  <span class="toplist-rating-outer">
-                    {{{snip_star_rating}}}
-                  </span>
-                      <div class="toplist-text-box">
-                          <span class="toplist-title"><h4><a {{{href}}}>{{{name}}}</a></h4></span>
-                          <span class="toplist-bonus">${{{signup_bonus_amount}}} Free</span>
-                          <span class="toplist-button"><a {{{href}}} class="btn btn-primary">Play Now</a></span>
-                          {{#page_yes}} <span class="toplist-review"><a {{{page}}}>Read More</a></span> {{/page_yes}} {{#page_no}} {{/page_no}}
-                      </div>
-                      <div class="toplist-image"><img class="img-responsive" src="{{{plain_website_screenshot_500x500}}}"/></div>
-                  </div>
+      <div class="col-md-4">
+          <div class="toplist-wrap">
+          <span class="toplist-rank">#{{{numbered}}}</span>
+          <span class="toplist-rating-outer">
+            {{{snip_star_rating}}}
+          </span>
+              <div class="toplist-text-box">
+                  <span class="toplist-title"><h4><a {{{href}}}>{{{name}}}</a></h4></span>
+                  <span class="toplist-bonus">${{{signup_bonus_amount}}} Free</span>
+                  <span class="toplist-button"><a {{{href}}} class="btn btn-primary">Play Now</a></span>
+                  {{#page_yes}} <span class="toplist-review"><a {{{page}}}>Read More</a></span> {{/page_yes}} {{#page_no}} {{/page_no}}
               </div>
+              <div class="toplist-image"><img class="img-responsive" src="{{{plain_website_screenshot_500x500}}}"/></div>
+          </div>
+      </div>
 
-{{/list_10_range_4_to_5}}
+      {{/list_10_range_2_to_3}}
 
-{{#list_10_range_6_to_10}}
-{{#query}} accepts_players = true {{/query}}
-{{{rating_sort}}}
+    </div>
 
-              <div class="col-md-4">
-                  <div class="toplist-wrap">
-                  <span class="toplist-rank">#{{{numbered}}}</span>
-                  <span class="toplist-rating-outer">
-                    {{{snip_star_rating}}}
-                  </span>
-                      <div class="toplist-text-box">
-                          <span class="toplist-title"><h4><a {{{href}}}>{{{name}}}</a></h4></span>
-                          <span class="toplist-bonus">${{{signup_bonus_amount}}} Free</span>
-                          <span class="toplist-button"><a {{{href}}} class="btn btn-primary">Play Now</a></span>
-                          {{#page_yes}} <span class="toplist-review"><a {{{page}}}>Read More</a></span> {{/page_yes}} {{#page_no}} {{/page_no}}
-                      </div>
-                      <div class="toplist-image"><img class="img-responsive" src="{{{plain_website_screenshot_500x500}}}"/></div>
-                  </div>
+    <div class="row">
+
+    {{#list_10_range_4_to_5}}
+    {{#query}} accepts_players = true {{/query}}
+    {{{rating_sort}}}
+
+      <div class="col-md-6">
+          <div class="toplist-wrap">
+          <span class="toplist-rank">#{{{numbered}}}</span>
+          <span class="toplist-rating-outer">
+            {{{snip_star_rating}}}
+          </span>
+              <div class="toplist-text-box">
+                  <span class="toplist-title"><h4><a {{{href}}}>{{{name}}}</a></h4></span>
+                  <span class="toplist-bonus">${{{signup_bonus_amount}}} Free</span>
+                  <span class="toplist-button"><a {{{href}}} class="btn btn-primary">Play Now</a></span>
+                  {{#page_yes}} <span class="toplist-review"><a {{{page}}}>Read More</a></span> {{/page_yes}} {{#page_no}} {{/page_no}}
               </div>
+              <div class="toplist-image"><img class="img-responsive" src="{{{plain_website_screenshot_500x500}}}"/></div>
+          </div>
+      </div>
 
-{{/list_10_range_6_to_10}}
+    {{/list_10_range_4_to_5}}
 
-              <div class="col-md-4">
-                <div class="toplist-wrap toplist-more">
-                  <span><a href="#" class="toplist-more-a">See more Casinos</a> <i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-                </div>
+    {{#list_10_range_6_to_10}}
+    {{#query}} accepts_players = true {{/query}}
+    {{{rating_sort}}}
+
+      <div class="col-md-4">
+          <div class="toplist-wrap">
+          <span class="toplist-rank">#{{{numbered}}}</span>
+          <span class="toplist-rating-outer">
+            {{{snip_star_rating}}}
+          </span>
+              <div class="toplist-text-box">
+                  <span class="toplist-title"><h4><a {{{href}}}>{{{name}}}</a></h4></span>
+                  <span class="toplist-bonus">${{{signup_bonus_amount}}} Free</span>
+                  <span class="toplist-button"><a {{{href}}} class="btn btn-primary">Play Now</a></span>
+                  {{#page_yes}} <span class="toplist-review"><a {{{page}}}>Read More</a></span> {{/page_yes}} {{#page_no}} {{/page_no}}
               </div>
-            </div>
+              <div class="toplist-image"><img class="img-responsive" src="{{{plain_website_screenshot_500x500}}}"/></div>
+          </div>
+      </div>
+
+      {{/list_10_range_6_to_10}}
+
+      <div class="col-md-4">
+        <div class="toplist-wrap toplist-more">
+          <span><a href="#" class="toplist-more-a">See more Casinos</a> <i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+        </div>
+      </div>
+</div>

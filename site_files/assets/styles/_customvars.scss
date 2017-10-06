@@ -8,11 +8,8 @@ $theme5: #ffffff;
 $theme6: #ffffff;
 
 
-
-
 $bg-main: #e5e5e5;                                  // main background color for site
 $wrapper-bg: white;                                 // content wrapper background
-$focus-bg-color: $theme3;                           // background color for high focus areas
 
 // default theme properties
 $dark-text-color: black;                            // dark text color for light backgrounds
@@ -20,8 +17,12 @@ $light-text-color: white;                           // light text color for dark
 $star-rating-color: red;                            // star ratings color
 $toplist-headings-bg: $theme1;                      // background for toplist headings
 $toplist-features-color: lighten($theme1, 10%);     // background for all the features attached to toplists
-$wrapper-border: none;
+$wrapper-border: none;    // TODO change all to $component-border
 $wrapper-box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
+$component-border: 1px solid #333;
+$bonus-font-color: #3eb1d4;
+
+
 
 
 // Navbar/header properties
@@ -35,13 +36,11 @@ $navbar-item-padding-bottom: 32px;
 
 // Carousel properties | _carousel.scss | cs2
 $carousel-caption-bg: rgba(0, 0, 0, 0.7);             // Caption background / opacity
-$carousel-title-color: white;                         // Casino title color
-$carousel-title-size: 30px;                           // Casino title size
-$carousel-bonus-color: white;                         // Bonus color
+$carousel-title-color: $light-text-color;             // Casino title color
+$carousel-title-size: 25px;                           // Casino title size
+$carousel-bonus-color: $light-text-color;             // Bonus color
 $carousel-bonus-size: 20px;                           // Bonus font size
-$carousel-bonus-weight: 800;                          // Bonus font weight
-$carousel-description-size: 16px;                     // Description font size
-$carousel-description-color: white;                   // Description font color
+$carousel-bonus-weight: 600;                          // Bonus font weight
 
 
 // Pricing table properties | _price-tables.scss | cs3
@@ -51,21 +50,23 @@ $price-table-heading-padding: 10px;                   // padding around logo
 $price-table-heading-bg-color: #EEE;                  // background color around logo
 $price-table-row-padding: 15px;                       //
 $price-table-row-bg-color: #fff;
-$price-table-row-bg-color-nth: #F8F8F8;
-$price-table-star-color: #fff;
+$price-table-row-bg-color-even: #F8F8F8;
+$price-table-star-color: $star-rating-color;          // star rating
+
 
 
 // Software VS | _softwarelist-compare-two.scss | cs4
-$software-vs-border: 1px solid #8d8d8d;
-$software-vs-vs-bg-color: $theme1;                      // background color of the VS div
-$software-vs-vs-text-color: $light-text-color;
-$software-vs-vs-width: 60px;
-$software-vs-vs-font-size: 30px;
-$software-vs-heading-bg-color: $theme1;
-$software-vs-heading-link-color: $light-text-color;
-$software-vs-link-size: 20px;
-$software-vs-row-bg-odd: whitesmoke;
-$software-vs-row-bg-even: #829be3;
+$software-vs-border: $component-border;
+$software-vs-vs-bg-color: $theme1;                      // background color of the VS element
+$software-vs-vs-text-color: $light-text-color;          // color of the VS element
+$software-vs-vs-width: 60px;                            // width of the VS element
+$software-vs-vs-font-size: 30px;                        // font size of VS element
+$software-vs-heading-bg-color: $theme1;                 // heading background color
+$software-vs-heading-link-color: $light-text-color;     // link color in heading
+$software-vs-link-size: 20px;                           // link size
+$software-vs-row-bg-odd: $theme2;                       // color of odd rows
+$software-vs-row-bg-even: darken($theme2, 10%);         // color of even rows
+$sofwarelist-logo-bg: $theme2;                          // color around the screenshot
 
 
 
@@ -113,6 +114,9 @@ $item-overview-font-size: 15px;
 $item-overview-font-color: $dark-text-color;
 
 
+// Item: Deposit Methods | _item-deposit-methods.scss | cs13
+$deposit-methods-font-size: $font-size-base;
+$deposit-methods-color: $dark-text-color;
 
 
 // Item Header Mast V1 | _item-mast-v1.scss | cs15
@@ -138,10 +142,10 @@ $mast-v1-rating-color: red;
 $softwarelist-overview-heading-bg-color: $toplist-headings-bg;
 $softwarelist-overview-heading-link-size: 15px;
 $softwarelist-overview-heading-link-color: white;
-$softwarelist-overview-border: 1px solid #333;
-$softwarelist-overview-image-bg-color: white;
-$softwarelist-overview-row-color-odd: whitesmoke;
-$softwarelist-overview-row-color-even: $theme2;
+$softwarelist-overview-border: $component-border;
+$softwarelist-overview-image-bg-color: $theme2;
+$softwarelist-overview-row-color-odd: $theme2;
+$softwarelist-overview-row-color-even: darken($theme2, 10%);
 $softwarelist-overview-item-text-size: 15px;
 $softwarelist-overview-item-font-color: dark-text-color;
 
@@ -175,6 +179,9 @@ $news-list-date-margin-bottom: 10px;                      // space between date 
 $news-list-body-font-size: 18px;                          // size of the text in the body
 
 
+
+
+
 // Popover properties | _popover.scss | cs21
 $popover-btn-color: $theme2;
 $popover-head-bg-color: $theme3;
@@ -195,16 +202,6 @@ $sidebar-margin: 5px 0;                              // top margin between .reco
 $sidebar-margin-wrap: 16px 0;                         // align sidebar wrapper with content wrapper
 $sidebar-border-radius: 4px;                          // sidebar border radius
 $sidebar-padding: 10px 6px;                           // padding on sidebar content
-// News list in Sidebar
-$list-padding: 10px;                                  // padding for the news list
-$list-padding-item: 20px 10px;                        // padding for individual news items
-$news-title-size: 16px;                               // size of the title / link
-$news-title-weight: 600;                              // make the title appear bolder or lighter
-$news-date-size: 11px;                                // date size
-$news-date-weight: 200;                               // date weight
-$news-description-size: 13px;                         // description size
-$news-description-margin-top: 5px;                    // gap between description and date
-$news-description-margin-bottom: 15px;                // gap below description
 
 
 
@@ -275,13 +272,17 @@ $toplist-feature-top-headin-text: $light-text-color;
 $toplist-feature-top-row-text-color: $dark-text-color;
 $toplist-feature-top-row-text-size: 15px;                     // item font size
 $toplist-feature-top-align: 30px;                             // this adds padding top the top of the elements that need to align with logo
-$toplist-feature-top-border: 1px solid #333;                  // replace with 'none' for no border
+$toplist-feature-top-border: $component-border;               // replace with 'none' for no border
 $toplist-feature-top-rating-color: $star-rating-color;
-
+$toplist-feature-top-row-color-odd: $theme2;
+$toplist-feature-top-row-color-even: darken($theme2, 10%);
 
 
 // Toplist: Compare Vs | _toplist-compare-vs.scss | cs37
 $toplist-compare-header-size: 20px;
+$toplist-compare-bonus-font-size: 20px;
+$toplist-compare-bonus-font-color: $bonus-font-color;
+$toplist-compare-bonus-font-weight: 600;
 $toplist-compare-item-heading-text-color: $light-text-color;
 $toplist-compare-item-heading-color: $toplist-headings-bg;        // heading background color | default $theme1
 $toplist-compare-item-color: $theme2;                             //
@@ -291,7 +292,7 @@ $toplist-compare-footer-bg: $theme2;
 $toplist-compare-footer-text-color: $dark-text-color;
 $toplist-compare-footer-font-size: 15px;
 $toplist-compare-item-text-color: $dark-text-color;
-$toplist-compare-border: 1px solid black;                        // replace with 'none' for no border
+$toplist-compare-border: $component-border;                        // replace with 'none' for no border
 $toplist-compare-row-even: darken($theme2, 10%);
 $toplist-compare-vs-text-size: 40px;
 $toplist-compare-vs-text-color: $light-text-color;
@@ -324,45 +325,57 @@ $item-featured-v1-review-padding: 20px 0;
 $games-payout-heading-bg: $toplist-headings-bg;
 $games-payout-heading-text-color: $light-text-color;
 $games-payout-item-font-size: 15px;
-$games-payout-row-color-odd: lightgray;
-$games-payout-row-color-even: whitesmoke;
+$games-payout-row-color-odd: $theme2;
+$games-payout-row-color-even: darken($theme2, 10%);
 $games-payout-featured-bg: $toplist-features-color;
-$games-payout-border: none;
+$games-payout-border: $component-border;
+$games-payout-bordercount: 9;     // if border is not 'none', this number represents the number of pixels to compensate for
 $games-payout-rating-color: $star-rating-color;
+$games-payout-feature-rating-color: $star-rating-color;
 $games-payout-featured-text-color: $light-text-color;
 $games-payout-logo-width: 125px;
 $games-payout-feature-bonus-size: 17px;
+$games-payout-feature-bonus-color: $bonus-font-color;
+$games-payout-feature-bonus-weight: 600;
+
+
+
 
 // Toplist Games Count Featured Right | _toplist-games-featured-right.scss | cs43
 $games-count-heading-bg: $toplist-headings-bg;
 $games-count-heading-text-color: $light-text-color;
 $games-count-item-font-size: 15px;
-$games-count-row-color-odd: lightgray;
-$games-count-row-color-even: whitesmoke;
+$games-count-row-color-odd: $theme2;
+$games-count-row-color-even: darken($theme2, 10%);
 $games-count-featured-bg: $toplist-features-color;
 $games-count-featured-text-color: $light-text-color;
-$games-count-border: none;
-$games-count-rating-color: red;
-
+$games-count-border: $component-border;
+$games-count-bordercount: 9;
+$games-count-rating-color: $star-rating-color;
+$games-count-logo-width: 125px;
+$games-count-feature-bonus-size: 17px;
+$games-count-feature-bonus-color: $bonus-font-color;
+$games-count-feature-bonus-weight: 600;
 
 // Toplist Option V1 | _toplist-v1.scss | cs45
 
 $toplist-heading-bg: $toplist-headings-bg;
 $toplist-heading-text-color: $light-text-color;
-$toplist-body-bg: whitesmoke;
+$toplist-item-bg-color: $theme2;
 $toplist-title-color: #222;
 $toplist-v1-rating-color: $star-rating-color;
 $toplist-heading-height: 60px;
 $toplist-heading-size: 15px;
-$toplist-heading-weight: 400;
-$toplist-heading-padding: 20px 10px;
+$toplist-heading-padding: 15px;
 $toplist-heading-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
 $toplist-body-padding: 20px 10px;
 $toplist-body-min-height: 90px;
 $toplist-body-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
 $toplist-title-size: 15px;
 $toplist-title-padding-top: 14px;
-$toplist-bonus-font-size: 15px;
+$toplist-bonus-font-size: 20px;
+$toplist-bonus-color: $bonus-font-color;
+$toplist-bonus-weight: 600;
 $toplist-bonus-padding: 14px 10px 0 0;
 $toplist-percent-font-size: 15px;
 $toplist-percent-padding: 14px 0 0 0;
@@ -372,20 +385,27 @@ $toplist-button-padding: 14px 0 0 0;
 $toplist-footer-font-size: 15px;
 $toplist-footer-icon-color: #0986f0 !important;
 $toplist-footer-icon-margin-left: 5px;
-
+$toplist-v1-border: $component-border;
 
 
 // Toplist Option V4 Tumbler | _toplist-v4-tumbler.scss | cs48
 $tumbler-rating-color: $star-rating-color;
-$tumbler-bonus-size: 15px;
-$tumbler-bg-color: $theme2;
-
+$tumbler-bonus-size: 20px;
+$tumbler-bonus-color: $bonus-font-color;
+$tumbler-bonus-weight: 600;
+$tumbler-bg-color: darken($theme2, 10%);
+$tumbler-border: $component-border;
 
 
 // Toplist Collapse | _toplist-collapse.scss | cs49
-$toplist-collapse-item-bg: whitesmoke;
-$toplist-collapse-border: 1px solid #333;
-$toplist-collapse-heading-text-color: $dark-text-color;
+$toplist-collapse-item-bg-odd: $theme2;
+$toplist-collapse-item-bg-even: darken($theme2, 10%);
+$toplist-collapse-border: $component-border;
+$toplist-collapse-heading-text-color: $light-text-color;
+$toplist-collapse-heading-bg: $toplist-headings-bg;
+
+
+
 
 
 // Toplist Payment Methods with Featured Item | _toplist-payment-methods.scss | cs50 - cs51
@@ -395,8 +415,9 @@ $payment-methods-heading-bg: $theme1;
 $payment-methods-heading-text-color: $light-text-color;
 $payment-methods-a-size: 15px;                        // size of the casino link
 $payment-methods-font-size: 15px;                     // size of the rest of the fonts per item row
-
-
+$payment-methods-border: $component-border;
+$payment-methods-row-color-even: $theme2;
+$payment-methods-row-color-odd: darken($theme2, 10%);
 
 
 // Toplist Quick Overview | _toplist-quick-overview.scss | cs52
@@ -404,9 +425,18 @@ $toplist-overview-heading-bg: $theme1;
 $toplist-overview-heading-text-color: $light-text-color;
 $toplist-overview-header-padding: 15px;
 $toplist-overview-heading-font-size: 15px;
-$toplist-overview-row-color-odd: whitesmoke;
-$toplist-overview-row-color-even: lightgray;
+$toplist-overview-row-color-odd: $theme2;
+$toplist-overview-row-color-even: darken($theme2, 10%);
 $toplist-overview-rating-color: red;
+$toplist-overview-borders: $component-border;
+
+
+// toplist Security Overview | _toplist-security-overview.scss | cs53
+$toplist-security-heading-bg: $toplist-headings-bg;
+$toplist-security-heading-text-color: $light-text-color;
+$toplist-security-row-color-odd: $theme2;
+$toplist-security-row-color-even: darken($theme2, 10%);
+$toplist-security-border: $component-border;
 
 
 
@@ -447,9 +477,6 @@ $casino-title-line-height: 1.7em;                     // line height for spacing
 
 
 
-
-
-
 // Toplist Games Offers Combined
 $offers-combined-header-bg: $theme2;                  // header background color
 $offers-combined-header-size: 15px;                   // header font size
@@ -466,3 +493,12 @@ $payment-methods-side-heading-bg: $toplist-headings-bg;
 $payment-methods-side-heading-padding: 15px;
 $payment-methods-side-heading-text-color: $light-text-color;
 $payment-methods-side-heading-text-size: 15px;
+$payment-methods-side-row-color-odd: $theme2;
+$payment-methods-side-row-color-even: darken($theme2, 10%);
+
+
+// Item: Banner V1 | _item-banner-v1.scss | cs63
+$item-banner-v1-bonus-size: 20px;
+$item-banner-v1-bonus-color: $dark-text-color;
+$item-banner-v1-border: $component-border;
+$item-banner-v1-bonus-weight: 600;

@@ -51,12 +51,16 @@
 @import "components/toplist-payment-methods-side";
 @import "components/item-featured-V2";
 @import "components/toplist-collapse";
+@import "components/item-deposit-methods";
+@import "components/alert-success";
+@import "components/item-banner-v1";
 
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";
 
 @import "theme";
+@import "components/preview-tab";
 
 @import "mobile/max-width-1200";
 @import "mobile/max-width-992";

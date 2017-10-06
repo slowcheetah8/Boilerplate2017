@@ -22,12 +22,14 @@
     .row {
       background-color: $games-payout-row-color-odd;
       font-size: $games-payout-item-font-size;
-      padding: 10px;
+      padding: 10px 0;
+      border-left: $games-payout-border;
+      border-right: $games-payout-border;
+      border-bottom: $games-payout-border;
       &:nth-child(even) {
         background-color: $games-payout-row-color-even;
       }
       div {
-        padding-left: 20px;
         span {
           display: block;
         }
@@ -35,7 +37,10 @@
           color: $games-payout-rating-color;
         }
         &:nth-of-type(5) {
-          padding-left: 0;
+          .btn {
+            font-size: 11px;
+
+          }
         }
       }
 
@@ -45,7 +50,7 @@
 
   .featured {
     border: $games-payout-border;
-    height: (62px * 7) + 51;
+    height: (62px * 7) + 51 + $games-payout-bordercount;
     text-align: center;
     padding: 10px;
     background-color: $games-payout-featured-bg;
@@ -55,6 +60,9 @@
       div {
         &:nth-of-type(1) {
           padding-bottom: 15px;
+          i {
+            color: $games-payout-feature-rating-color;
+          }
         }
         &:nth-of-type(2) {
           position: relative;
@@ -78,6 +86,9 @@
           padding: 10px;
           span {
             font-size: $games-payout-feature-bonus-size;
+            color: $games-payout-feature-bonus-color;
+            font-weight: $games-payout-feature-bonus-weight;
+            text-transform: uppercase;
           }
         }
         &:nth-of-type(4) {

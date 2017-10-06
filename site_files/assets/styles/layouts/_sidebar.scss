@@ -9,7 +9,7 @@
 		padding: $sidebar-padding;
 		margin: $sidebar-margin-wrap;
 		ol {
-			padding: $list-padding;
+			padding: 10px;
 		}
 
 		.list-group-item {
@@ -18,31 +18,5 @@
 			padding: 2px;
 		}
 	}
-	.news {
-		li {
-			height: auto;
-			display: block;
-			padding: $list-padding-item;
-		}
-	}
-	.news-title {
-		font-size: $news-title-size;
-		font-weight: $news-title-weight;
-	}
-	.news-date {
-		font-size: $news-date-size;
-		font-weight: $news-date-weight;
-		clear: both;
-		display: block;
-	}
-	.news-description {
-		font-size: $news-description-size;
-		clear: both;
-		display: block;
-		margin-top: $news-description-margin-top;
-		margin-bottom: $news-description-margin-bottom;
-		a {
-			font-weight: 600;
-		}
-	}
+
 }

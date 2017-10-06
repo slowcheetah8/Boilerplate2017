@@ -1,48 +1,45 @@
 <div class="wrap">
 
-                <section class="recommended">
+    <section class="recommended">
 
-                  <h4>Recommended Casinos</h4>
+      <h4>Recommended Casinos</h4>
 
-  {{#list_10_sidebar_toplist}}
-  {{#query}} accepts_players = true {{/query}}
-  {{{rating_sort}}}
-
-
-                      <div class="row">
-
-                        <div class="col-lg-2 col-md-2 col-sm-1 col-xs-2">
-
-                          <span class="logo">{{{image_125x125_30x30}}}</span>
-
-                        </div>
-
-                        <div class="col-lg-7 col-md-7 col-sm-8 col-xs-7">
-
-                          <span class="title"><a {{{href}}}>{{{name}}}</a></span>
-
-                        </div>
-
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-
-                          <span class="play"><a {{{href}}} class="btn btn-default btn-sm">Play</a></span>
-
-                        </div>
-
-                      </div>
+          {{#list_10_sidebar_toplist}}
+          {{#query}} accepts_players = true {{/query}}
+          {{{rating_sort}}}
 
 
-  {{/list_10_sidebar_toplist}}
+          <div class="row">
 
-              </section>
+            <div class="col-lg-2 col-md-2 col-sm-1 col-xs-2">
+
+              <span class="logo">{{{image_125x125_30x30}}}</span>
 
             </div>
 
-            {{#maybe}}
+            <div class="col-lg-7 col-md-7 col-sm-8 col-xs-7">
 
-            <div class="content-wrap">
-              {{{snip_cs60_news_list_full_width}}}
+              <span class="title"><a {{{href}}}>{{{name}}}</a></span>
+
             </div>
 
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
 
-            {{/maybe}}
+              <span class="play"><a {{{href}}} class="btn btn-default btn-sm">Play</a></span>
+
+            </div>
+
+          </div>
+
+
+          {{/list_10_sidebar_toplist}}
+
+  </section>
+</div>
+
+      {{#maybe}}
+
+        {{{snip_cs60_news_list_full_width}}}
+
+
+      {{/maybe}}

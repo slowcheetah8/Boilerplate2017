@@ -15,17 +15,15 @@
 		padding: $price-table-row-padding;
 		background: $price-table-row-bg-color;
 		&:nth-of-type(even) {
-			background: $price-table-row-bg-color-nth;
+			background: $price-table-row-bg-color-even;
 		}
 	}
 
 	.btn {
 		border-radius: 0;
+		width: 100%;
 	}
-	.focus-bg {
-		background: $focus-bg-color;
-		color: #fff;
-	}
+
 
 
 

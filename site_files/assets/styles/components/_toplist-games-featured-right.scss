@@ -30,6 +30,9 @@
       background-color: $games-count-row-color-odd;
       font-size: $games-count-item-font-size;
       padding: 10px;
+      border-left: $games-count-border;
+      border-right: $games-count-border;
+      border-bottom: $games-count-border;
       &:nth-child(even) {
         background-color: $games-count-row-color-even;
       }
@@ -45,7 +48,7 @@
 
   .featured {
     border: $games-count-border;
-    height: (62px * 7) + 51;
+    height: (62px * 7) + 51 + $games-count-bordercount;
     text-align: center;
     padding: 10px;
     background-color: $games-count-featured-bg;
@@ -55,20 +58,48 @@
       div {
         &:nth-of-type(1) {
           padding-bottom: 15px;
+          i {
+            color: $games-count-rating-color;
+          }
         }
         &:nth-of-type(2) {
-          span {
+          position: relative;
+          top: 10px;
+          span:nth-of-type(1) {
             img {
-              border: $games-count-border;
-
+              width: $games-count-logo-width;
+              z-index: 10;
             }
+            display: block;
+            position: absolute;
+            top: calc(50% - #{$games-count-logo-width / 2});
+            left: calc(50% - #{$games-count-logo-width / 2});
+          }
+          span:nth-of-type(2) {
+            //
           }
         }
         &:nth-of-type(3) {
+          top: 25px;
+          padding: 10px;
+          span {
+            font-size: $games-count-feature-bonus-size;
+            color: $games-count-feature-bonus-color;
+            font-weight: $games-count-feature-bonus-weight;
+            text-transform: uppercase;
+          }
+        }
+        &:nth-of-type(4) {
+          top: 20px;
           ul {
-            img {
-              //padding-bottom: 10px;
-            }
+            font-size: 15px;
+            padding: 0;
+          }
+        }
+        &:nth-of-type(5) {
+          top: 30px;
+          .btn {
+            background-color: whitesmoke;
           }
         }
       }
@@ -81,10 +112,10 @@
 
     .list {
       margin: 10px 10px 10px 10px;
-      background-color: none;
+      //background-color: darken($games-payout-heading-bg, 5%);
       padding: 20px;
-      border: $games-count-border;
-      font-size: 13px;
+      //border: $games-count-border;
+      font-size: 10px;
       list-style: none;
       margin-bottom: 30px;
     }

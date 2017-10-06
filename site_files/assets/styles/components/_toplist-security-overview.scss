@@ -6,9 +6,10 @@
 
   .heading {
     padding: 10px 0;
-    background-color: $theme1;
-    color: $light-text-color;
+    background-color: $toplist-security-heading-bg;
+    color: $toplist-security-heading-text-color;
     font-size: 15px;
+    border: $toplist-security-border;
     .row {
       div:nth-of-type(1) {
         padding-left: 30px;
@@ -19,12 +20,15 @@
   .item {
     .row {
       padding: 20px 0;
+      border-left: $toplist-security-border;
+      border-right: $toplist-security-border;
+      border-bottom: $toplist-security-border;
 
       &:nth-of-type(odd) {
-        background-color: white;
+        background-color: $toplist-security-row-color-odd;
       }
       &:nth-of-type(even) {
-        background-color: lightgray;
+        background-color: $toplist-security-row-color-even;
       }
     }
   }

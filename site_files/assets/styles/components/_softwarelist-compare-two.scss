@@ -32,7 +32,7 @@
   }
   .logo {
     padding: 10px;
-    background-color: #829be3;
+    background-color: $sofwarelist-logo-bg;
     border: $software-vs-border;
     img {
       width: 100%;
@@ -52,6 +52,12 @@
       }
       &:nth-child(even) {
         background-color: $software-vs-row-bg-even;
+      }
+      &:nth-of-type(6) {
+        text-align: center;
+        .btn {
+          width: 100%;
+        }
       }
     }
   }

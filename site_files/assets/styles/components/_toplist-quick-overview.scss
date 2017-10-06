@@ -14,9 +14,7 @@
     width: 100%;
     overflow: hidden;
     text-align: center;
-    border-top: $wrapper-border;
-    border-left: $wrapper-border;
-    border-right: $wrapper-border;
+    border: $toplist-overview-borders;
     padding: $toplist-overview-header-padding;
     font-size: $toplist-overview-heading-font-size;
     color: $toplist-overview-heading-text-color;
@@ -25,9 +23,9 @@
 
   .item {
     .row {
-      border-top: $wrapper-border;
-      border-left: $wrapper-border;
-      border-right: $wrapper-border;
+      border-bottom: $toplist-overview-borders;
+      border-left: $toplist-overview-borders;
+      border-right: $toplist-overview-borders;
       text-align: center;
       padding: 10px 0 10px 0;
       .align {
@@ -58,7 +56,7 @@
 
   .terms {
     background-color: $toplist-overview-heading-bg;
-    border: $wrapper-border;
+    border: $toplist-overview-borders;
     a {
       float: right;
       padding:20px;

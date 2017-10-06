@@ -1,0 +1,25 @@
+#item-banner-v1 {
+  div {
+    width: 250px;
+    text-align: center;
+    border: $item-banner-v1-border;
+    padding: 3px;
+    .bonus {
+      padding-top: 10px;
+      display: block;
+      font-size: $item-banner-v1-bonus-size;
+      color: $item-banner-v1-bonus-color;
+      font-weight: $item-banner-v1-bonus-weight;
+    }
+    .logo {
+      display: block;
+      //padding: 20px;
+      img {
+        //width: 100%;
+      }
+    }
+    .btn {
+      //
+    }
+  }
+}

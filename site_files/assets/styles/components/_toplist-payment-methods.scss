@@ -8,6 +8,7 @@
     text-align: center;
     font-size: $payment-methods-heading-size;
     color: $payment-methods-heading-text-color;
+    border: $payment-methods-border;
     .row {
       div:nth-of-type(7) {
         right:10px;
@@ -22,6 +23,9 @@
 
     .row {
       padding: 25px 0 25px 0;
+      border-left: $payment-methods-border;
+      border-right: $payment-methods-border;
+      border-bottom: $payment-methods-border;
 
       div {
 
@@ -43,12 +47,12 @@
 
 
     .row:nth-child(even) {
-      background-color: lightgrey;
+      background-color: $payment-methods-row-color-even;
     }
     .row:nth-child(odd) {
-      background-color: whitesmoke;
+      background-color: $payment-methods-row-color-odd;
     }
-    
+
 
   }
 

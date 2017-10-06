@@ -1,7 +1,7 @@
 #toplist-v1 {
 	.toplist {
 		.row {
-			//padding-top: 1px;
+
 		}
 		.heading-wrap {
 
@@ -13,12 +13,10 @@
 			text-align: center;
 			padding: $toplist-heading-padding;
 			height: $toplist-heading-height;
-			border: $wrapper-border;
+			border: $toplist-v1-border;
 
 			div {
 				font-size: $toplist-heading-size;
-				font-weight: $toplist-heading-weight;
-				text-transform: uppercase;
 				text-align: center;
 				color: $toplist-heading-text-color;
 			}
@@ -27,8 +25,10 @@
 
 		}
 		.item {
-			background-color: $toplist-body-bg;
-			border: $wrapper-border;
+			background-color: $toplist-item-bg-color;
+			border-left: $toplist-v1-border;
+			border-right: $toplist-v1-border;
+			border-bottom: $toplist-v1-border;
 			width: 100%;
 			margin: 0;
 			box-shadow: $toplist-body-shadow;
@@ -37,7 +37,7 @@
 			padding: $toplist-body-padding;
 			min-height: $toplist-body-min-height;
 			&:hover {
-				background-color: darken($toplist-body-bg, 20%);
+				background-color: darken($toplist-item-bg-color, 20%);
 			}
 
 			div {
@@ -76,8 +76,9 @@
 						display: block;
 						text-transform: uppercase;
 						font-size: $toplist-bonus-font-size;
-						font-weight: 200;
+						font-weight: $toplist-bonus-weight;
 						padding: $toplist-bonus-padding;
+						color: $toplist-bonus-color;
 					}
 				}
 				&:nth-of-type(4) {

@@ -1,12 +1,6 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
-	// Content block thumbnail name
-
-	// Making sure text don't break div structure
-	.btn-block {
-		font-size: 25px;
-	}
 
 	//news list
 	.news-list-wrap{
@@ -97,15 +91,8 @@
 						font-size: 15px;
 						padding: 5px;
 					}
-					&:nth-of-type(3) {									// Description
-						font-size: $carousel-description-size;
-						padding: 5px;
-					}
-					&:nth-of-type(4) {									// Button
-						.btn {
-							//
-						}
-					}
+
+					
 				}
 
 

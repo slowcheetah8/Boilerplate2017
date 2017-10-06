@@ -25,15 +25,15 @@
       text-align: center;
     }
     .row:nth-child(even) {
-      background-color: lightgrey;
+      background-color: $toplist-feature-top-row-color-even;
     }
     .row:nth-child(odd) {
-      background-color: whitesmoke;
+      background-color: $toplist-feature-top-row-color-odd;
     }
 
     .row {
       padding: 10px;
-
+      border-top: $toplist-feature-top-border;
       div:nth-child(1) {
         span {
           display: block;

@@ -9,7 +9,7 @@
 
     <div class="container">
 
-    {{{snip_bread}}}
+    {{{snip_cs5_global_bread}}}
 
       <div class="row">
         <div class="col-lg-9 col-md-9 col-sm-12">
@@ -21,7 +21,22 @@
               {{{text_1}}}
               {{{text_2}}}
               {{{text_3}}}
-              {{{text_4}}}
+
+              <div class="row" id="preview-tab">
+              	<ul class="nav nav-tabs" role="tablist">
+              		<li role="presentation" class="active"><a href="#preview" aria-controls="preview" role="tab" data-toggle="tab">Preview</a></li>
+              		<li role="presentation"><a href="#html" aria-controls="html" role="tab" data-toggle="tab">Snip HTML</a></li>
+              		<li role="presentation"><a href="#vars" aria-controls="vars" role="tab" data-toggle="tab">Custom Variables</a></li>
+              	</ul>
+              	<!-- Tab panes -->
+              	<div class="tab-content">
+              		<div role="tabpanel" class="tab-pane active" id="preview">{{{text_4}}}</div>
+              		<div role="tabpanel" class="tab-pane" id="html">{{{text_5}}}</div>
+              		<div role="tabpanel" class="tab-pane" id="vars">{{{text_6}}}</div>
+              	</div>
+              </div>
+
+
             </div>
 
           </section>
@@ -32,7 +47,7 @@
 
           <section class="sidebar">
 
-          {{{snip_sidebar_components}}}
+          {{{snip_cs58_sidebar_components}}}
 
           </section>
 
@@ -44,11 +59,11 @@
 
     <footer>
 
-    {{{snip_footer}}}
+    {{{snip_cs7_global_footer}}}
 
     </footer>
 
-    {{{snip_js}}}
+    {{{snip_cs9_global_js}}}
 
   </body>
 </html>

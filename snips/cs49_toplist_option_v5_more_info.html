@@ -3,7 +3,7 @@
   <div class="row">
             <div class="col-xs-12">
               <div class="toplist">
-                <div class="heading-wrap hidden-xs">
+                <div class="col-md-12 hidden-xs hidden-md">
                   <div class="col-lg-2 col-md-12 col-sm-12"></div>
                   <div class="col-lg-2 col-md-12 col-sm-12"></div>
                   <div class="col-lg-3 col-md-12 col-sm-12">Bonus</div>
@@ -32,9 +32,9 @@
 
                       </div>
                       <div class="col-lg-3 col-md-12 col-sm-12 toplist-bonus">
-                        <span class="font-bold text-uppercase">Bonus De {{{signup_bonus_percent}}}% jusqu'à concurrence de</span><br>
+                        <span class="font-bold text-uppercase">Bonus From {{{signup_bonus_percent}}}% up to a maximum of</span><br>
                         <span class="bonus-amount">{{{signup_bonus_amount}}}&euro;</span><br/>
-                        {{#maybe_all}}<span class="font18">+{{{free_spins_amount}}} Tours Gratuits Sur La {{{free_spins_game}}}</span>{{/maybe_all}}
+                        {{#maybe_all}}<span class="font18">+{{{free_spins_amount}}} Free Spins {{{free_spins_game}}}</span>{{/maybe_all}}
                       </div>
                       <div class="col-lg-1 col-md-12 col-sm-12">
                         <span class="payout-per">{{{payout_percent}}}%</span>
@@ -64,7 +64,7 @@
                         </div>
                         <div class="col-md-4 col-sm-5 col-xs-12 text-right pull-right">
                             <div class="mrg-bott-10">{{{website_screenshot_500x500}}}</div>
-                            <a {{{href}}} class="btn btn-danger btn-block btn-16">Réclamez Le Bonus {{{name}}} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            <a {{{href}}} class="btn btn-danger btn-block btn-16">Claim Bonus <i class="fa fa-angle-right" aria-hidden="true"></i></a>
                         </div>
                         <div class="toplist-cross">
                           <a href="javascript:;" role="button" data-toggle="collapse" data-target="#{{{numbered}}}" class="collapsed" aria-expanded="false">x</a>
