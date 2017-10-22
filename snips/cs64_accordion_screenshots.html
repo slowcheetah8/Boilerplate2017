@@ -1,0 +1,46 @@
+<div class="panel-group" id="accordion-screenshots" role="tablist" aria-multiselectable="true">
+  {{#list_6}}
+  <div class="panel panel-default">
+    <div class="more">Click panel to see more</div>
+		<div class="panel-heading"
+			 id="heading{{{numbered}}}"
+			 role="button"
+			 data-toggle="collapse"
+			 data-parent="#accordion-screenshots"
+			 href="#collapse{{{numbered}}}"
+			 aria-expanded="true"
+			 aria-controls="collapse{{{numbered}}}">
+
+       <div class="row">
+         <div class="col-lg-3 col-md-12 col-sm-12">
+           <span>{{{image_125x125}}}</span>
+         </div>
+         <div class="col-lg-3 col-md-12 col-sm-12">
+           <span>{{{name}}}</span><br>
+           {{{snip_cs28_rating_stars_sm}}}
+         </div>
+         <div class="col-lg-3 col-md-12 col-sm-12">
+           <span>${{{signup_bonus_amount}}} Sign-Up Bonus</span>
+         </div>
+         <div class="col-lg-3 col-md-12 col-sm-12">
+           <a {{{href}}} class="btn btn-primary">Play Now</a><br>
+           <a {{{page}}}>Read Review</a>
+         </div>
+       </div>
+
+
+		</div>
+		<div id="collapse{{{numbered}}}"
+			 class="panel-collapse collapse"
+			 role="tabpanel"
+			 aria-labelledby="heading{{{numbered}}}">
+
+			<div class="panel-body" id="accordion-content-1">
+          {{{snip_cs59_item_screenshots}}}
+			</div>
+
+		</div>
+	</div>
+  {{/list_6}}
+
+</div>

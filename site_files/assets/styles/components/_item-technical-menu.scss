@@ -1,0 +1,23 @@
+#item-technical-menu {
+
+  .panel-heading {
+    background-color: $technical-menu-heading-bg-color;
+    color: $technical-menu-heading-font-color;
+    padding: $technical-menu-padding;
+  }
+  #collapse-1 {
+    .panel-body {
+      background-color: $technical-menu-body-bg-color;
+      .info-head {
+        color: $technical-menu-info-head-font-color;
+      }
+      .info-body {
+        color: $technical-menu-info-body-font-color;
+        //padding-bottom: 10px;
+        i {
+          color: $technical-menu-info-star-rating-color;
+        }
+      }
+    }
+  }
+}

@@ -1,22 +1,25 @@
 <section id="news-list-full-width">
+  <h3 class="list-heading">Latest News</h3>
   {{#menulist_news_1_to_500}}
   {{{latest}}}
 
-      <div class="news-list-wrap">
-          <div class="media">
-          {{#maybe_all}}
-            <div class="media-left media-top">
-              <a {{{href}}}>
-                <img class="media-object" src="{{{pageimage_150x100}}}">
-              </a>
-            </div>
-            {{/maybe_all}}
-            <div class="media-body">
-              <h4 class="media-heading"><a {{{href}}}>{{{title}}}</a></h4>
-              {{{date}}} - {{{description}}}
-            </div>
-          </div>
+  <div class="news-list-wrap">
+      <div class="media">
+      {{#maybe_all}}
+        <div class="media-left media-top">
+          <a {{{href}}}>
+            <img class="media-object" src="{{{pageimage_150x100}}}">
+          </a>
+        </div>
+        {{/maybe_all}}
+        <div class="media-body">
+          <span class="media-heading"><a {{{href}}}>{{{title}}}</a></span><br>
+          <span class="date">{{{date}}}</span><br>
+          <span class="description">{{{description}}}</span><br>
+          <a {{{page}}} class="review">Read Review</a>
+        </div>
       </div>
+  </div>
 
   {{/menulist_news_1_to_500}}
 </section>

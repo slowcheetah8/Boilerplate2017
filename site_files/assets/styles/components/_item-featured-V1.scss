@@ -9,28 +9,27 @@
     border-left: 1px solid;
     border-right: 1px solid;
     border-bottom: 1px solid;
-
+    //margin-bottom: 20px;
     .list:nth-child(1) {                      // bottom feature #1
       text-align: center;
-      padding: $item-featured-v1-logo-padding;
       img {
         width: 100%;
       }
     }
     .list:nth-child(2) {                      // bottom feature #2
 
-      color: $item-featured-v1-rating-color;
-      padding: $item-featured-v1-rating-padding;
+      color: $item-featured-v1-description-color;
+      padding: 10px 0 0 10px;
       text-align: left;
       span:nth-of-type(1) {
-        font-size: $item-featured-v1-rating-title-size;
+        font-size: $item-featured-v1-casino-name-font-size;
         display: block;
       }
       i {
-        color: gold;
+        color: $item-featured-v1-star-rating-color;
       }
       span {
-        font-size: $item-featured-v1-rating-font-size;
+        font-size: $item-featured-v1-description-font-size;
       }
     }
     .list:nth-child(3) {                      // bottom feature #3
@@ -61,7 +60,6 @@
           text-align: center;
           margin-top: -10px;
         }
-
       }
     }
     .list:nth-child(4) {                      // bottom feature #4
@@ -71,6 +69,10 @@
       span {
         display: block;
         font-size: $item-featured-v1-software-font-size;
+      }
+      img {
+        width: 15px;
+        height: 12px;
       }
     }
 

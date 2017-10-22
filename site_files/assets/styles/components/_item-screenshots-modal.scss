@@ -1,0 +1,79 @@
+#item-screenshots-modal {
+  div {
+    padding: $item-screenshots-modal-div-padding;
+    button {
+      border: $item-screenshots-modal-border;
+      box-shadow: $item-screenshots-modal-box-shadow;
+      padding: 0;
+      width: 100%;
+      margin-bottom: 20px;
+      &:hover {
+        .more {
+          display: block;
+        }
+        img {
+          filter: $item-screenshots-modal-hover-color;
+          transition: 0.3s;
+        }
+      }
+      .more {
+        position: absolute;
+        text-align: center;
+        top: calc(50% - #{$item-screenshots-modal-plus-icon-height / 2} - 10px;);
+        left: calc(50% - #{$item-screenshots-modal-plus-icon-width / 2});
+        display: none;
+        z-index: 10;
+        i {
+          font-size: $item-screenshots-modal-plus-icon-font-size;
+          color: $item-screenshots-modal-plus-icon-color;
+          width: $item-screenshots-modal-plus-icon-width;
+          height: $item-screenshots-modal-plus-icon-height;
+        }
+        .text {
+          color: white;
+        }
+      }
+      img {
+        width: 100%;
+
+      }
+    }
+    .vertical-alignment-helper {
+      display:table;
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      pointer-events: none;
+      .vertical-align-center {
+        /* To center vertically */
+        display: table-cell;
+        vertical-align: middle;
+        pointer-events: none;
+        .modal-content {
+          padding: 0;
+          img {
+            border-radius: $item-screenshots-modal-img-border-radius;
+            width: 100%;
+          }
+          .close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: $item-screenshots-modal-close-button-size;
+            color: $item-screenshots-modal-close-button-color;
+            opacity: 0.8;
+            border-radius: 10px;
+            z-index: 2;
+          }
+          /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+          width:inherit;
+          height:inherit;
+          /* To center horizontally */
+          margin: 0 auto;
+          pointer-events:all;
+        }
+      }
+    }
+
+  }
+}

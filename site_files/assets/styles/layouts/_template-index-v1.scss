@@ -1,0 +1,18 @@
+.template-index {
+  .bg-alt {
+    background-color: $template-index-v1-section-alt-bg-color;
+  }
+
+  .content {
+    padding: $template-index-v1-section-padding;
+    color: $template-index-v1-section-font-color;
+    .row {
+      div {
+        p {
+          //margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+}

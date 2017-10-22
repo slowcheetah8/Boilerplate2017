@@ -1,0 +1,138 @@
+#accordion-screenshots {
+  .panel {
+    position: relative;
+    border: none;               // this overrides the default accordion border
+    &:hover {
+      .panel-heading {
+        background-color: rgba(0,0,0, 0.1);
+      }
+
+      .more {
+        display: block;
+      }
+    }
+    .more {
+      position: absolute;
+      display: none;
+      left: 70%;
+      padding: 10px;
+    }
+    .panel-heading {
+      border: $accordion-screenshots-border;
+      border-radius: 3px;
+      .row {
+        div {
+          color: $accordion-screenshots-text-color;
+          &:nth-of-type(1) {
+            text-align: center;
+
+          }
+          &:nth-of-type(2) {
+            text-align: left;
+            margin-top: 35px;
+            font-size: $accordion-screenshots-name-size;
+            font-weight: $accordion-screenshots-name-weight;
+            color: $dark-text-color;
+            i {
+              color: $accordion-screenshots-rating-color;
+            }
+          }
+          &:nth-of-type(3) {
+            text-align: center;
+            font-size: $accordion-screenshots-bonus-size;
+            font-weight: $accordion-screenshots-bonus-weight;
+            color: $accordion-screenshots-bonus-color;
+            margin-top: 35px;
+          }
+          &:nth-of-type(4) {
+            text-align: center;
+            margin-top: 35px;
+            .btn {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .panel-body {
+    //padding: 0;
+    border: $accordion-screenshots-body-border;
+    div {
+      padding: 5px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+#accordion-item {
+  .panel {
+    position: relative;
+    border: none;               // this overrides the default accordion border
+    &:hover {
+      .panel-heading {
+        background-color: rgba(0,0,0, 0.1);
+      }
+
+      .more {
+        display: block;
+      }
+    }
+    .more {
+      position: absolute;
+      display: none;
+      left: 70%;
+      padding: 10px;
+    }
+    .panel-heading {
+      border: $component-border;
+      border-radius: 3px;
+      .row {
+        div {
+          &:nth-of-type(1) {                    // logo
+            text-align: center;
+
+          }
+          &:nth-of-type(2) {                    // casino name & rating
+            text-align: left;
+            margin-top: 35px;
+            font-size: 15px;
+            font-weight: 400;
+            color: $dark-text-color;
+          }
+          &:nth-of-type(3) {                    // bonus offer
+            text-align: center;
+            font-size: 25px;
+            color: $dark-text-color;
+            margin-top: 35px;
+          }
+          &:nth-of-type(4) {                    // supported platforms
+            margin-top: 35px;
+          }
+          &:nth-of-type(5) {                    // play now section
+            text-align: center;
+            margin-top: 35px;
+            .btn {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .panel-body {
+    //background-color: black;
+    div {
+      &:nth-of-type(1) {
+
+      }
+      &:nth-of-type(2) {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

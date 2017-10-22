@@ -1,89 +1,33 @@
+#item-mast-v1 {
 
-#item-header-mast {
-	.item {
-		//margin: 16px 0;
-		.wrap {
-			.row {
-				border-radius: $mast-v1-border-radius;
-				background-color: $mast-v1-bg;
-				width: 100%;
-				margin: 0;
-				border: none;
-				overflow: auto;
-				text-align: center;
-				padding: $mast-v1-padding;
-				height: auto;
-				#logo-wrap {
-					width: 260px;
-					height: 260px;
-					background-color: $mast-v1-logo-bg-color;
-					display: block;
-					border-radius: $mast-v1-logo-bg-radius;
-					padding: 40px;
-					//margin: auto;
-					text-align: center;
-					span {
-						&:nth-of-type(1) {
-							img {
-								width: 100%;
-							}
-						}
-						&:nth-of-type(2) {
-							i {
-								color: $mast-v1-rating-color;
-							}
-						}
-					}
-				}
-
-				#banner-caption {
-					span {
-						&:nth-of-type(1) {						// Caption title
-							display: block;
-							font-size: $mast-v1-title-size;
-							font-weight: $mast-v1-title-weight;
-							padding: 15px;
-							color: whitesmoke;
-
-						}
-						&:nth-of-type(2) {						// Caption paragraph / description
-							display: block;
-							font-size: 15px;
-							color: $mast-v1-description-color;
-						}
-						&:nth-of-type(3) {						// Bonus heading
-							display: block;
-							text-align: center;
-							text-transform: uppercase;
-							width: 100%;
-							margin-top: 20px;
-							font-size: $mast-v1-bonus-heading-size;
-							font-weight: 400;
-							color: $mast-v1-bonus-heading-color;
-						}
-						&:nth-of-type(4) {						// Bonus
-							text-align: center;
-							display: block;
-							text-transform: uppercase;
-							width: 100%;
-							margin-top: 4px;
-							font-size: $mast-v1-bonus-size;
-							font-weight: $mast-v1-bonus-weight;
-							color: $mast-v1-bonus-color;
-						}
-						&:nth-of-type(5) {						// Play now button
-							text-align: center;
-							display: block;
-							//width: $mast-v1-bonus-button-width;
-							margin: auto;
-							padding: 15px;
-						}
-					}
-				}
+	div {
+		background-color: $mast-v1-bg;
+		padding: $mast-v1-padding;
+		border-radius: $mast-v1-border-radius;
+		.logo-bg {
+			background-color: $mast-v1-logo-bg-color;
+			text-align: center;
+			border-radius: 10px;
+			padding: 50px;
+			i {
+				color: $mast-v1-rating-color;
 			}
-
-
 		}
-
+		.info {
+			color: $mast-v1-font-color;
+			text-align: center;
+			.casino-name {
+				font-size: $mast-v1-title-size;
+				font-weight: $mast-v1-title-weight;
+				color: $mast-v1-title-color;
+			}
+			.bonus {
+				font-size: $mast-v1-bonus-size;
+				color: $mast-v1-bonus-color;
+				font-weight: $mast-v1-bonus-weight;
+				text-transform: $mast-v1-bonus-text-transform;
+			}
+		}
 	}
+
 }

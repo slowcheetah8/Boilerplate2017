@@ -1,6 +1,7 @@
 // the below controls the styling of the payout toplist component
 
 #toplist-games-payout {
+  margin: $games-payout-margin;
   .col-lg-3 {
     padding: 0;
   }
@@ -10,7 +11,8 @@
 
 
   .heading {
-    border: $games-payout-border;
+    border-top: $games-payout-border;
+    border-right: $games-payout-border;
     padding: 15px 0;
     background-color: $games-payout-heading-bg;
     text-align: left;
@@ -22,6 +24,7 @@
     .row {
       background-color: $games-payout-row-color-odd;
       font-size: $games-payout-item-font-size;
+      color: $games-payout-item-font-color;
       padding: 10px 0;
       border-left: $games-payout-border;
       border-right: $games-payout-border;
@@ -49,7 +52,9 @@
   }
 
   .featured {
-    border: $games-payout-border;
+    border-left: $games-payout-border;
+    border-top: $games-payout-border;
+    border-bottom: $games-payout-border;
     height: (62px * 7) + 51 + $games-payout-bordercount;
     text-align: center;
     padding: 10px;
@@ -116,7 +121,7 @@
       margin: 10px 10px 10px 10px;
       //background-color: darken($games-payout-heading-bg, 5%);
       padding: 20px;
-      border: $games-payout-border;
+      //border: $games-payout-border;
       font-size: 10px;
       list-style: none;
       margin-bottom: 30px;

@@ -54,9 +54,14 @@
         background-color: $software-vs-row-bg-even;
       }
       &:nth-of-type(6) {
+        div {
+          padding: 0;
+        }
+        padding: 0;
         text-align: center;
         .btn {
           width: 100%;
+          border-radius: 0;
         }
       }
     }

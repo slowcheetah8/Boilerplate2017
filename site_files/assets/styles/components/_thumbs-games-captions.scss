@@ -6,7 +6,7 @@
 
   .thumbnail {
     background-color: $games-captions-card-color;
-    padding: 5px;
+    padding: 5px 5px 0 5px;
     height: $games-captions-card-height;
     .thumbnail-content {
       a {
@@ -30,6 +30,7 @@
 				a {
 					img {
 						filter: brightness(30%);
+            transition: 0.2s;
 					}
 				}
 			}
@@ -44,6 +45,9 @@
         .thumbnail-content{
           display: table-cell;
           vertical-align: middle;
+          .review {
+            text-transform: $games-captions-review-text-transform;
+          }
         }
       }
       &:hover .thumbnail-content-prt {
@@ -52,6 +56,7 @@
     }
   }
   .caption {
+    padding: 5px;
     a {
       text-align: left;
       font-size: $games-captions-size;

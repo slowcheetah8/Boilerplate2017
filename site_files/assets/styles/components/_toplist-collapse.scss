@@ -27,7 +27,7 @@
           .row {
 
 
-            border-bottom: $toplist-collapse-border;
+            border-top: $toplist-collapse-border;
             border-left: $toplist-collapse-border;
             border-right: $toplist-collapse-border;
             padding: 15px;
@@ -103,21 +103,24 @@
           }
           .collapse {
             .row {
+              padding-top: 1px;
               .more-detail-content {
                 width: 100%;
                 display: inline-block;
-                //border-top: 1px dashed #dcdcdc;
+                border-top: 1px dashed #dcdcdc;
                 padding: 20px 0;
                 position: relative;
                 .text-left {
 
                 }
                 .text-right {
-                  //float: right;
+                  text-align: right;
                   .mrg-bott-10 {
+                    margin-bottom: 10px;
                     img {
                       width: 100%;
                       height: auto;
+                      vertical-align: middle;
                     }
                   }
                 }

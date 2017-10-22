@@ -1,0 +1,150 @@
+#toplist-v2 {
+  margin: $toplist-v2-margin;
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+    .heading {
+      padding: 15px 0 15px 0;
+      background-color: $toplist-v2-heading-bg-color;
+      font-size: $toplist-v2-heading-font-size;
+      color: $toplist-v2-heading-font-color;
+      font-weight: $toplist-v2-heading-font-weight;
+      text-align: center;
+    }
+  }
+	.panel {
+    position: relative;
+    margin-bottom: 5px;
+    &:hover {
+      .more {
+        display: block;
+      }
+    }
+    .count {
+      position: absolute;
+      z-index: 10;
+      top: -5px;
+      left: -5px;
+      padding: 7px 13px;
+      border-radius: 2px 10px 10px 10px;
+      background-color: rgba(0,0,0,.8);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .more {
+      position: absolute;
+      top: 75%;
+      left: calc(50% - #{158px / 2});
+      display: none;
+      font-size: $toplit-v2-more-font-size;
+      color: $toplit-v2-more-font-color;
+    }
+
+    .item {
+      padding: 20px;
+      background-color: $toplist-v2-panel-bg-color;
+      &:hover {
+        background-color: $toplist-v2-panel-bg-hover-color;
+        transition: 0.5s;
+
+      }
+      div {
+        &:nth-of-type(1) {
+          span {
+            background-color: yellow;
+            padding: 30px 15px;
+            border-radius: 4px;
+          }
+        }
+        &:nth-of-type(2) {
+          padding: $toplist-v2-item-padding;
+          span {
+            font-size: $toplist-v2-casino-font-size;
+            color: $toplist-v2-casino-font-color;
+            i {
+              color: $toplist-v2-rating-color;
+            }
+          }
+        }
+        &:nth-of-type(3) {
+          padding: $toplist-v2-item-padding;
+          text-align: center;
+          span {
+            font-size: $toplist-v2-bonus-font-size;
+            color: $toplist-v2-bonus-font-color;
+          }
+        }
+        &:nth-of-type(4) {
+          padding: $toplist-v2-item-padding;
+          text-align: center;
+          span {
+            font-size: $toplist-v2-software-font-size;
+            color: $toplist-v2-software-font-color;
+          }
+        }
+        &:nth-of-type(5) {
+          padding: $toplist-v2-item-padding;
+          text-align: center;
+          span {
+            font-size: $toplist-v2-country-font-size;
+            color: $toplist-v2-country-font-color;
+            img {
+              width: $toplist-v2-country-img-width;
+              height: $toplist-v2-flag-img-height;
+            }
+          }
+        }
+        &:nth-of-type(6) {
+          padding: $toplist-v2-item-padding;
+          text-align: center;
+          .btn {
+            margin-bottom: 10px;
+          }
+          span:nth-of-type(2){
+            text-transform: $toplist-v2-review-text-transform;
+          }
+        }
+      }
+    }
+    .panel-body {
+      background-color: none;
+      padding: 15px 0;
+      .row {
+
+        .casino-name {
+          font-size: $toplist-v2-collapse-casino-font-size;
+          color: $toplist-v2-collapse-casino-font-color;
+          font-weight: $toplist-v2-collapse-casino-font-weight;
+          margin-bottom: 10px;
+        }
+        .description {
+          font-size: $toplist-v2-collapse-description-font-size;
+          color: $toplist-v2-collapse-description-font-color;
+          margin-bottom: 10px;
+        }
+        .btn {
+            background-color: $toplist-v2-collapse-btn-color;
+            color: $toplist-v2-collapse-btn-font-color;
+            font-size: $toplist-v2-collapse-btn-font-size;
+        }
+        .review {
+          margin-bottom: 20px;
+          a {
+            color: $toplist-v2-collapse-read-review-font-color;
+            font-size: $toplist-v2-collapse-read-review-font-size;
+            text-transform: $toplist-v2-collapse-read-review-font-transform;
+          }
+        }
+        .screenshot {
+          text-align: center;
+          img {
+            border: $toplist-v2-screenshots-border;
+            box-shadow: 0 2px 3px 0 rgba(0,0,0,.3);
+          }
+        }
+      }
+    }
+  }
+
+}

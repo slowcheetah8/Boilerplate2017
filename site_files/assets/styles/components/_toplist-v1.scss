@@ -10,7 +10,6 @@
 			margin: 0;
 			//box-shadow: $toplist-heading-shadow;
 			overflow: hidden;
-			text-align: center;
 			padding: $toplist-heading-padding;
 			height: $toplist-heading-height;
 			border: $toplist-v1-border;
@@ -19,6 +18,9 @@
 				font-size: $toplist-heading-size;
 				text-align: center;
 				color: $toplist-heading-text-color;
+			}
+			.casino-title {
+				text-align: left;
 			}
 
 

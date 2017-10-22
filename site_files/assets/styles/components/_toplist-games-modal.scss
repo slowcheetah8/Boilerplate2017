@@ -1,0 +1,45 @@
+#toplist-games-modal {
+  .item {
+    .btn {
+      padding: 0;
+    }
+  }
+
+  .modal-dialog {
+    //left: -100px;
+    width: 70%;
+
+    .modal-content {
+      width: auto;
+
+      .modal-body {
+        .game {
+        height: auto;
+        width: 67%;
+        float: left;
+        iframe, img {
+          width: 800px;
+        }
+        }
+        .side {
+          position: relative;
+          width: 32%;
+          height: 600px;
+          float: left;
+          background-color: whitesmoke;
+          text-align: center;
+          padding-top: 35px;
+          .jackpot-title {
+            font-size: 20px;
+            .jackpot-amount {
+              font-size: 25px;
+            }
+          }
+        }
+        .clearfix {
+          clear: both;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,178 @@
+{{#item}}
+<div class="panel-group" id="item-technical-menu" role="tablist" aria-multiselectable="true">
+  <div class="heading">Technical Details</div>
+  <div class="panel panel-default">
+		<div class="panel-heading"
+			 id="heading-1"
+			 role="button"
+			 data-toggle="collapse"
+			 data-parent="#item-technical-menu"
+			 href="#collapse-1"
+			 aria-expanded="true"
+			 aria-controls="collapseOne">
+
+			<h4 class="panel-title">
+				<a >
+					Company Info
+				</a>
+			</h4>
+
+		</div>
+		<div id="collapse-1"
+			 class="panel-collapse collapse"
+			 role="tabpanel"
+			 aria-labelledby="heading-1">
+
+			<div class="panel-body" id="accordion-content-1">
+        <span class="info-head">Established in:<br>
+          <span class="info-body">{{{established}}}</span>
+        </span><br>
+        <span class="info-head">License:<br><span class="info-body">{{{license}}}</span></span><br>
+        <span class="info-head"><strong>Rating:</strong><br><span class="info-body">{{{snip_cs28_rating_stars_sm}}}</span></span><br>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading"
+			 role="button"
+			 id="heading-2"
+			 data-toggle="collapse"
+			 data-parent="#item-technical-menu"
+			 href="#collapse-2"
+			 aria-expanded="false"
+			 aria-controls="collapse-2">
+
+			<h4 class="panel-title">
+				<a>
+					Software
+				</a>
+			</h4>
+
+		</div>
+		<div id="collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-2">
+			<div class="panel-body" id="accordion-content-2">
+        {{{all_software}}}
+			</div>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading"
+			 role="button"
+			 id="heading-3"
+			 data-toggle="collapse"
+			 data-parent="#item-technical-menu"
+			 href="#collapse-3"
+			 aria-expanded="false"
+			 aria-controls="collapse-3">
+
+			<h4 class="panel-title">
+				<a>
+					Deposit Methods
+				</a>
+			</h4>
+
+		</div>
+		<div id="collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-3">
+			<div class="panel-body" id="accordion-content-3">
+				<p>{{{snip_cs13_item_deposit_methods}}}</p>
+			</div>
+		</div>
+	</div>
+
+  <div class="panel panel-default">
+		<div class="panel-heading"
+			 role="button"
+			 id="heading-4"
+			 data-toggle="collapse"
+			 data-parent="#item-technical-menu"
+			 href="#collapse-4"
+			 aria-expanded="false"
+			 aria-controls="collapse-4">
+
+			<h4 class="panel-title">
+				<a>
+					Supported Platforms
+				</a>
+			</h4>
+
+		</div>
+		<div id="collapse-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-4">
+			<div class="panel-body" id="accordion-content-4">
+        {{{snip_cs31_item_supported_platforms_icons}}}
+			</div>
+		</div>
+	</div>
+
+  <div class="panel panel-default">
+		<div class="panel-heading"
+			 role="button"
+			 id="heading-5"
+			 data-toggle="collapse"
+			 data-parent="#item-technical-menu"
+			 href="#collapse-5"
+			 aria-expanded="false"
+			 aria-controls="collapse-5">
+
+			<h4 class="panel-title">
+				<a>
+					Supported Countries
+				</a>
+			</h4>
+
+		</div>
+		<div id="collapse-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-5">
+			<div class="panel-body" id="accordion-content-5">
+        {{#traffic_ca_yes}}<span>{{{snip_cs74_flag_canada}}}</span> {{/traffic_ca_yes}}
+        {{#traffic_ca_no}} {{/traffic_ca_no}}
+
+        {{#traffic_de_yes}}<span>{{{snip_cs79_flag_germany}}}</span> {{/traffic_de_yes}}
+        {{#traffic_de_no}} {{/traffic_de_no}}
+
+        {{#traffic_it_yes}}<span>{{{snip_cs81_flag_italy}}}</span> {{/traffic_it_yes}}
+        {{#traffic_it_no}} {{/traffic_it_no}}
+
+        {{#traffic_fr_yes}}<span>{{{snip_cs77_flag_france}}}</span> {{/traffic_fr_yes}}
+        {{#traffic_fr_no}} {{/traffic_fr_no}}
+
+        {{#traffic_uk_yes}}<span>{{{snip_cs78_flag_uk}}}</span> {{/traffic_uk_yes}}
+        {{#traffic_uk_no}} {{/traffic_uk_no}}
+
+        {{#traffic_usa_yes}}<span>{{{snip_cs76_flag_usa}}}</span> {{/traffic_usa_yes}}
+        {{#traffic_usa_no}} {{/traffic_usa_no}}
+
+        {{#traffic_rsa_yes}}<span>{{{snip_cs75_flag_rsa}}}</span> {{/traffic_rsa_yes}}
+        {{#traffic_rsa_no}} {{/traffic_rsa_no}}
+			</div>
+		</div>
+	</div>
+
+  <div class="panel panel-default">
+		<div class="panel-heading"
+			 role="button"
+			 id="heading-6"
+			 data-toggle="collapse"
+			 data-parent="#item-technical-menu"
+			 href="#collapse-6"
+			 aria-expanded="false"
+			 aria-controls="collapse-6">
+
+			<h4 class="panel-title">
+				<a>
+					Languages
+				</a>
+			</h4>
+
+		</div>
+		<div id="collapse-6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-6">
+			<div class="panel-body" id="accordion-content-6">
+				{{{software_languages}}}
+			</div>
+		</div>
+	</div>
+
+
+</div>
+{{/item}}

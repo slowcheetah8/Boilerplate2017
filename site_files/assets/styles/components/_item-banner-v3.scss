@@ -1,0 +1,15 @@
+#item-banner-v3 {
+
+  .row {
+    background-color: $item-banner-v3-bg-color;
+    padding: 30px;
+    border: $item-banner-v3-border;
+    border-radius: $item-banner-v3-border-radius;
+
+    .bonus {
+      font-size: $item-banner-v3-bonus-font-size;
+      color: $item-banner-v3-bonus-font-color;
+
+    }
+  }
+}

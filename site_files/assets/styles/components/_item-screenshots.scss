@@ -1,3 +1,17 @@
 #item-screenshots {
-  
+  .screenshots {
+    div {
+      padding-bottom: 20px;
+      padding: $item-screenshots-padding;
+      img {
+        width: 100%;
+        border: $item-screenshots-border;
+        border-radius: $item-screenshots-border-radius;
+        box-shadow: $item-screenshots-img-shadow;
+        &:hover {
+          filter: brightness(80%);
+        }
+      }
+    }
+  }
 }

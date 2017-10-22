@@ -1,7 +1,6 @@
 .breadcrumb {
-	padding-bottom: $breadcrumbs-padding-bottom;
 	background: $breadcrumbs-bg;
 	font-size: $breadcrumbs-font-size;
-	padding-left: $breadcrumbs-padding-left;
-	margin-bottom: $breadcrumbs-margin-bottom;
+	padding: $breadcrumb-padding;
+	margin-bottom: 0;
 }

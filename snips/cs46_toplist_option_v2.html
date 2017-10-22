@@ -1,0 +1,78 @@
+<div id="toplist-v2">
+
+  <div class="row">
+    <div class="col-lg-12 hidden-md hidden-sm hidden-xs heading">
+      <div class="col-lg-2 col-md-2 col-sm-12"></div>
+      <div class="col-lg-2 col-md-2 col-sm-12">Casino</div>
+      <div class="col-lg-2 col-md-2 col-sm-12">Bonus</div>
+      <div class="col-lg-2 col-md-2 col-sm-12">Software</div>
+      <div class="col-lg-2 col-md-2 col-sm-12">Players</div>
+      <div class="col-lg-2 col-md-2 col-sm-12"></div>
+    </div>
+  </div>
+
+  {{#list_6}}
+  {{{only_show_items_with_pages}}}
+  <div class="panel panel-default">
+    <span class="count">#{{{numbered}}}</span>
+
+		<div class="row item" id="heading{{{numbered}}}"
+          role="button"
+            data-toggle="collapse"
+              data-parent="#toplist-v2"
+                href="#collapse{{{numbered}}}"
+                  aria-expanded="true"
+                    aria-controls="collapse{{{numbered}}}">
+         <span class="more">Click Panel For More Info</span>
+         <div class="col-lg-2 col-md-2 col-sm-12">
+           <span style="background-color:lightblue;">{{{image_125x125_70x70}}}</span>
+         </div>
+         <div class="col-lg-2 col-md-3 col-sm-12 title-rating">
+           <span>{{{name}}}</span><br>
+           {{{snip_cs28_rating_stars_sm}}}
+         </div>
+         <div class="col-lg-2 col-md-2 col-sm-12">
+           <span><strong>${{{signup_bonus_amount}}} Free </strong>{{#maybe_all}}<br> + {{{free_spins_amount}}} Free Spins {{/maybe_all}}</span>
+         </div>
+         <div class="col-lg-2 hidden-md col-sm-12">
+           <span>{{{software}}}
+         </div>
+         <div class="col-lg-2 col-md-3 col-sm-12">
+          {{#traffic_ca_yes}}<span class="text-center">{{{snip_cs74_flag_canada}}}  Players Accepted from Canada</span> {{/traffic_ca_yes}}
+          {{#traffic_ca_no}} {{/traffic_ca_no}}
+         </div>
+         <div class="col-lg-2 col-md-2 col-sm-12">
+           <span><a {{{href}}} class="btn btn-primary">Play Now</a></span><br>
+           <span><a {{{page}}}>Read Review</a></span>
+         </div>
+		</div>
+    <div id="collapse{{{numbered}}}"
+			 class="panel-collapse collapse"
+			 role="tabpanel"
+			 aria-labelledby="heading{{{numbered}}}">
+
+			<div class="panel-body" id="accordion-content-1">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="casino-name">{{{name}}}</div>
+              <div class="description">
+                {{{short_review_text}}}
+              </div>
+              <div><a {{{href}}} class="btn btn-block">Get Bonus Now</a></div><br>
+              <div class="review text-center"><a {{{page}}}>Read Review</a></div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 screenshot">
+              {{{website_screenshot_250x250}}}
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 screenshot">
+              {{{software_screenshot_250x250}}}
+            </div>
+          </div>
+			</div>
+
+		</div>
+
+	</div>
+  {{/list_6}}
+
+</div>

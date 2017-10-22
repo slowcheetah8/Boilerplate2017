@@ -3,7 +3,7 @@
 
 	// Content block thumbnail name
 
-	
+
 
 	//header_navbar
 	.navbar-nav {
@@ -35,7 +35,39 @@
 			}
 		}
 	}
-
+	
+	#toplist-games-section {
+		.game-item {
+			.panel {
+				&:hover {
+	        background-color: rgba(0,0,0,0.2);
+	        .btn {
+	          display: none;
+	        }
+	      }
+			}
+		}
+	}
+	#thumbnail-casino {
+		.thumbnail {
+			height: 370px;
+			.thumbnail-casino-hover {
+				img {
+					width: 350px;
+				}
+			}
+			.caption {
+				text-align: center;
+			}
+		}
+	}
+	#toplist-overview {
+		.item {
+			.row:nth-of-type(1) {
+		    border-top: $toplist-overview-borders;
+		  }
+		}
+	}
 
 
 }

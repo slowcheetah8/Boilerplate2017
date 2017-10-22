@@ -1,6 +1,10 @@
 #toplist-payment-methods {
   padding: 0;
   display: block;
+
+  .more {
+    margin-bottom: 10px;
+  }
   .heading {
     //border: 1px solid #333;
     padding: $payment-methods-heading-padding;

@@ -1,14 +1,6 @@
 // the below controls the styling of the overview toplist component
 
 #toplist-overview {
-  .row {
-    background-color: $toplist-overview-row-color-even;
-  }
-  .row:nth-of-type(even) {
-    background-color: $toplist-overview-row-color-odd;
-  }
-
-
   .heading {
     background-color: $toplist-overview-heading-bg;
     width: 100%;
@@ -18,7 +10,6 @@
     padding: $toplist-overview-header-padding;
     font-size: $toplist-overview-heading-font-size;
     color: $toplist-overview-heading-text-color;
-
   }
 
   .item {
@@ -28,13 +19,50 @@
       border-right: $toplist-overview-borders;
       text-align: center;
       padding: 10px 0 10px 0;
+
+      &:nth-of-type(odd) {
+        background-color: $toplist-overview-row-color-odd;
+        &:hover {
+          background-color: $toplist-overview-row-color-hover;
+        }
+      }
+      &:nth-of-type(even) {
+        background-color: $toplist-overview-row-color-even;
+        &:hover {
+          background-color: $toplist-overview-row-color-hover;
+        }
+      }
       .align {
         padding-top: 35px;
         display: block;
       }
+
       div:nth-of-type(2) {
         span {
           padding-bottom: 10px;
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+      div:nth-of-type(3) {
+        span {
+          font-size: $toplist-overview-bonus-font-size;
+          color: $toplist-overview-bonus-color;
+          font-weight: $toplist-overview-bonus-font-weight;
+        }
+      }
+      div:nth-of-type(4) {
+        span {
+          font-size: $toplist-overview-software-font-size;
+          color: $toplist-overview-software-color;
+          font-weight: $toplist-overview-software-font-weight;
+        }
+      }
+      div:nth-of-type(5) {
+        span {
+          font-size: $toplist-overview-payout-font-size;
+          color: $toplist-overview-payout-color;
+          font-weight: $toplist-overview-payout-font-weight;
         }
       }
       div:nth-of-type(6) {

@@ -1,0 +1,44 @@
+#header-v1 {
+  .navbar-wrapper {
+  	width: 100%;
+  	margin: auto;
+  	left: 0;
+  	right: 0;
+  	top: 0;
+  	z-index: 20;
+  	height: 85px;
+    padding: 10px 0;
+  }
+
+  .navbar {
+    background-color: white;
+    .navbar-toggle {
+      .icon-bar {
+        background-color: $header-v1-link-font-color;
+      }
+    }
+    .navbar-nav {
+    	li {
+    		a {
+    			padding-bottom: 12px;
+    			padding-top: 32px;
+          color: $header-v1-link-font-color;
+          text-transform: uppercase;
+          &:hover {
+            border-bottom: $header-v1-link-hover-border-bottom;
+            background-color: white;
+          }
+    		}
+    	}
+    }
+  }
+
+  .navbar-brand {
+  	float: left;
+    margin-right: 60px;
+    img {
+      padding: 10px;
+      height: 75px;
+    }
+  }
+}

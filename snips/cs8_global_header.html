@@ -25,14 +25,169 @@
                         <li><a href="{{{root}}}best-practices.html">Best Practices</a></li>
                     </ul>
                 </li>
-                <li><a href="{{{root}}}components.html">Components</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Templates <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      {{#menulist_top}}
-                        <li>{{{menu}}}</li>                 
-                      {{/menulist_top}}  
-                    </ul>
+                <li>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <span class="caret"></span></a>
+                  <ul class="dropdown-menu multi-level">
+                    <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Toplist</a>
+                      <ul class="dropdown-menu">
+                        {{#menulist_components_2}}
+                        <li>{{{menu}}}</li>
+                        {{/menulist_components_2}}
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Item</a>
+                      <ul class="dropdown-menu">
+                        {{#menulist_components_5}}
+                        <li>{{{menu}}}</li>
+                        {{/menulist_components_5}}
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Carousels</a>
+                      <ul class="dropdown-menu">
+                        {{#menulist_components_1}}
+                        <li>{{{menu}}}</li>
+                        {{/menulist_components_1}}
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software</a>
+                      <ul class="dropdown-menu">
+                        {{#menulist_components_3}}
+                        <li>{{{menu}}}</li>
+                        {{/menulist_components_3}}
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu</a>
+                      <ul class="dropdown-menu">
+                        {{#menulist_components_6}}
+                        <li>{{{menu}}}</li>
+                        {{/menulist_components_6}}
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Modal</a>
+                      <ul class="dropdown-menu">
+                        {{#menulist_components_7}}
+                        <li>{{{menu}}}</li>
+                        {{/menulist_components_7}}
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">News</a>
+                      <ul class="dropdown-menu">
+                        {{#menulist_components_8}}
+                        <li>{{{menu}}}</li>
+                        {{/menulist_components_8}}
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Alert</a>
+                      <ul class="dropdown-menu">
+                        {{#menulist_components_9}}
+                        <li>{{{menu}}}</li>
+                        {{/menulist_components_9}}
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rating</a>
+                      <ul class="dropdown-menu">
+                        {{#menulist_components_10}}
+                        <li>{{{menu}}}</li>
+                        {{/menulist_components_10}}
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sidebar</a>
+                      <ul class="dropdown-menu">
+                        {{#menulist_components_11}}
+                        <li>{{{menu}}}</li>
+                        {{/menulist_components_11}}
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tabs</a>
+                      <ul class="dropdown-menu">
+                        {{#menulist_components_12}}
+                        <li>{{{menu}}}</li>
+                        {{/menulist_components_12}}
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Thumbs</a>
+                      <ul class="dropdown-menu">
+                        {{#menulist_components_13}}
+                        <li>{{{menu}}}</li>
+                        {{/menulist_components_13}}
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Accordion</a>
+                      <ul class="dropdown-menu">
+                        {{#menulist_components_14}}
+                        <li>{{{menu}}}</li>
+                        {{/menulist_components_14}}
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Collapse</a>
+                      <ul class="dropdown-menu">
+                        {{#menulist_components_15}}
+                        <li>{{{menu}}}</li>
+                        {{/menulist_components_15}}
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jumbotron</a>
+                      <ul class="dropdown-menu">
+                        {{#menulist_components_16}}
+                        <li>{{{menu}}}</li>
+                        {{/menulist_components_16}}
+                      </ul>
+                    </li>
+                  </ul>
+
+                </li>
+                <li>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Templates <span class="caret"></span></a>
+                  <ul class="dropdown-menu multi-level">
+                    <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Template Index</a>
+                      <ul class="dropdown-menu">
+                        {{#menulist_template_index}}
+                        <li>{{{menu}}}</li>
+                        {{/menulist_template_index}}
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Template Sub</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="template_sub_v1.html">Template Sub V1</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Template Toplist</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="template_toplist_v1.html">Toplist V1</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Template News List</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="template_news_list_v1.html">News List V1</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Template News Article</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="template_news_article_v1.html">News Article V1</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+
                 </li>
                 <li><a href="{{{root}}}system-tags.html">System Tags</a></li>
               </ul>

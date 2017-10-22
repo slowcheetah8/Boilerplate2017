@@ -1,0 +1,40 @@
+<div class="row" id="toplist-top-3">
+{{#list_3_top3}}
+	<div class="col-lg-4 col-md-12 col-sm-12">
+    <div class="item-container">
+      <span class="count">#{{{numbered}}}</span>
+      <div class="top">
+        <div class="col-lg-4 col-md-12 col-sm-12 logo-bg" style="background-color:lightgreen;">
+          <span>{{{image_125x125_70x70}}}</span>
+        </div>
+        <div class="col-lg-8 col-md-12 col-sm-12">
+          <span>{{{name}}}</span><br>
+          {{{snip_cs28_rating_stars_sm}}}<br>
+          <span>Magna elit sint aute nulla quem velit esse summis quem</span>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="bonus">
+          <span class="heading">Sign-Up Bonus</span><br>
+          <span class="bonus-amount"><strong>${{{signup_bonus_amount}}} Free </strong>{{#maybe_all}} + {{{free_spins_amount}}} Free Spins {{/maybe_all}}</span>
+        </div>
+        <div class="software">
+          <span>{{{software}}}</span>
+        </div>
+				<div class="country">
+					{{#traffic_ca_yes}}
+
+					<span>
+						{{{snip_cs74_flag_canada}}}
+						Players Accepted from Canada
+					</span>
+					{{/traffic_ca_yes}}
+          {{#traffic_ca_no}} {{/traffic_ca_no}}
+				</div>
+        <a {{{href}}} class="btn btn-primary btn-lg">Play Now</a><br>
+        <a {{{page}}} class="btn btn-block">Read Review</a>
+      </div>
+    </div>
+	</div>
+{{/list_3_top3}}
+</div>

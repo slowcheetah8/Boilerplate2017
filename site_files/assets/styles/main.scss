@@ -2,7 +2,6 @@
 // GetBootstrap Sass & Mixins
 @import "bootstrap";
 @import "customvars";
-@import "functions";
 
 @import "common/global";
 
@@ -54,10 +53,29 @@
 @import "components/item-deposit-methods";
 @import "components/alert-success";
 @import "components/item-banner-v1";
+@import "components/item-banner-v2";
+@import "components/item-banner-v3";
+@import "components/accordion-item";
+@import "components/toplist-top-3";
+@import "components/toplist-games-section";
+@import "components/item-mast-v2";
+@import "components/item-screenshots-modal";
+@import "components/item-technical-menu";
+@import "components/sidebar-top-10";
+@import "components/toplist-v2";
+@import "components/toplist-games-modal";
+//@import "components/test.scss";
 
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";
+@import "layouts/header-v1";
+@import "layouts/template-index-v1";
+@import "layouts/template-sub-v1";
+@import "layouts/template-toplist-v1";
+@import "layouts/template-news-list-v1";
+@import "layouts/template-news-article-v1";
+
 
 @import "theme";
 @import "components/preview-tab";

@@ -1,0 +1,28 @@
+.template-news-article-v1 {
+  .article {
+    padding: $template-news-article-v1-section-padding;
+    background-color: whitesmoke;
+    .content {
+
+      color: $template-news-article-v1-section-font-color;
+      article {
+        margin-left: auto;
+        margin-right: auto;
+        img {
+          float: left;
+          margin: 0 20px 20px 0;
+        }
+        .date {
+          display: block;
+          font-size: $template-news-article-v1-date-font-size;
+          margin-bottom: $template-news-article-v1-date-margin-bottom;
+          font-weight: $template-news-article-v1-date-font-weight;
+        }
+        p {
+          text-align: justify;
+        }
+      }
+    }
+  }
+
+}

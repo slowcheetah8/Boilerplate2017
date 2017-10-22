@@ -1,0 +1,13 @@
+.template-toplist-v1 {
+  .container-fluid {
+    padding: 0;
+    .bg-alt {
+      background-color: $template-toplist-v1-section-alt-bg-color;
+    }
+    .content {
+      padding: $template-toplist-v1-section-padding;
+      color: $template-toplist-v1-section-font-color;
+    }
+  }
+
+}

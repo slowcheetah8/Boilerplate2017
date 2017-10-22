@@ -1,0 +1,45 @@
+#sidebar-top-10 {
+  margin: $sidebar-top-10-margin;
+  .row {
+    background-color: $sidebar-top-10-item-bg-color;
+    border-left: $sidebar-top-10-border;
+    border-right: $sidebar-top-10-border;
+    border-top: $sidebar-top-10-border;
+    margin: 0;
+    padding: 10px;
+    .logo-bg {
+      background-color: $sidebar-top-10-logo-bg-color;
+      border-radius: $sidebar-top-10-logo-border-radius;
+      padding: 7px;
+      span {
+        img {
+
+        }
+      }
+    }
+    .title {
+      padding: 0 0 0 5px;
+      span {
+        font-size: $sidebar-top-10-casino-font-size;
+        font-weight: $sidebar-top-10-casino-font-weight;
+        color: $sidebar-top-10-casino-font-color;
+      }
+      i {
+        color: $sidebar-top-10-rating-color;
+      }
+    }
+    .review {
+
+      padding: 10px 0;
+      .btn {
+
+        font-size: $sidebar-top-10-review-font-size;
+        font-weight: $sidebar-top-10-review-font-weight;
+      }
+    }
+
+  }
+  .row:last-of-type {
+    border-bottom: $sidebar-top-10-border;
+  }
+}

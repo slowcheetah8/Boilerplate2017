@@ -1,0 +1,21 @@
+#item-banner-v2 {
+  div {
+    text-align: center;
+    border: $item-banner-v2-border;
+    background-color: $item-banner-v2-bg-color;
+    padding: 15px;
+    span {
+      &:nth-of-type(1) {
+        font-size: $item-banner-v2-caption-font-size;
+        color: $item-banner-v2-caption-font-color;
+      }
+      &:nth-of-type(2) {
+        font-size: $item-banner-v2-bonus-font-size;
+        color: $item-banner-v2-bonus-font-color;
+      }
+    }
+    .btn {
+      width: $item-banner-v2-button-width;
+    }
+  }
+}
