@@ -1,23 +1,40 @@
 #item-technical-menu {
 
-  .panel-heading {
-    background-color: $technical-menu-heading-bg-color;
-    color: $technical-menu-heading-font-color;
-    padding: $technical-menu-padding;
+  margin-top: $techincal-menu-margin-top;
+  .panel-top {
+      background-color: $technical-menu-heading-top-bg-color;
+      padding: $technical-menu-padding;
+      color: $technical-menu-heading-font-color;
   }
-  #collapse-1 {
+  .panel {
+    margin-top: 0;
+
+    .panel-heading {
+      background-color: $technical-menu-heading-bg-color;
+      color: $technical-menu-heading-font-color;
+      padding: $technical-menu-padding;
+
+    }
+  }
+
+
+
+  #tech-collapse-1 {
     .panel-body {
       background-color: $technical-menu-body-bg-color;
       .info-head {
         color: $technical-menu-info-head-font-color;
+        display: block;
       }
       .info-body {
         color: $technical-menu-info-body-font-color;
-        //padding-bottom: 10px;
+        display: block;
+        padding-bottom: 8px;
         i {
           color: $technical-menu-info-star-rating-color;
         }
       }
+
     }
   }
 }

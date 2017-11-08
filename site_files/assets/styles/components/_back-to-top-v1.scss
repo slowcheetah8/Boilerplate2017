@@ -1,0 +1,25 @@
+#back-to-top-v1 {
+  position: fixed;
+  text-align: center;
+  display: none;
+  margin: $back-to-top-v1-margin;
+  right: 40px;
+  top: 800px;
+  a {
+    i {
+      font-size: $back-to-top-v1-size;
+      padding: $back-to-top-v1-padding;
+      background-color: $back-to-top-v1-bg-color;
+      color: $back-to-top-v1-color;
+      border-radius: 5px;
+    }
+  }
+
+
+}
+
+@media only screen and (max-width : 1580px) {
+	#back-to-top-v1 {
+		display: none !important;
+	}
+}

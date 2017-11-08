@@ -1,8 +1,86 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
-	
+	#games-play-demo-v1 {
+		.panel {
+			.panel-heading {
+				.panel-title {
+					font-size: 18px;
+				}
+				.rating {
+					margin-top: 0;
+				}
 
+			}
+		}
+	}
+
+	#item-banner-v4 {
+		.row {
+			div:nth-of-type(1) {
+				margin-left: -30px;
+				margin-right: -30px;
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+
+	#item-banner-v5 {
+		.row {
+			div:nth-of-type(1) {
+	     	img {
+					width: 100%;
+					height: auto;
+				}
+	    }
+		}
+	}
+
+	#item-banner-terms {
+		.row {
+			div:nth-of-type(1) {
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+
+	#item-banner-live-dealer {
+    .row {
+      div:nth-of-type(1) {
+				//height: 250px;
+        .img-dealer {
+					z-index: 100;
+					width: 100%;
+					height: auto;
+					
+        }
+
+      }
+      div:nth-of-type(2) {
+        padding: 5px;
+
+      }
+    }
+  }
+
+
+
+
+	#item-overview-v2 {
+		#overview-panel-1 {
+			height: auto;
+			.heading {
+				font-size: 15px;
+			}
+		}
+
+	}
 
 
 	//news list

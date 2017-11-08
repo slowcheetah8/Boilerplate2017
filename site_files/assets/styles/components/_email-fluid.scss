@@ -1,0 +1,24 @@
+#email-banner-fluid {
+  margin: 15px 0 0 0;
+  background-color: $email-fluid-bg-color;
+  p {
+    display: inline-block;
+    font-size: $email-fluid-font-size;
+    color: $email-fluid-font-color;
+  }
+  form {
+    float: right;
+    input {
+      height: 35px;
+      width: 250px;
+    }
+    button {
+      height: 35px;
+      width: 150px;
+      background-color: $email-fluid-button-color;
+      color: white;
+      border-radius: 0;
+      border: none;
+    }
+  }
+}

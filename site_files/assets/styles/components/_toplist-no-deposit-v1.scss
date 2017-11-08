@@ -1,0 +1,112 @@
+#toplist-no-deposit-v1 {
+	.heading-wrap {
+
+		background-color: $toplist-no-deposit-heading-bg;
+		border: $toplist-no-deposit-border;
+
+		div {
+			font-size: $toplist-no-deposit-heading-font-size;
+			text-align: center;
+			color: $toplist-no-deposit-heading-text-color;
+			padding: $toplist-no-deposit-heading-padding;
+		}
+	}
+
+	.item {
+		background-color: $toplist-no-deposit-item-bg-color;
+		border-left: $toplist-no-deposit-border;
+		border-right: $toplist-no-deposit-border;
+		border-bottom: $toplist-no-deposit-border;
+		overflow: hidden;
+		text-align: center;
+		padding: $toplist-no-deposit-item-padding;
+		&:hover {
+			background-color: darken($toplist-no-deposit-item-bg-color, 5%);
+		}
+
+		div {
+			&:nth-of-type(1) {
+				padding: 0;
+				.logo {
+					display: block;
+					width: 100%;
+
+				}
+			}
+			&:nth-of-type(2) {
+				padding: $toplist-no-deposit-bonus-padding;
+				.bonus {
+					text-align: center;
+					display: block;
+					text-transform: uppercase;
+					font-size: $toplist-no-deposit-bonus-font-size;
+					font-weight: $toplist-no-deposit-bonus-weight;
+					color: $toplist-no-deposit-bonus-color;
+				}
+			}
+			&:nth-of-type(3) {
+				padding: $toplist-no-deposit-amount-padding;
+				.no-deposit {
+          line-height: 1em;
+					text-align: center;
+					display: block;
+					text-transform: uppercase;
+					font-size: $toplist-no-deposit-amount-font-size;
+					font-weight: $toplist-no-deposit-amount-weight;
+					color: $toplist-no-deposit-amount-color;
+				}
+			}
+			&:nth-of-type(4) {
+				padding: $toplist-no-deposit-code-padding;
+				.code {
+					font-size: $toplist-no-deposit-code-font-size;
+					color: $toplist-no-deposit-code-font-color;
+					font-weight: 400;
+					display: block;
+				}
+			}
+			&:nth-of-type(5) {
+				padding: $toplist-no-deposit-rating-padding;
+				.rating {
+					font-size: $toplist-no-deposit-rating-font-size;
+					font-weight: 400;
+					display: block;
+					i {
+						color: $toplist-no-deposit-rating-font-color;
+					}
+				}
+			}
+			&:nth-of-type(6) {
+				padding: $toplist-no-deposit-button-padding;
+				.btn {
+					text-align: center;
+					display: block;
+					width: 100%;
+					margin-bottom: 15px;
+				}
+
+			}
+		}
+	}
+	.more {
+		background-color: $toplist-no-deposit-heading-bg;
+		padding: 30px;
+		text-align: center;
+		span {
+			font-size: $toplist-no-deposit-footer-font-size;
+			cursor: pointer;
+			position: relative;
+			top: 20%;
+			display: block;
+			font-weight: 500;
+		}
+		i {
+			color: $toplist-no-deposit-footer-icon-color;
+			margin-left: 5px;
+		}
+		.more-a {
+			color: $toplist-no-deposit-footer-icon-color;
+		}
+	}
+
+}

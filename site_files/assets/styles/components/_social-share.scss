@@ -1,65 +1,68 @@
-.share-group {
-	position: fixed;
-	margin-top: 15px;
-	ul {
-		float: right;
-		list-style: none outside none;				// no effect
-		margin: $share-ul-margin;
-		min-width: $share-dropdown-width;
-		padding: 0;
-		li {
+#social-share-v1 {
+	.share-group {
+		position: fixed;
+		margin-top: 15px;
+		ul {
+			float: right;
+			list-style: none outside none;				// no effect
+			margin: $share-ul-margin;
+			min-width: $share-dropdown-width;
+			padding: 0;
+			li {
 
-			i {
-				font-size: $share-font-size;
-				}
-			display: block;
+				i {
+					font-size: $share-font-size;
+					}
+				display: block;
 
-			list-style: none outside none;			// no effect
-			margin: $share-dropdown-margin;
+				list-style: none outside none;			// no effect
+				margin: $share-dropdown-margin;
+			}
 		}
 	}
-}
 
 
-/*social share*/
-.btn-share {
-	background-color: #BEBEBE; 	//
-	border-color: #CCCCCC;		// Not called in template
-	color: #333333;				//
-}
+	/*social share*/
+	.btn-share {
+		background-color: #BEBEBE; 	//
+		border-color: #CCCCCC;		// Not called in template
+		color: #333333;				//
+	}
 
-.btn-twitter {
-	background-color: $share-twitter-bg-color !important;
-	width: $share-share-width;
-	color: $share-font-color;
-}
+	.btn-twitter {
+		background-color: $share-twitter-bg-color !important;
+		width: $share-share-width;
+		color: $share-font-color;
+	}
 
-.btn-facebook {
-	background-color: $share-facebook-bg-color !important;
-	width: $share-share-width;
-	color: $share-font-color;
-}
+	.btn-facebook {
+		background-color: $share-facebook-bg-color !important;
+		width: $share-share-width;
+		color: $share-font-color;
+	}
 
-.btn-google {
-	background-color: $share-google-bg-color !important;
-	width: $share-share-width;
-	color: $share-font-color;
-}
+	.btn-google {
+		background-color: $share-google-bg-color !important;
+		width: $share-share-width;
+		color: $share-font-color;
+	}
 
-.btn-linkedin {
-	background-color: $share-linkedin-bg-color !important;
-	width: $share-share-width;
-	color: $share-font-color;
-}
+	.btn-linkedin {
+		background-color: $share-linkedin-bg-color !important;
+		width: $share-share-width;
+		color: $share-font-color;
+	}
 
-.btn-pinterest {
-	background-color: $share-pinterest-bg-color !important;
-	width: $share-share-width;
-	color: $share-font-color;
-}
+	.btn-pinterest {
+		background-color: $share-pinterest-bg-color !important;
+		width: $share-share-width;
+		color: $share-font-color;
+	}
 
-.btn-mail {
-	background-color: $share-mail-bg-color !important;
-	width: $share-share-width;
-	color: $share-font-color;
+	.btn-mail {
+		background-color: $share-mail-bg-color !important;
+		width: $share-share-width;
+		color: $share-font-color;
+	}
+
 }

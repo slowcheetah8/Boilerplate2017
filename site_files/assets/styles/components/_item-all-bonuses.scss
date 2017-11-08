@@ -1,0 +1,50 @@
+#item-all-bonuses {
+  margin: $item-all-bonuses-bonus-margin;
+  .list-group {
+
+    .list-group-item {
+      padding: $item-all-bonuses-bonus-item-padding;
+      background-color: $item-all-bonuses-item-bg-color;
+
+      .offer {
+        color: $item-all-bonuses-offer-font-color;
+      }
+
+      .dashed-box {
+        border: $item-all-bonuses-bonus-code-border;
+        padding: 5px;
+        width: 75%;
+        text-align: center;
+        margin: 0;
+      }
+
+      //wagering div
+      .align {
+        padding-top: 10px;
+      }
+      .wagering {
+        padding: 5px 10px;
+        color: $item-all-bonuses-wagering-font-color;
+        background-color: $item-all-bonuses-wagering-bg-color;
+        display: inline-block;
+        border-radius: 10px;
+        margin-right: 10px;
+      }
+
+      .code {
+        font-size: $item-all-bonuses-code-font-size;
+        color: $item-all-bonuses-code-font-color;
+      }
+
+      span {
+        display: block;
+      }
+      .btn {
+        width: 100%;
+      }
+
+
+
+    }
+  }
+}

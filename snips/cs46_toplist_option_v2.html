@@ -11,8 +11,9 @@
     </div>
   </div>
 
-  {{#list_6}}
+  {{#list_[@listsize][@range]}}
   {{{only_show_items_with_pages}}}
+  {{#query}} accepts_players=true {{/query}}
   <div class="panel panel-default">
     <span class="count">#{{{numbered}}}</span>
 
@@ -24,26 +25,28 @@
                   aria-expanded="true"
                     aria-controls="collapse{{{numbered}}}">
          <span class="more">Click Panel For More Info</span>
-         <div class="col-lg-2 col-md-2 col-sm-12">
-           <span style="background-color:lightblue;">{{{image_125x125_70x70}}}</span>
+         <div class="col-lg-2 col-md-12 col-sm-12">
+           <div class="logo-bg" style="background-color:lightblue;">{{{image_125x125_70x70}}}</div>
          </div>
-         <div class="col-lg-2 col-md-3 col-sm-12 title-rating">
+         <div class="col-lg-2 col-md-12 col-sm-12 title-rating">
            <span>{{{name}}}</span><br>
            {{{snip_cs28_rating_stars_sm}}}
          </div>
-         <div class="col-lg-2 col-md-2 col-sm-12">
+         <div class="col-lg-2 col-md-12 col-sm-12">
            <span><strong>${{{signup_bonus_amount}}} Free </strong>{{#maybe_all}}<br> + {{{free_spins_amount}}} Free Spins {{/maybe_all}}</span>
          </div>
-         <div class="col-lg-2 hidden-md col-sm-12">
+         <div class="col-lg-2 col-md-12 col-sm-12">
            <span>{{{software}}}
          </div>
-         <div class="col-lg-2 col-md-3 col-sm-12">
+         <div class="col-lg-2 col-md-12 col-sm-12">
           {{#traffic_ca_yes}}<span class="text-center">{{{snip_cs74_flag_canada}}}  Players Accepted from Canada</span> {{/traffic_ca_yes}}
           {{#traffic_ca_no}} {{/traffic_ca_no}}
          </div>
-         <div class="col-lg-2 col-md-2 col-sm-12">
-           <span><a {{{href}}} class="btn btn-primary">Play Now</a></span><br>
-           <span><a {{{page}}}>Read Review</a></span>
+         <div class="col-lg-2 col-md-12 col-sm-12">
+           <span><a {{{href}}} class="btn btn-primary btn-lg">Play Now</a></span>
+           {{#page_yes}}<span class="review"><a {{{page}}} class="btn">Read Review</a></span>{{/page_yes}}
+   				 {{#page_no}}{{/page_no}}
+           <span class="hidden-lg hidden-xl">Click panel for more info</span>
          </div>
 		</div>
     <div id="collapse{{{numbered}}}"
@@ -58,8 +61,10 @@
               <div class="description">
                 {{{short_review_text}}}
               </div>
-              <div><a {{{href}}} class="btn btn-block">Get Bonus Now</a></div><br>
-              <div class="review text-center"><a {{{page}}}>Read Review</a></div>
+              <div><a {{{href}}} class="btn btn-primary btn-lg">Get Bonus Now</a></div><br>
+
+              {{#page_yes}}<div class="review text-center"><a {{{page}}}>Read Review</a></div>{{/page_yes}}
+      				{{#page_no}}{{/page_no}}
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 screenshot">
               {{{website_screenshot_250x250}}}
@@ -73,6 +78,6 @@
 		</div>
 
 	</div>
-  {{/list_6}}
+  {{/list_[@listsize][@range]}}
 
 </div>

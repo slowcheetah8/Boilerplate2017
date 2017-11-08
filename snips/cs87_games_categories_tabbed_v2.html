@@ -1,0 +1,100 @@
+<div id="games-categories-tabbed-v2">
+
+	<div class="tab-wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#gametype-1" data-toggle="tab">Slots</a></li>
+			<li><a href="#gametype-2" data-toggle="tab">Blackjack</a></li>
+			<li><a href="#gametype-3" data-toggle="tab">Roulette</a></li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div class="tab-pane active" id="gametype-1">
+				<div class="row">
+          <div class="col-lg-12">
+            {{{text_8}}}
+          </div>
+				</div>
+				<div class="row">
+					{{#gamelist_8}}
+          {{{game_type_[@gametype_1]}}}
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="thumbnails-content">
+						{{{snip_cs34_thumbs_games_captions}}}
+					</div>
+          {{/gamelist_8}}
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<h5><strong>More Games</strong></h5>
+            <ul id="footer-games">
+              {{#gamelist_10}}
+							{{{game_type_[@gametype_1]}}}
+                <li><a {{{href}}}>{{{name}}}</a><span class="divider">&nbsp;&nbsp;/&nbsp;</span></li>
+              {{/gamelist_10}}
+            </ul>
+
+          </div>
+				</div>
+			</div>
+			<div class="tab-pane" id="gametype-2">
+				<div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            {{{text_9}}}
+          </div>
+				</div>
+				<div class="row">
+					{{#gamelist_8}}
+          {{{game_type_[@gametype_2]}}}
+
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="thumbnails-content">
+						{{{snip_cs34_thumbs_games_captions}}}
+					</div>
+
+          {{/gamelist_8}}
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<h5><strong>More Games</strong></h5>
+            <ul id="footer-games">
+              {{#gamelist_10}}
+							{{{game_type_[@gametype_2]}}}
+                <li><a {{{href}}}>{{{name}}}</a><span class="divider">&nbsp;&nbsp;/&nbsp;</span></li>
+              {{/gamelist_10}}
+            </ul>
+
+          </div>
+				</div>
+			</div>
+			<div class="tab-pane" id="gametype-3">
+				<div class="row">
+          <div class="col-lg-12">
+            {{{text_10}}}
+          </div>
+				</div>
+				<div class="row">
+					{{#gamelist_8}}
+          {{{game_type_[@gametype_3]}}}
+
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="thumbnails-content">
+						{{{snip_cs34_thumbs_games_captions}}}
+					</div>
+
+          {{/gamelist_8}}
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<h5><strong>More Games</strong></h5>
+						<ul id="footer-games">
+							{{#gamelist_10}}
+							{{{game_type_[@gametype_3]}}}
+								<li><a {{{href}}}>{{{name}}}</a><span class="divider">&nbsp;&nbsp;/&nbsp;</span></li>
+							{{/gamelist_10}}
+						</ul>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>

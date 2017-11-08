@@ -1,0 +1,27 @@
+<section id="sidebar-bonus-offer">
+
+  <div class="row">
+    <span><strong>Top [@listsize] Casinos</strong></span>
+  </div>
+
+  {{#list_[@listsize]_sidebar_bonus}}
+  {{{rating_sort}}}
+
+  <div class="row">
+
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 logo-bg" style="background-color:lightblue;">
+      <span>{{{image_125x125_70x70}}}</span>
+    </div>
+
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 item">
+      <span class="name">{{{name}}}</span>
+      <span class="bonus"><strong>${{{signup_bonus_amount}}} Free</strong></span><br>
+      {{#maybe_all}} <span class="spins">+ {{{free_spins_amount}}} Free Spins</span>{{/maybe_all}}
+      <a {{{href}}} class="btn btn-primary btn-sm">Claim Now</a>
+    </div>
+
+  </div>
+
+  {{/list_[@listsize]_sidebar_bonus}}
+
+</section>

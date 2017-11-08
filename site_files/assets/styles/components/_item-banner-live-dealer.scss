@@ -1,0 +1,55 @@
+#item-banner-live-dealer {
+  margin: 70px 0;
+  .panel {
+    background-color: $item-banner-v4-bg-color;
+    //height: 330px;
+    border: $item-banner-live-dealer-border;
+    border-radius: $item-banner-live-dealer-border-radius;
+
+    .row {
+      min-height: 330px;
+      div:nth-of-type(1) {
+        position: relative;
+        padding: $item-banner-live-dealer-left-div-padding;
+        //
+        .img-dealer {
+          position: absolute;
+          top: -35px;
+        }
+      }
+      div:nth-of-type(2) {
+        padding: $item-banner-live-dealer-right-div-padding;
+        h3, h2 {
+          font-size: $item-banner-live-dealer-heading-font-size;
+          color: $item-banner-live-dealer-heading-font-color;
+
+        }
+        p {
+          font-size: $item-banner-live-dealer-description-font-size;
+          color: $item-banner-live-dealer-description-font-color;
+        }
+        a {
+          font-size: $item-banner-live-dealer-link-font-size;
+          color: $item-banner-live-dealer-link-font-color;
+          padding-bottom: 15px;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+#live-dealer-collapse {
+
+  .panel-body {
+    background-color: $item-banner-live-dealer-panel-body-bg-color;
+    padding: $item-banner-live-dealer-panel-body-padding;
+    h2 {
+      font-size: $item-banner-live-dealer-panel-body-h2-size;
+    }
+    p {
+      font-size: $item-banner-live-dealer-panel-body-p-size;
+    }
+  }
+
+}

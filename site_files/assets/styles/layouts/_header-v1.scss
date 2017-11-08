@@ -11,7 +11,7 @@
   }
 
   .navbar {
-    background-color: white;
+    background-color: $header-v1-bg-color;
     .navbar-toggle {
       .icon-bar {
         background-color: $header-v1-link-font-color;
@@ -23,6 +23,7 @@
     			padding-bottom: 12px;
     			padding-top: 32px;
           color: $header-v1-link-font-color;
+          font-weight: $header-v1-link-font-weight;
           text-transform: uppercase;
           &:hover {
             border-bottom: $header-v1-link-hover-border-bottom;

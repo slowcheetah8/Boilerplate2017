@@ -5,14 +5,12 @@
   }
 
   .thumbnail {
+    float: left;
     background-color: $games-captions-card-color;
     padding: 5px 5px 0 5px;
-    height: $games-captions-card-height;
+    height: 230px;
     .thumbnail-content {
-      a {
-        font-size: $games-captions-size;
 
-      }
     }
     &:hover {
       background: $games-captions-card-hover-color;
@@ -26,6 +24,19 @@
           width: 100%;
         }
       }
+
+      .thumbnail-content {
+        display: none;
+        position: absolute;
+        width: 100%;
+        padding: 0 15px;
+        top: calc(50% - 48px);
+        .btn {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+      }
+
       &:hover {
 				a {
 					img {
@@ -33,34 +44,33 @@
             transition: 0.2s;
 					}
 				}
+        .thumbnail-content {
+          display: block;
+        }
 			}
 
-      .thumbnail-content-prt {
-        display: none;
-        position: absolute;
-        margin: auto;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        .thumbnail-content{
-          display: table-cell;
-          vertical-align: middle;
-          .review {
-            text-transform: $games-captions-review-text-transform;
-          }
-        }
-      }
-      &:hover .thumbnail-content-prt {
-        display: table;
-      }
+
+
     }
   }
   .caption {
+    position: relative;
+    min-height: 70px;
     padding: 5px;
-    a {
+    .game-name {
       text-align: left;
-      font-size: $games-captions-size;
-      font-weight: $games-captions-font-weight;
+      font-size: $games-captions-game-name-font-size;
+      font-weight: $games-captions-game-name-font-weight;
+      color: $games-captions-game-name-font-color;
+    }
+    i {
+      color: $games-captions-star-rating-color;
+    }
+    .small-review {
+      display: none;
+      text-align: right;
+      bottom: 5px;
+      color: $games-captions-small-review-font-color;
     }
   }
 

@@ -1,0 +1,39 @@
+<div id="item-banner-v6">
+	<div class="row">
+		<div class="col-md-8 col-sm-6 col-xs-12">
+			<div class="h4">Promotions and Bonuses at {{{name}}}</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="key-rating pull-right">
+				<span> Section Rating: {{{rating_decimal}}} </span>&nbsp;
+				{{{snip_cs27_rating_stars_md}}}
+			</div>
+		</div>
+	</div>
+	<div class="item-banner-sec">
+		<div class="col-md-12 hidden-xs hidden-sm">&nbsp;</div>
+		<div class="col-md-1">&nbsp;</div>
+		<div class="col-md-6 col-sm-8 col-xs-12">
+			<div class="total-bonus">
+				<span class="free-bonus-text-color">Sign Up Bonus:</span>
+				<span>&nbsp;${{{signup_bonus_amount}}}</span>
+			</div>
+			<div class="row">
+				<div class="col-md-12 free-bonus">
+					{{#free_spins_bonus_yes}}
+						<span class="free-bonus-text-color text-italic text-bold">+{{{free_spins_amount}}} free spins</span>
+					{{/free_spins_bonus_yes}}
+					{{#free_spins_bonus_no}} {{/free_spins_bonus_no}}
+
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1 hidden-xs hidden-sm">&nbsp;</div>
+		<div class="col-md-3 col-sm-4 col-xs-12 claim-button text-right">
+			<div class="col-md-12">&nbsp;</div>
+			<a {{{href}}} class="btn btn-primary btn-lg">Claim Bonus</a>
+		</div>
+		<div class="col-md-1 hidden-xs hidden-sm">&nbsp;</div>
+		<div class="col-xs-12">&nbsp;</div>
+	</div>
+</div>

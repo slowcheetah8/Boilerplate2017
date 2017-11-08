@@ -1,0 +1,24 @@
+.template-index-v2 {
+  .bg-alt {
+    background-color: $template-index-v2-section-alt-bg-color;
+  }
+
+  .content {
+    padding: $template-index-v2-section-padding;
+    color: $template-index-v2-section-font-color;
+    .bg-banner {
+      width: auto;
+      height: 470px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .row {
+      div {
+        p {
+          //margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+}

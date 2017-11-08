@@ -1,0 +1,66 @@
+#sidebar-bonus-offer {
+  margin: $sidebar-bonus-offer-margin;
+
+  .row {
+
+    &:first-of-type {
+      background-color: $sidebar-bonus-offer-heading-bg-color;
+      font-size: $sidebar-bonus-offer-heading-font-size;
+      color: $sidebar-bonus-offer-heading-font-color;
+      text-transform: uppercase;
+    }
+    background-color: $sidebar-bonus-offer-item-bg-color;
+    border-left: $sidebar-bonus-offer-border;
+    border-right: $sidebar-bonus-offer-border;
+    border-top: $sidebar-bonus-offer-border;
+    margin: 0;
+    padding: 10px;
+    box-shadow: $wrapper-box-shadow;
+    .logo-bg {
+      text-align: center;
+      background-color: $sidebar-bonus-offer-logo-bg-color;
+      border-radius: $sidebar-bonus-offer-logo-border-radius;
+      padding: 7px;
+    }
+    .item {
+      position: relative;
+      min-height: 80px;
+      padding: 0 0 0 10px;
+      .name {
+        display: block;
+        padding-bottom: 10px;
+        font-size: $sidebar-bonus-offer-casino-font-size;
+        color: $sidebar-bonus-offer-casino-font-color;
+        font-weight: $sidebar-bonus-offer-casino-font-weight;
+      }
+      .bonus {
+        font-size: $sidebar-bonus-offer-bonus-font-size;
+        color: $sidebar-bonus-offer-bonus-font-color;
+      }
+      .spins {
+        font-size: $sidebar-bonus-offer-spins-font-size;
+        color: $sidebar-bonus-offer-spins-font-color;
+        line-height: 1em;
+      }
+      .btn {
+        position: absolute;
+        display: none;
+        top: calc(50% - 15px);
+        width: 95%;
+
+      }
+    }
+  }
+  .row:last-of-type {
+    border-bottom: $sidebar-bonus-offer-border;
+  }
+  .row:hover {
+    background-color: rgba(0,0,0,0.7);
+    transition: 0.5s;
+    .item {
+      .btn {
+        display: block;
+      }
+    }
+  }
+}

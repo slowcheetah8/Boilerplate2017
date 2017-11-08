@@ -1,0 +1,47 @@
+#item-banner-terms {
+  margin: 20px 0;
+  .panel {
+    background-color: $item-banner-terms-bg-color;
+    border: $item-banner-terms-border;
+    border-radius: $item-banner-terms-border-radius;
+
+    .row {
+      div:first-of-type {
+        padding: $item-banner-terms-left-div-padding;
+      }
+      div:last-of-type {
+        padding: $item-banner-terms-right-div-padding;
+      }
+    }
+
+    .heading {
+      display: block;
+      font-size: $item-banner-terms-font-size;
+      color: $item-banner-terms-font-color;
+      line-height: 1.1em;
+      padding: 10px 0 10px 10px;
+    }
+    .more-terms {
+      display: block;
+      padding: 20px;
+      font-size: $item-banner-terms-more-font-size;
+      color: $item-banner-terms-more-font-color;
+    }
+  }
+}
+
+#terms-collapse {
+  .panel-body {
+    background-color: $item-banner-terms-panel-body-bg-color;
+    padding: $item-banner-terms-panel-body-padding;
+    //padding-top: 30px;
+
+    h2 {
+      font-size: $item-banner-terms-well-h2-size;
+    }
+    p {
+      font-size: $item-banner-terms-well-p-size;
+    }
+  }
+
+}

@@ -1,0 +1,47 @@
+#sidebar-games-new {
+  margin: $sidebar-games-new-margin;
+  .row {
+    &:first-of-type {
+      background-color: $sidebar-games-new-heading-bg-color;
+      font-size: $sidebar-games-new-heading-font-size;
+      color: $sidebar-games-new-heading-font-color;
+      text-transform: uppercase;
+    }
+    background-color: $sidebar-games-new-item-bg-color;
+    border-left: $sidebar-games-new-border;
+    border-right: $sidebar-games-new-border;
+    border-top: $sidebar-games-new-border;
+    margin: 0;
+    padding: 10px;
+    box-shadow: $wrapper-box-shadow;
+    .logo-bg {
+      text-align: center;
+      padding: 0;
+      span {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .item {
+      padding: 15px 0 15px 10px;
+      .name {
+        display: block;
+        a {
+          font-size: $sidebar-games-new-name-font-size;
+          color: $sidebar-games-new-name-font-color;
+          font-weight: $sidebar-games-new-name-font-weight;
+        }
+      }
+      .software {
+        font-size: $sidebar-games-new-software-font-size;
+        color: $sidebar-games-new-software-font-color;
+        font-weight: $sidebar-games-new-software-font-weight;
+      }
+
+    }
+  }
+  .row:last-of-type {
+    border-bottom: $sidebar-games-new-border;
+  }
+}

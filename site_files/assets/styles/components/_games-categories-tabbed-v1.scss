@@ -1,0 +1,85 @@
+#games-categories-tabbed-v1 {
+	.header-line {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding-top: 15px;
+		.h4 {
+			margin: 0;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		.header-link {
+			a {
+				font-weight: bold;
+				text-decoration: underline;
+			}
+		}
+	}
+	.games_categories_tabbed_sec {
+		background-color: $games-tabbed-v1-bg-color;
+		margin: 15px 0 0 0;
+		padding: 15px 0;
+		border: $games-tabbed-v1-border;
+		border-radius: 2px;
+		clear: both;
+		.tabs-left {
+			border-bottom: none;
+			padding-top: 2px;
+			padding-left: 30px;
+			li {
+				float: none;
+				padding: 0 0;
+				margin-bottom: 0;
+				&.title {
+					border-bottom: $games-tabbed-v1-border;
+					font-size: $games-tabbed-v1-title-font-size;
+					font-weight: bold;
+					padding-bottom: 15px;
+					padding-top: 15px;
+					margin-bottom: 0;
+				}
+				a {
+					border-radius: 0;
+					display: block;
+					padding: 15px 5px 15px;
+					border: none;
+					border-bottom: $games-tabbed-v1-border;
+					font-size: $games-tabbed-v1-nav-title-font-size;
+					color: $games-tabbed-v1-nav-title-font-color;
+					font-weight: bold;
+					text-decoration: underline;
+					&:hover,
+					&:focus {
+						background: $games-tabbed-v1-nav-bg-color-focus;
+					}
+				}
+				&.active>a {
+					border-bottom: $games-tabbed-v1-border;
+					color: $games-tabbed-v1-nav-title-font-color-active;
+					background: $games-tabbed-v1-nav-bg-color-focus;
+					&:hover,
+					&:focus {
+						border: none;
+						border-bottom: $games-tabbed-v1-border;
+					}
+				}
+			}
+		}
+
+		.tab-content {
+			display: inline-block;
+			width: 100%;
+			padding-top: 30px;
+			padding-right: 15px;
+			.tab-pane {
+				.description {
+					display: block;
+					padding-bottom: 10px;
+					font-size: $games-tabbed-v1-description-font-size;
+					color: $games-tabbed-v1-description-font-color;
+				}
+			}
+		}
+	}
+}

@@ -1,47 +1,45 @@
+#news-list-grid {
+  .list-heading {
+    font-size: $news-list-grid-list-heading-font-size;
+		padding-left: 15px;
+  }
+  .news-list-wrap {
+		margin-bottom: 30px;
+    background-color: $news-list-grid-bg-color;
+    padding: 10px;
+    border-top: $news-list-grid-border;
+    border-left: $news-list-grid-border;
+    border-right: $news-list-grid-border;
+    &:last-child {
+      border-bottom: $news-list-grid-border;
+    }
+    .media {
+      .media-body {
+        .media-heading {
+          font-size: $news-list-grid-heading-font-size;
+          a {
+            color: $news-list-grid-heading-link-color;
+          }
+        }
+        .date {
+          font-size: $news-list-grid-date-font-size;
+          color: $news-list-grid-date-font-color;
+          font-weight: $news-list-grid-date-font-weight;
+          color: $news-list-grid-date-font-weight;
+        }
+        .description {
+          font-size: $news-list-grid-description-font-size;
+          color: $news-list-grid-description-font-color;
+        }
+        .review {
+          font-size: $news-list-grid-review-font-size;
+          text-transform: $news-list-grid-review-text-transform;
+          color: $news-list-grid-review-font-color;
+					margin-top: 10px;
+					display: block;
+        }
+      }
+    }
+  }
 
-// margin below news-list
-.margin-bottom-30 {
-	margin-bottom: 30px;
-}
-
-/* Portlet */
-.portlet {
-
-	background: $news-list-bg;
-	padding: $news-list-padding;
-	border: $news-list-border;
-	box-shadow: $wrapper-box-shadow;
-	/* Portlet Title */
-	.portlet-title {
-		padding: $news-list-title-padding;
-	  	min-height: $news-list-title-min-height;
-	  	border-bottom: $news-list-title-border-bottom;
-	  	margin-bottom: $news-list-title-margin-bottom;
-		.caption {
-			float: left;
-			display: inline-block;
-			.caption-subject {
-				color: $news-list-title-color;
-				font-size: $news-list-title-size;
-				font-weight: $news-list-title-weight;
-			}
-		}
-	}
-
-
-
-	.portlet-body {
-		font-size: $news-list-body-font-size;
-		span {
-			&:nth-of-type(1) {
-				display: block;
-				font-weight: $news-list-date-weight;
-				font-size: $news-list-date-size;
-				margin-bottom: $news-list-date-margin-bottom;
-			}
-			&:nth-of-type(2) {
-				display: block;
-			}
-		}
-	}
 }

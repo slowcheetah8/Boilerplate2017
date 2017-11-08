@@ -1,23 +1,19 @@
 #toplist-v1 {
 	.toplist {
-		.row {
 
-		}
 		.heading-wrap {
 
-			background-color: $toplist-heading-bg;
+			background-color: $toplist-v1-heading-bg;
 			width: 100%;
 			margin: 0;
-			//box-shadow: $toplist-heading-shadow;
 			overflow: hidden;
-			padding: $toplist-heading-padding;
-			height: $toplist-heading-height;
+			padding: $toplist-v1-heading-padding;
 			border: $toplist-v1-border;
 
 			div {
-				font-size: $toplist-heading-size;
+				font-size: $toplist-v1-heading-font-size;
 				text-align: center;
-				color: $toplist-heading-text-color;
+				color: $toplist-v1-heading-text-color;
 			}
 			.casino-title {
 				text-align: left;
@@ -27,19 +23,17 @@
 
 		}
 		.item {
-			background-color: $toplist-item-bg-color;
+			background-color: $toplist-v1-item-bg-color;
 			border-left: $toplist-v1-border;
 			border-right: $toplist-v1-border;
 			border-bottom: $toplist-v1-border;
 			width: 100%;
 			margin: 0;
-			box-shadow: $toplist-body-shadow;
 			overflow: hidden;
 			text-align: center;
-			padding: $toplist-body-padding;
-			min-height: $toplist-body-min-height;
+			padding: $toplist-v1-item-padding;
 			&:hover {
-				background-color: darken($toplist-item-bg-color, 20%);
+				background-color: darken($toplist-v1-item-bg-color, 20%);
 			}
 
 			div {
@@ -54,12 +48,12 @@
 						text-align: left;
 						display: block;
 						width: 100%;
-						font-size: $toplist-title-size;
+						font-size: $toplist-v1-title-size;
 						font-weight: 200;
 						text-transform: uppercase;
-						padding-top: $toplist-title-padding-top;
+						padding: $toplist-v1-title-padding;
 						a {
-							color: $toplist-title-color;
+							color: $toplist-v1-title-color;
 						}
 					}
 					.rating-outer {
@@ -77,26 +71,24 @@
 						text-align: center;
 						display: block;
 						text-transform: uppercase;
-						font-size: $toplist-bonus-font-size;
-						font-weight: $toplist-bonus-weight;
-						padding: $toplist-bonus-padding;
-						color: $toplist-bonus-color;
+						font-size: $toplist-v1-bonus-font-size;
+						font-weight: $toplist-v1-bonus-weight;
+						padding: $toplist-v1-bonus-padding;
+						color: $toplist-v1-bonus-color;
 					}
 				}
 				&:nth-of-type(4) {
 					.percent {
-						display: block;
-						font-size: $toplist-percent-font-size;
+						font-size: $toplist-v1-percent-font-size;
 						font-weight: 400;
-						padding: $toplist-percent-padding;
+						padding: $toplist-v1-percent-padding;
 					}
 				}
 				&:nth-of-type(5) {
 					.payout {
-						display: block;
-						font-size: $toplist-payout-font-size;
+						font-size: $toplist-v1-payout-font-size;
 						font-weight: 400;
-						padding: $toplist-payout-padding;
+						padding: $toplist-v1-payout-padding;
 					}
 				}
 				&:nth-of-type(6) {
@@ -104,7 +96,7 @@
 						text-align: center;
 						display: block;
 						width: 100%;
-						padding: $toplist-button-padding;
+						padding: $toplist-v1-button-padding;
 						margin-bottom: 10px;
 					}
 					.review {
@@ -115,11 +107,11 @@
 
 		}
 		.more {
-			background-color: $toplist-heading-bg;
+			background-color: $toplist-v1-heading-bg;
 			padding: 30px;
 			text-align: center;
 			span {
-				font-size: $toplist-footer-font-size;
+				font-size: $toplist-v1-footer-font-size;
 				cursor: pointer;
 				position: relative;
 				top: 20%;
@@ -127,11 +119,11 @@
 				font-weight: 500;
 			}
 			i {
-				color: $toplist-footer-icon-color;
-				margin-left: $toplist-footer-icon-margin-left;
+				color: $toplist-v1-footer-icon-color;
+				margin-left: 5px;
 			}
 			.more-a {
-				color: $toplist-footer-icon-color;
+				color: $toplist-v1-footer-icon-color;
 			}
 		}
 

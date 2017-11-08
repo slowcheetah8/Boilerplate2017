@@ -1,8 +1,24 @@
 <div id="supported-platforms">
     <span>
-    {{#download_yes}} <i class="fa fa-mobile"></i><i class="fa fa-tablet"></i><br> {{/download_yes}}
-    {{#download_no}} {{/download_no}}
-    {{#flash_play_yes}} <i class="fa fa-desktop"></i> {{/flash_play_yes}}
+    {{#mobile_yes}}
+      <i class="fa fa-android"></i>&nbsp
+      <i class="fa fa-tablet"></i>&nbsp
+    {{/mobile_yes}}
+    {{#mobile_no}} {{/mobile_no}}
+
+    {{#flash_play_yes}}
+      <i class="fa fa-desktop"></i>&nbsp
+      <i class="fa fa-windows"></i>&nbsp
+      <i class="fa fa-laptop"></i>&nbsp
+    {{/flash_play_yes}}
     {{#flash_play_no}} {{/flash_play_no}}
+
+    {{#mac_compatible_yes}}
+      <i class="fa fa-apple"></i>&nbsp
+    {{/mac_compatible_yes}}
+    {{#mac_compatible_no}} {{/mac_compatible_no}}
+
+
     </span>
 </div>
+ 

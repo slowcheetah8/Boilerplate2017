@@ -15,7 +15,8 @@
 				<span>{{{snip_cs26_rating_stars_lg}}}</span>
 				<span>${{{signup_bonus_amount}}} Free</span>
 				<span>{{{description}}}</span>
-				<a {{{page}}} class="btn btn-default btn-sm">Read Review</a>
+				{{#page_yes}}<a {{{page}}} class="btn btn-default btn-sm">Read Review</a>{{/page_yes}}
+				{{#page_no}}{{/page_no}}
 			</div>
 		</div>
 	</div>

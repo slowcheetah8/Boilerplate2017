@@ -1,0 +1,120 @@
+#item-overview-v2 {
+
+
+
+
+	.item_quick_overview_list {
+    border: $item-overview-v2-border;
+		margin: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+    background-color: $item-overview-v2-banner-bg-color;
+    border-radius: $item-overview-v2-banner-border-radius;
+
+    #overview-panel-1 {
+      .row {
+        div:nth-of-type(1) {
+          text-align: center;
+          padding-right: 10px;
+
+        }
+				div:nth-of-type(2) {
+          padding-right: 10px;
+					.value {
+						color: $item-overview-v2-value-font-color;
+	        }
+        }
+      }
+    }
+    #overview-panel-2 {
+      div:nth-of-type(1) {
+
+				i {
+					color: $item-overview-v2-star-rating-color;
+				}
+
+        span:nth-of-type(1) {
+          display: block;
+          font-size: 18px;
+        }
+
+  			div:nth-of-type(1) {
+  				font-size: $item-overview-v2-list-rating-font-size;
+          font-weight: $item-overview-v2-list-rating-font-weight;
+  				.rating-color {
+  					color: $item-overview-v2-list-rating-font-color;
+  					font-weight: bold;
+            display: inline;
+            font-size: $item-overview-v2-list-rating-font-size + 5px;
+  				}
+  			}
+      }
+    }
+    #overview-panel-3 {
+      .row {
+        div:nth-of-type(2) {
+
+          span:nth-of-type(1) {
+            font-size: $item-overview-v2-bonus-heading-font-size;
+						color: $item-overview-v2-bonus-heading-font-color;
+            display: block;
+          }
+          span:nth-of-type(2) {
+            font-size: $item-overview-v2-bonus-font-size;
+						color: $item-overview-v2-bonus-font-color;
+            line-height: 1em;
+            margin-bottom: 15px;
+            display: block;
+          }
+        }
+      }
+    }
+
+    .item-list {
+  		border: $item-overview-v2-border;
+      background-color: $item-overview-v2-item-bg-color;
+  		margin: 20px 0;
+  		padding: 17px 20px;
+      border-radius: 5px;
+      height: $item-overview-v2-item-height;
+      .row {
+        margin-bottom: 15px;
+        .heading {
+          display: block;
+          font-size: $item-overview-v2-item-heading-font-size;
+          color: $item-overview-v2-item-heading-font-color;
+        }
+
+
+
+
+        .logo-div {
+          padding-right: 0;
+          .logo-bg {
+            background-color: yellow;
+            display: block;
+            text-align: center;
+            margin-top: -17px;
+						margin-bottom: 10px;
+            padding: 15px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+          }
+        }
+        .btn {
+          width: 100%;
+        }
+      }
+
+  		.item-rating {
+
+  		}
+
+  	}
+	}
+
+
+
+
+}

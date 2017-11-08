@@ -1,0 +1,40 @@
+#item-banner-v6 {
+	display: inline-block;
+	width: 100%;
+	margin-top: 10px;
+	.h4 {
+		font-weight: bold;
+	}
+	.key-rating {
+		margin-top: 10px;
+		font-weight: bold;
+		.star-md {
+			i {
+				color: $item-banner-v1-star-color;
+			}
+		}
+	}
+	.item-banner-sec {
+		border: $item-banner-v1-border;
+		background: $item-banner-v1-bg-color;
+		display: inline-block;
+		width: 100%;
+		margin-top: 10px;
+		.total-bonus {
+			font-weight: bold;
+			font-size: $item-banner-v1-total-bonus-font-size;
+		}
+		.free-bonus {
+			font-style: italic;
+			font-weight: bold;
+		}
+		.free-bonus-text-color {
+			color: $item-banner-v1-free-bonus-text-color;
+		}
+		.claim-button {
+			.btn {
+				//
+			}
+		}
+	}
+}

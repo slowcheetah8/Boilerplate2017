@@ -1,0 +1,25 @@
+<div class="row" id="toplist-top-4-spins">
+{{#list_4}}
+
+	<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 item">
+		<div class="panel">
+			<span class="logo-bg">{{{image_125x125_70x70}}}</span>
+			<div class="panel-heading">
+				<span class="casino-name"><strong>{{{name}}}</strong></span>
+			</div>
+			<div class="panel-body">
+				<span>Sign-Up Bonus</span>
+				<span class="bonus"><strong>${{{signup_bonus_amount}}} Free</strong></span>
+				<span>UP TO</span>
+				<span>{{{signup_bonus_percent}}}%</span>
+				{{#maybe_all}}
+					+ <span class="spins">{{{free_spins_amount}}}</span> Free Spins
+			 	{{/maybe_all}}
+			</div>
+			<div class="panel-footer">
+				<a {{{href}}} class="btn btn-primary btn-lg">Claim Now</a>
+			</div>
+		</div>
+	</div>
+{{/list_4}}
+</div>

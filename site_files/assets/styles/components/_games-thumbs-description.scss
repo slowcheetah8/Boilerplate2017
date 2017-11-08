@@ -1,0 +1,47 @@
+#games-thumbs-description {
+  div {
+    .thumbnail {
+
+      background-color: $games-thumbs-description-bg-color;
+      .thumb-top {
+        text-align: center;
+        position: relative;
+
+        img {
+          width: 100%;
+        }
+        .btn {
+          position: absolute;
+          top: calc(50% - 17px);
+          display: none;
+          z-index: 999;
+          width: 100%;
+
+        }
+        .overlay {
+          position: absolute;
+          min-height: 30px;
+          background-color: rgba(0,0,0,0.7);
+          z-index: 999;
+          bottom: 0;
+          width: 100%;
+          .game-name {
+            display: block;
+            font-size: $games-thumbs-description-name-font-size;
+            color: $games-thumbs-description-name-font-color;
+          }
+        }
+        &:hover {
+          .btn {
+            display: block;
+            transition: .5s;
+          }
+          img {
+            filter: brightness(20%);
+            transition: .5s;
+          }
+        }
+      }
+    }
+  }
+}

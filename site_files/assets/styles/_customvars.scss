@@ -1,6 +1,6 @@
 //
 // Color scheme
-$theme1: #252525;         // features, headings
+$theme1: #252525;
 $theme2: whitesmoke;
 $theme3: yellow;
 $theme4: #d5dee2;
@@ -10,17 +10,20 @@ $theme6: #ffffff;
 
 $bg-main: #e3e6e8;                                  // main background color for site
 $wrapper-bg: white;                                 // content wrapper background
-
 // default theme properties
 $dark-text-color: #333333;                            // dark text color for light backgrounds
 $light-text-color: white;                           // light text color for dark backgrounds
+$theme-light-bg: $theme2;
+$theme-dark-bg: $theme1;
 $star-rating-color: red;                            // star ratings color
 $toplist-headings-bg: $theme1;                      // background for toplist headings
 $toplist-features-color: lighten($theme1, 10%);     // background for all the features attached to toplists
 $wrapper-border: none;
-$wrapper-box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
+$wrapper-box-shadow: 0 1px 1px 0 rgba(0,0,0,.3);
 $component-border: 1px solid #DDDDDD;
 $bonus-font-color: #3eb1d4;
+$banner-bg: $theme1;
+
 
 
 // Boilerplate Navbar properties
@@ -33,17 +36,49 @@ $navbar-item-padding-bottom: 32px;
 
 // Template Index V1 | _template-index-v1.scss
 $template-index-v1-section-alt-bg-color: darken($bg-main, 5%);
-$template-index-v1-section-padding: 50px 0;
+$template-index-v1-section-padding: 10px 0;
 $template-index-v1-section-font-color: $dark-text-color;
+
+// Template Index V2 | _template-index-v2.scss
+$template-index-v2-section-alt-bg-color: darken($bg-main, 5%);
+$template-index-v2-section-padding: 30px 0;
+$template-index-v2-section-font-color: $dark-text-color;
 
 
 // Template Sub V1 | _template-sub-v1.scss
 $template-sub-v1-container-padding: 30px 0;          // padding for the entire container
 
+// Tempalte Review V1 | _template-review-v1.scss
+$template-review-v1-container-padding: 0;
+
+
 // Template Toplist V1 | _template-toplist-v1
 $template-toplist-v1-section-alt-bg-color: darken($bg-main, 5%);
-$template-toplist-v1-section-padding: 30px 0;
+$template-toplist-v1-section-padding: 10px 0;
 $template-toplist-v1-section-font-color: $dark-text-color;
+
+
+// Template Contact V1 | _template-contact-v1.scss
+$template-contact-v1-section-alt-bg-color: darken($bg-main, 5%);
+$template-contact-v1-section-padding: 10px 0 60px 0;
+$template-contact-v1-section-font-color: $dark-text-color;
+
+
+// Template Contact V1 | _template-contact-v1.scss
+$template-games-section-v1-section-alt-bg-color: darken($bg-main, 5%);
+$template-games-section-v1-section-padding: 60px 0 60px 0;
+$template-games-section-v1-section-font-color: $dark-text-color;
+
+$template-games-section-v2-section-alt-bg-color: darken($bg-main, 5%);
+$template-games-section-v2-section-padding: 30px 0 30px 0;
+$template-games-section-v2-section-font-color: $dark-text-color;
+
+
+// Template Contact V1 | _template-contact-v1.scss
+$template-games-page-v1-section-alt-bg-color: darken($bg-main, 5%);
+$template-games-page-v1-section-padding: 60px 0 60px 0;
+$template-games-page-v1-section-font-color: $dark-text-color;
+
 
 // Template News List V1 | _template-news-list-v1
 $template-news-list-v1-section-alt-bg-color: darken($bg-main, 5%);
@@ -71,7 +106,7 @@ $carousel-bonus-weight: 600;                          // Bonus font weight
 $price-table-text-color: $dark-text-color;                        // font color of text
 $price-table-margin-top: 35px;                        // top margin of tables
 $price-table-heading-padding: 10px;                   // padding around logo
-$price-table-heading-bg-color: #EEE;                  // background color around logo
+$price-table-heading-bg-color: $theme-light-bg;                  // background color around logo
 $price-table-row-padding: 15px;                       //
 $price-table-row-bg-color: #fff;
 $price-table-row-bg-color-even: #F8F8F8;
@@ -110,12 +145,15 @@ $footer-links-height: 140px;                        // height of area for footer
 $footer-links-padding: 40px;                        // adjust padding for footer links
 $footer-links-color: #ddc9aa;
 $footer-links-font-size: 12px;
-$footer-links-spacing: 2px;                         // add a bit of spacing between footer link items
 $footer-sub-min-height: 80px;                       // minimum height for footer-sub
 $footer-sub-margin-top: 40px;                       // add space above of footer-sub outside
 $footer-sub-font-size: 13px;
+$footer-links-font-weight: 700;
 $footer-sub-padding-top: 20px;                      // add space above text in footer-sub
-
+$footer-sub-back-icon-size: 30px;
+$footer-sub-back-icon-padding: 5px;
+$footer-sub-back-icon-bg-color: rgba(0,0,0,0.2);
+$footer-sub-back-icon-color: white;
 
 
 // Social share button | _social-share.scss | cs10
@@ -169,19 +207,17 @@ $softwarelist-overview-heading-bg-color: $toplist-headings-bg;
 $softwarelist-overview-heading-link-size: 15px;
 $softwarelist-overview-heading-link-color: white;
 $softwarelist-overview-border: $component-border;
-$softwarelist-overview-image-bg-color: $theme2;
-$softwarelist-overview-row-color-odd: $theme2;
+$softwarelist-overview-image-bg-color: $theme-light-bg;
+$softwarelist-overview-row-color-odd: $theme-light-bg;
 $softwarelist-overview-row-color-even: darken($theme2, 10%);
 $softwarelist-overview-item-text-size: 15px;
 $softwarelist-overview-item-font-color: dark-text-color;
 
 
 // List Group | _list-group.scss | cs17
-$list-group-size: 15px;                               // Font size of the menu item
-$list-group-bg: white;                              // Background color for menu item
-$list-group-text-color: $dark-text-color;
-$list-group-heading: $theme1;
-$list-group-heading-font-color: $light-text-color;
+$list-group-item-font-size: 15px;                               // Font size of the menu item
+$list-group-item-bg-color: $theme-light-bg;                              // Background color for menu item
+$list-group-item-font-color: $dark-text-color;
 $list-group-margin: 20px 0;
 $list-group-border: $component-border;
 
@@ -192,27 +228,25 @@ $modal-body-p-color: $dark-text-color;
 
 
 // News list | _news-list.scss | cs19
-$news-list-bg: $theme2;                                   // news-list background color
-$news-list-padding: 30px;                                 // inner padding of news-list card
-$news-list-border: $wrapper-border;                       // default wrapper border - adjust to 'none' for no border
-$news-list-title-padding: 0;                              // padding to align news title
-$news-list-title-min-height: 40px;
-$news-list-title-border-bottom: 1px solid $theme1;        // line separating title from body
-$news-list-title-margin-bottom: 28px;                     // creates space between separator and body
-$news-list-title-size: 18px;                              // size of the title
-$news-list-title-weight: 600;                             // give the title more or less weight
-$news-list-title-color: #aaa;                             // color of the title
-$news-list-date-weight: 600;                              // give more or less weight to the date
-$news-list-date-size: 11px;                               // size of the date
-$news-list-date-margin-bottom: 10px;                      // space between date and text below it
-$news-list-body-font-size: 18px;                          // size of the text in the body
-
+$news-list-grid-list-heading-font-size: 18px;
+$news-list-grid-bg-color: $theme-light-bg;
+$news-list-grid-border: $component-border;
+$news-list-grid-heading-font-size: 15px;
+$news-list-grid-heading-link-color: $dark-text-color;
+$news-list-grid-date-font-size: 11px;
+$news-list-grid-date-font-color: $dark-text-color;
+$news-list-grid-date-font-weight: 600;
+$news-list-grid-description-font-size: 13px;
+$news-list-grid-description-font-color: $dark-text-color;
+$news-list-grid-review-font-size: 14px;
+$news-list-grid-review-text-transform: uppercase;
+$news-list-grid-review-font-color: none;
 
 
 
 
 // Popover properties | _popover.scss | cs21
-$popover-btn-color: $theme2;
+$popover-btn-color: $theme-light-bg;
 $popover-head-bg-color: $theme3;
 $popover-head-font-size: 14px;
 $popover-content-font-size: 14px;
@@ -244,7 +278,7 @@ $supported-platforms-border: 1px solid #dcdcdc;
 
 
 // Tabs properties | _tabs.scss | cs32
-$tabs-bg-color: $theme2;
+$tabs-bg-color: $theme-light-bg;
 $tabs-link-color: $dark-text-color;
 $tabs-content-text-color: $dark-text-color;
 $tabs-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
@@ -260,7 +294,7 @@ $tabs-content-font-size: 16px;
 
 // Thumbs Items Captions | _thumbs-items-captions.scss | cs33
 $thumbs-items-item-name-size: 15px;
-$thumbs-items-bg-color: $theme2;
+$thumbs-items-bg-color: $theme-light-bg;
 $thumbs-items-bottom-space: 10px 0;
 $thumbs-items-rating-align: 10px;
 $thumbs-items-bonus-size: 15px;
@@ -271,16 +305,14 @@ $thumbs-items-border: 1px solid #333;
 
 
 // Thumbs Games Captions | _thumbs-games-captions.scss | cs34
-$games-captions-size: 15px;                                   // Font size of game name
-$games-captions-font-weight: 700;
-$games-captions-link-color: $gray-darker;                     // dark text on light background
+$games-captions-game-name-font-size: 15px;                                   // Font size of game name
+$games-captions-game-name-font-weight: 700;
+$games-captions-game-name-font-color: $dark-text-color;
 $games-captions-card-color: $theme2;                          //
-$games-captions-card-hover-color: darken($theme2, 30%);
-$games-captions-card-height: auto;
+$games-captions-card-hover-color: darken($games-captions-card-color, 5%);
 $games-captions-text-color: $dark-text-color;
-$games-captions-review-text-transform: uppercase;
-
-
+$games-captions-star-rating-color: gold;
+$games-captions-small-review-font-color: red;    // color of the review link for small devices
 
 
 
@@ -288,7 +320,7 @@ $games-captions-review-text-transform: uppercase;
 $thumbs-games-link-color: $light-text-color;
 $thumbs-games-link-font-weight: 600;                     // font weight for title / link
 $thumbs-games-link-size: 15px;
-$thumbs-games-bg-color: $theme2;
+$thumbs-games-bg-color: $theme-light-bg;
 $thumbs-games-caption-bg: rgba(0, 0, 0, 0.7);                    //
 
 
@@ -350,6 +382,65 @@ $item-featured-v1-review-padding: 20px 0;
 $item-featured-v1-star-rating-color: $star-rating-color;
 
 
+// Toplist Free Spins V1 | _toplist-free-spins-v1.scss | cs40
+
+$toplist-free-spins-heading-bg: $toplist-headings-bg;
+$toplist-free-spins-heading-text-color: $light-text-color;
+$toplist-free-spins-item-bg-color: $theme-light-bg;
+$toplist-free-spins-heading-font-size: 18px;
+$toplist-free-spins-heading-padding: 15px;
+$toplist-free-spins-item-padding: 0 15px;
+$toplist-free-spins-inner-align-padding: 40px 0 0 0;   //this padding shorthand will be applied to every column for every item(row)
+$toplist-free-spins-bonus-font-size: 20px;
+$toplist-free-spins-bonus-color: $bonus-font-color;
+$toplist-free-spins-bonus-weight: 600;
+$toplist-free-spins-bonus-padding: $toplist-free-spins-inner-align-padding;
+$toplist-free-spins-amount-font-size: 40px;
+$toplist-free-spins-amount-color: $bonus-font-color;
+$toplist-free-spins-amount-weight: 600;
+$toplist-free-spins-amount-padding: $toplist-free-spins-inner-align-padding;
+$toplist-free-spins-code-font-size: 15px;
+$toplist-free-spins-code-padding: $toplist-free-spins-inner-align-padding;
+$toplist-free-spins-code-font-color: lightgray;
+$toplist-free-spins-rating-font-size: 15px;
+$toplist-free-spins-rating-padding: $toplist-free-spins-inner-align-padding;
+$toplist-free-spins-rating-font-color: gold;
+$toplist-free-spins-button-padding: $toplist-free-spins-inner-align-padding;
+$toplist-free-spins-footer-font-size: 15px;
+$toplist-free-spins-footer-icon-color: #0986f0 !important;
+$toplist-free-spins-border: $component-border;
+
+
+
+// Toplist No Deposit V1 | _toplist-no-deposit-v1.scss | cs41
+
+$toplist-no-deposit-heading-bg: $toplist-headings-bg;
+$toplist-no-deposit-heading-text-color: $light-text-color;
+$toplist-no-deposit-item-bg-color: $theme-light-bg;
+$toplist-no-deposit-heading-font-size: 18px;
+$toplist-no-deposit-heading-padding: 15px;
+$toplist-no-deposit-item-padding: 0 15px;
+$toplist-no-deposit-inner-align-padding: 40px 0 0 0;   //this padding shorthand will be applied to every column for every item(row)
+$toplist-no-deposit-bonus-font-size: 20px;
+$toplist-no-deposit-bonus-color: $bonus-font-color;
+$toplist-no-deposit-bonus-weight: 600;
+$toplist-no-deposit-bonus-padding: $toplist-no-deposit-inner-align-padding;
+$toplist-no-deposit-amount-font-size: 40px;
+$toplist-no-deposit-amount-color: $bonus-font-color;
+$toplist-no-deposit-amount-weight: 600;
+$toplist-no-deposit-amount-padding: $toplist-no-deposit-inner-align-padding;
+$toplist-no-deposit-code-font-size: 15px;
+$toplist-no-deposit-code-padding: $toplist-no-deposit-inner-align-padding;
+$toplist-no-deposit-code-font-color: lightgray;
+$toplist-no-deposit-rating-font-size: 15px;
+$toplist-no-deposit-rating-padding: $toplist-no-deposit-inner-align-padding;
+$toplist-no-deposit-rating-font-color: gold;
+$toplist-no-deposit-button-padding: $toplist-no-deposit-inner-align-padding;
+$toplist-no-deposit-footer-font-size: 15px;
+$toplist-no-deposit-footer-icon-color: #0986f0 !important;
+$toplist-no-deposit-border: $component-border;
+
+
 // Toplist Payout Games Featured Left | _toplist-games-payout.scss | cs42
 $games-payout-heading-bg: $toplist-headings-bg;
 $games-payout-heading-text-color: $light-text-color;
@@ -389,32 +480,27 @@ $games-count-feature-bonus-weight: 600;
 
 // Toplist Option V1 | _toplist-v1.scss | cs45
 
-$toplist-heading-bg: $toplist-headings-bg;
-$toplist-heading-text-color: $light-text-color;
-$toplist-item-bg-color: $theme2;
-$toplist-title-color: #222;
+$toplist-v1-heading-bg: $toplist-headings-bg;
+$toplist-v1-heading-text-color: $light-text-color;
+$toplist-v1-item-bg-color: $theme-light-bg;
+$toplist-v1-title-color: #222;
 $toplist-v1-rating-color: $star-rating-color;
-$toplist-heading-height: 60px;
-$toplist-heading-size: 15px;
-$toplist-heading-padding: 15px;
-$toplist-heading-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
-$toplist-body-padding: 20px 10px;
-$toplist-body-min-height: 90px;
-$toplist-body-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
-$toplist-title-size: 15px;
-$toplist-title-padding-top: 14px;
-$toplist-bonus-font-size: 20px;
-$toplist-bonus-color: $bonus-font-color;
-$toplist-bonus-weight: 600;
-$toplist-bonus-padding: 14px 10px 0 0;
-$toplist-percent-font-size: 15px;
-$toplist-percent-padding: 14px 0 0 0;
-$toplist-payout-font-size: 15px;
-$toplist-payout-padding: 14px 0 0 0;
-$toplist-button-padding: 14px 0 0 0;
-$toplist-footer-font-size: 15px;
-$toplist-footer-icon-color: #0986f0 !important;
-$toplist-footer-icon-margin-left: 5px;
+$toplist-v1-heading-font-size: 18px;
+$toplist-v1-heading-padding: 15px;
+$toplist-v1-item-padding: 20px 10px;
+$toplist-v1-title-size: 15px;
+$toplist-v1-title-padding: 14px 0 0 0;
+$toplist-v1-bonus-font-size: 20px;
+$toplist-v1-bonus-color: $bonus-font-color;
+$toplist-v1-bonus-weight: 600;
+$toplist-v1-bonus-padding: 14px 10px 0 0;
+$toplist-v1-percent-font-size: 15px;
+$toplist-v1-percent-padding: 14px 0 0 0;
+$toplist-v1-payout-font-size: 15px;
+$toplist-v1-payout-padding: 14px 0 0 0;
+$toplist-v1-button-padding: 14px 0 0 0;
+$toplist-v1-footer-font-size: 15px;
+$toplist-v1-footer-icon-color: #0986f0 !important;
 $toplist-v1-border: $component-border;
 
 
@@ -423,8 +509,8 @@ $toplist-v2-heading-bg-color: none;                 // panel background
 $toplist-v2-heading-font-size: 15px;                // heading font size
 $toplist-v2-heading-font-color: $dark-text-color;   // heading font color
 $toplist-v2-heading-font-weight: 500;               // heading font weight
-$toplist-v2-item-padding: 15px 0;                     // align items with logo via top padding
-$toplist-v2-panel-bg-color: whitesmoke;             // panel row color
+$toplist-v2-item-padding: 20px 0 0 0;                     // align items with logo via top padding
+$toplist-v2-panel-bg-color: $theme-light-bg;             // panel row color
 $toplist-v2-panel-bg-hover-color: darken($toplist-v2-panel-bg-color, 5%);
 $toplit-v2-more-font-size: 11px;                    // font size of the "click panel" notification
 $toplit-v2-more-font-color: gray;                   // font color of the "click panel" notification
@@ -445,14 +531,13 @@ $toplist-v2-collapse-casino-font-weight: 600;
 $toplist-v2-collapse-casino-font-color: $dark-text-color;
 $toplist-v2-collapse-description-font-size: 15px;
 $toplist-v2-collapse-description-font-color: $dark-text-color;
-$toplist-v2-collapse-btn-color: $theme1;
+$toplist-v2-collapse-btn-color: none;
 $toplist-v2-collapse-btn-font-color: $light-text-color;
 $toplist-v2-collapse-btn-font-size: 18px;
 $toplist-v2-collapse-read-review-font-color: none;
 $toplist-v2-collapse-read-review-font-size: 14px;
 $toplist-v2-collapse-read-review-font-transform: uppercase;
 $toplist-v2-screenshots-border: 1px solid black;
-$toplist-v2-margin: 20px 0;
 
 
 // Toplist Option V4 Tumbler | _toplist-v4-tumbler.scss | cs48
@@ -470,6 +555,8 @@ $toplist-collapse-item-bg-even: darken($theme2, 10%);
 $toplist-collapse-border: $component-border;
 $toplist-collapse-heading-text-color: $light-text-color;
 $toplist-collapse-heading-bg: $toplist-headings-bg;
+
+
 
 
 
@@ -573,7 +660,7 @@ $item-screenshots-padding: 20px 5px;
 
 // News List Full Width | _news-list-full-width.scss | cs60
 $news-list-full-width-list-heading-font-size: 18px;
-$news-list-full-width-bg-color: white;
+$news-list-full-width-bg-color: $theme-light-bg;
 $news-list-full-width-border: $component-border;
 $news-list-full-width-heading-font-size: 13px;
 $news-list-full-width-heading-link-color: $dark-text-color;
@@ -624,7 +711,7 @@ $accordion-screenshots-body-border: none;                  // border for the dro
 
 // Toplist: Top 3 Casinos | _toplist-top-3.scss | cs65
 $toplist-top-3-border: none;                 // choose border style
-$toplist-top-3-bg-color: whitesmoke;
+$toplist-top-3-bg-color: $theme-light-bg;
 $toplist-top-3-logo-bg: lightblue;                        // this value is overwritten by html inline code
 $toplist-top-3-casino-font-size: 17px;                    // casino font size
 $toplist-top-3-casino-font-color: $dark-text-color;       // casino font color
@@ -654,7 +741,7 @@ $toplist-games-section-bonus-font-size: 15px;
 $toplist-games-section-bonus-font-color: $dark-text-color;
 $toplist-games-section-margin: 20px 0;
 
-// Item: Banner Top | _item-banner-top.scss | cs68
+// Item: Banner Top | _item-mast-v2.scss | cs68
 $item-mast-v2-logo-border-radius: 4px;
 $item-mast-v2-casino-font-size: 20px;
 $item-mast-v2-casino-font-color: $light-text-color;
@@ -665,6 +752,19 @@ $item-mast-v2-sign-up-font-color: $light-text-color;
 $item-mast-v2-sign-up-font-size: 11px;
 $item-mast-v2-bonus-font-color: $light-text-color;
 $item-mast-v2-bonus-font-size: 20px;
+
+// Item: Banner Top | _item-mast-v3.scss | cs77
+$item-mast-v3-logo-border-radius: 4px;
+$item-mast-v3-heading-font-size: 20px;
+$item-mast-v3-heading-font-color: $light-text-color;
+$item-mast-v3-rating-color: gold;
+$item-mast-v3-description-font-color: $light-text-color;
+$item-mast-v3-description-font-size: 16px;
+$item-mast-v3-bg-color: $toplist-features-color;
+$item-mast-v3-sign-up-font-color: $light-text-color;
+$item-mast-v3-sign-up-font-size: 11px;
+$item-mast-v3-bonus-font-color: $light-text-color;
+$item-mast-v3-bonus-font-size: 20px;
 
 
 // Item: Screenshots Modals | _item-screenshots-modal.scss | cs69
@@ -681,6 +781,8 @@ $item-screenshots-modal-close-button-color: red;
 $item-screenshots-modal-close-button-size: 25px;
 
 // Item Technical Menu | _item-technical-menu.scss | cs70
+$techincal-menu-margin-top: 50px;
+$technical-menu-heading-top-bg-color: lightgray;
 $technical-menu-padding: 15px;
 $technical-menu-heading-bg-color: white;
 $technical-menu-heading-font-color: $dark-text-color;
@@ -690,8 +792,12 @@ $technical-menu-info-body-font-color: $dark-text-color;
 $technical-menu-info-star-rating-color: $star-rating-color;
 
 
+
+
+
+
 // Sidebar: Top 10 Casinos | _sidebar-top-10.scss | cs71
-$sidebar-top-10-item-bg-color: white;
+$sidebar-top-10-item-bg-color: $theme-light-bg;
 $sidebar-top-10-border: $component-border;
 $sidebar-top-10-casino-font-size: 13px;
 $sidebar-top-10-casino-font-weight: 500;
@@ -707,7 +813,7 @@ $sidebar-top-10-margin: 30px 0;
 
 // Item: banner V2 | _item-banner-v2.scss | cs72
 $item-banner-v2-border: $component-border;
-$item-banner-v2-bg-color: $theme1;
+$item-banner-v2-bg-color: $banner-bg;
 $item-banner-v2-caption-font-size: 15px;
 $item-banner-v2-caption-font-color: $light-text-color;
 $item-banner-v2-bonus-font-size: 25px;
@@ -716,14 +822,352 @@ $item-banner-v2-button-width: 250px;
 
 
 
-// Item: Banner V3 | _item-banner-v3.scss | sc73
-$item-banner-v3-bg-color: $theme1;
+// Item: Banner V3 | _item-banner-v3.scss | cs73
+$item-banner-v3-bg-color: $banner-bg;
 $item-banner-v3-bonus-font-size: 25px;
 $item-banner-v3-bonus-font-color: $light-text-color;
 $item-banner-v3-border: $component-border;
 $item-banner-v3-border-radius: 5px;
 
 
+// Item Text Slider | _item-text-slider.scss | cs78
+$text-slider-min-height: 160px;     // set this height to prevent the wrapper from readjusting the height for the smaller slides
+$text-slider-bg-color: $banner-bg;
+$text-slider-headings-padding: 20px 0 20px 45px;
+$text-slider-right-text-padding: 20px 80px 20px 30px;
+$text-slider-font-color: $light-text-color;
+$text-slider-font-size: 14px;
+$text-slider-jackpot-font-size: 30px;
+$text-slider-jackpot-font-weight: 800;
+$text-slider-jackpot-font-color: red;
+$text-slider-margin: 0 0 20px 0;
+
+
+// Item: Banner V4 | _item-banner-v4.scss | cs79
+$item-banner-v4-bg-color: $banner-bg;
+$item-banner-v4-heading-font-color: $light-text-color;
+$item-banner-v4-heading-font-size: 30px;
+$item-banner-v4-bonus-font-size: 25px;
+$item-banner-v4-bonus-font-color: red;
+$item-banner-v4-border: $component-border;
+$item-banner-v4-border-radius: 5px;
+$item-banner-v4-row-padding: 20px 30px 0 30px;
+$item-banner-v4-caption-padding: 20px 0 0 0;
+
+// Item All Bonusus | _item-all-bonuses.scss | cs80
+$item-all-bonuses-bonus-margin: 60px 0;
+$item-all-bonuses-bonus-item-padding: 15px 35px;
+$item-all-bonuses-item-bg-color: $theme-light-bg;
+$item-all-bonuses-offer-font-color: orange;
+$item-all-bonuses-bonus-code-border: 3px dashed lightblue;
+$item-all-bonuses-wagering-bg-color: orange;
+$item-all-bonuses-wagering-font-color: gray;
+$item-all-bonuses-code-font-size: 18px;
+$item-all-bonuses-code-font-color: gray;
+
+
+// Item: Banner V5 Mobile | _item-banner-v5.scss | cs81
+$item-banner-v5-bg-color: $banner-bg;
+$item-banner-v5-bonus-font-size: 25px;
+$item-banner-v5-bonus-font-color: $light-text-color;
+$item-banner-v5-border: $component-border;
+$item-banner-v5-border-radius: 5px;
+$item-banner-v5-icon-bg-color: $theme-light-bg;
+$item-banner-v5-icon-size: 40px;
+$item-banner-v5-icon-color: gray;
+
+
+
+
+// Item: Banner Terms | _item-banner-terms.scss | cs84
+$item-banner-terms-bg-color: $banner-bg;
+$item-banner-terms-left-div-padding: 30px 30px 0 30px;
+$item-banner-terms-right-div-padding: 30px 30px 0 30px;
+$item-banner-terms-font-size: 40px;
+$item-banner-terms-font-color: $light-text-color;
+$item-banner-terms-border: $component-border;
+$item-banner-terms-border-radius: 5px;
+$item-banner-terms-more-font-size: 18px;
+$item-banner-terms-more-font-color: red;
+$item-banner-terms-well-h2-size: 38px;
+$item-banner-terms-well-p-size: 18px;
+$item-banner-terms-panel-body-bg-color: $theme-light-bg;
+$item-banner-terms-panel-body-padding: 25px;
+
+
 // Header V1 | _header-v1 | cs82
 $header-v1-link-font-color: $dark-text-color;
+$header-v1-link-font-weight: 800;
 $header-v1-link-hover-border-bottom: 3px solid red;
+$header-v1-bg-color: $theme-light-bg;
+
+
+
+// Social share button V2 | _social-share.scss | cs83
+$share-v2-share-button-font-size: 15px;
+$share-v2-share-button-font-weight: 800;
+$share-v2-ul-margin: 0;                            // drop down directly below share button
+$share-v2-dropdown-width: 100%;                    // dropdown container width
+$share-v2-font-size: 25px;
+$share-v2-twitter-color: #3399CC;
+$share-v2-facebook-color: #3D5B96;
+$share-v2-google-color: #DD3F34;
+$share-v2-linkedin-color: #1884BB;
+$share-v2-pinterest-color: #CC1E2D;
+$share-v2-mail-color: #FFC90E;
+
+// Sticky Menu | _sticky-menu | cs85
+$sticky-menu-bg-color: white;                      // bg color
+$sticky-menu-border-bottom: 3px solid red;         // the border at the bottom when hover or active
+$sticky-menu-link-font-color: $dark-text-color;    // link font color
+$sticky-menu-link-font-size: 16px;
+$sticky-menu-link-font-weight: 600;
+$sticky-menu-link-padding-bottom: 15px;            // push the bottom border down
+
+
+$email-fluid-bg-color: $banner-bg;
+$email-fluid-font-size: 21px;
+$email-fluid-font-color: $light-text-color;
+$email-fluid-button-color: red;
+
+
+
+// Footer V1 | _layouts/footer-v1.scss | cs90
+$footer-v1-bg-color: black;                          // footer
+$footer-v1-sub-bg-color: black;             // footer-sub bg color
+$footer-v1-links-height: auto;                        // height of area for footer links
+$footer-v1-links-padding: 20px 0 0 0;                        // adjust padding for footer links
+$footer-v1-links-color: $light-text-color;
+$footer-v1-links-font-size: 13px;
+$footer-v1-sub-min-height: 80px;                       // minimum height for footer-sub
+$footer-v1-sub-margin-top: 0;                       // add space above of footer-sub outside
+$footer-v1-sub-font-size: 13px;
+$footer-v1-links-font-weight: 700;
+$footer-v1-sub-padding-top: 20px;                      // add space above text in footer-sub
+
+
+
+// Back to top V1 | _back-to-top-v1.scss | cs91
+$back-to-top-v1-size: 30px;
+$back-to-top-v1-padding: 5px;
+$back-to-top-v1-bg-color: lightblue;
+$back-to-top-v1-color: white;
+$back-to-top-v1-margin: 15px;
+
+
+
+// Item: Banner Live Dealer | _item-banner-live-dealer.scss | cs92
+$item-banner-live-dealer-bg-color: $banner-bg;
+$item-banner-live-dealer-bonus-font-size: 25px;
+$item-banner-live-dealer-border: $component-border;
+$item-banner-live-dealer-border-radius: 5px;
+$item-banner-live-dealer-left-div-padding: 30px 20px 0 60px;
+$item-banner-live-dealer-right-div-padding: 40px 30px 30px 0;
+$item-banner-live-dealer-heading-font-size: 24px;
+$item-banner-live-dealer-heading-font-color: $light-text-color;
+$item-banner-live-dealer-description-font-size: 15px;
+$item-banner-live-dealer-description-font-color: $light-text-color;
+$item-banner-live-dealer-link-font-size: 16px;
+$item-banner-live-dealer-link-font-color: red;
+$item-banner-live-dealer-panel-body-h2-size: 38px;
+$item-banner-live-dealer-panel-body-p-size: 18px;
+$item-banner-live-dealer-panel-body-bg-color: $theme-light-bg;
+$item-banner-live-dealer-panel-body-padding: 25px;
+
+
+
+// Games Categories Tabbed V1 | _games-categories-tab-v1.scss | cs86
+$games-tabbed-v1-bg-color: $theme-light-bg;
+$games-tabbed-v1-border: 1px solid #d8d8d8;
+$games-tabbed-v1-title-font-size: 18px;   // currently the "slots by" section - to be made dynamic
+$games-tabbed-v1-nav-title-font-size: 16px;   // tab nav font size
+$games-tabbed-v1-nav-title-font-color: red;
+$games-tabbed-v1-nav-bg-color-focus: darken($games-tabbed-v1-bg-color, 5%);
+$games-tabbed-v1-nav-title-font-color-active: black;
+$games-tabbed-v1-description-font-size: 14px;
+$games-tabbed-v1-description-font-color: $dark-text-color;
+
+
+// Games Categories Tabbed V2 | _games-categories-tab-v2.scss | cs87
+$games-tabbed-v2-border: 1px solid #d8d8d8;
+$games-tabbed-v2-title-font-size: 14px;
+$games-tabbed-v2-heading-bg-color: $theme-light-bg;
+$games-tabbed-v2-heading-font-color: $dark-text-color;
+$games-tabbed-v2-heading-text-decoration: none;
+$games-tabbed-v2-link-hover-color: red;
+$games-tabbed-v2-link-bg-hover-color: none;                   // set if you want to override the default
+$games-tabbed-v2-content-heading-size: 30px;                  // size of the heading inside the tabbed content
+$games-tabbed-v2-content-heading-color: $dark-text-color;     // color of the heading inside the tabbed content
+$games-tabbed-v2-content-p-size: 16px;
+$games-tabbed-v2-content-bg-color: $theme-light-bg;
+$games-tabbed-v2-content-p-color: $dark-text-color;
+$games-tabbed-v2-content-footer-links-font-size: 14px;
+$games-tabbed-v2-content-footer-links-font-weight: 700;
+$games-tabbed-v2-content-footer-links-divider-font-weight: 100;
+$games-tabbed-v2-content-footer-links-font-color: red;
+$games-tabbed-v2-content-footer-links-hover-font-color: $dark-text-color;
+
+
+
+
+// 8. item_quick_overview.scss
+$item-overview-v2-border: 1px solid #dedede;
+$item-overview-v2-banner-bg-color: $theme1;
+$item-overview-v2-banner-border-radius: 5px;
+$item-overview-v2-item-bg-color: $theme-light-bg;
+$item-overview-v2-item-height: 150px;
+$item-overview-v2-item-heading-font-size: 18px;
+$item-overview-v2-item-heading-font-color: $dark-text-color;
+$item-overview-v2-item-value-font-size: 15px;
+$item-overview-v2-star-rating-color: gold;
+$item-overview-v2-list-rating-font-size: 36px;
+$item-overview-v2-list-rating-font-weight: 800;
+$item-overview-v2-list-rating-font-color: #00aff0;
+$item-overview-v2-list-rating-bott-font-size: 14px;
+$item-overview-v2-value-font-color: red;    // games count and payout percent color
+$item-overview-v2-bonus-heading-font-size: 15px;
+$item-overview-v2-bonus-heading-font-color: $dark-text-color;
+$item-overview-v2-bonus-font-size: 35px;
+$item-overview-v2-bonus-font-color: red;
+
+// Social Share V3 | _social-share.scss | cs93
+$share-v3-share-font-size: 15px;
+$share-v3-share-font-weight: 800;
+$share-v3-ul-margin: 0;                            // drop down directly below share button
+$share-v3-dropdown-width: 100%;                    // dropdown container width
+$share-v3-font-size: 25px;
+$share-v3-twitter-color: #3399CC;
+$share-v3-facebook-color: #3D5B96;
+$share-v3-google-color: #DD3F34;
+$share-v3-linkedin-color: #1884BB;
+$share-v3-pinterest-color: #CC1E2D;
+$share-v3-mail-color: #FFC90E;
+
+
+// Games Paginized V1 | _games-paginized-v1.scss | cs95
+$games-paginized-v1-thumbnail-height: 295px;                                   // Font size of game name
+
+
+// Games Play Demo V1 | _games-play-demo-v1.scss | cs96
+$games-play-demo-v1-panel-padding: 0 15px 15px 15px;
+$games-play-demo-v1-panel-bg-color: $theme-light-bg;
+$games-play-demo-v1-panel-heading-bg-color: $theme-light-bg;
+$games-play-demo-v1-rating-bg-color: $theme-light-bg;
+$games-play-demo-v1-rating-border: none;
+$games-play-demo-v1-rating-box-shadow: none;
+$games-play-demo-v1-game-name-font-size: 26px;                                   // Font size of game name
+$games-play-demo-v1-game-name-font-weight: 700;
+$games-play-demo-v1-game-name-font-color: $dark-text-color;
+$games-play-demo-v1-card-color: $theme2;                          //
+$games-play-demo-v1-card-hover-color: darken($games-play-demo-v1-card-color, 5%);
+$games-play-demo-v1-text-color: $dark-text-color;
+$games-play-demo-v1-star-rating-color: gold;
+$games-play-demo-v1-small-review-font-color: red;    // color of the review link for small devices
+
+
+
+// Toplist: Top 3 Casinos | _toplist-top-3.scss | cs97
+$toplist-top-4-spins-border: none;                 // choose border style
+$toplist-top-4-spins-bg-color: whitesmoke;
+$toplist-top-4-spins-logo-bg: lightblue;                        // this value is overwritten by html inline code
+$toplist-top-4-spins-casino-font-size: 17px;                    // casino font size
+$toplist-top-4-spins-casino-font-color: $dark-text-color;       // casino font color
+$toplist-top-4-spins-amount-font-size: 25px;
+$toplist-top-4-spins-amount-font-color: red;
+$toplist-top-4-spins-bonus-font-size: 18px;                     // bonus font size
+$toplist-top-4-spins-bonus-font-color: $dark-text-color;        // bonus text color
+$toplist-top-4-spins-box-shadow: $wrapper-box-shadow;
+$toplist-top-4-spins-margin: 20px 0;
+
+
+
+// Item Banner V6 | _item-banner-v6.scss | cs98
+$item-banner-v1-border: 1px solid #dedede;
+$item-banner-v1-bg-color: #fff;
+$item-banner-v1-total-bonus-font-size: 30px;
+$item-banner-v1-free-bonus-text-color: #5dbb1d;
+$item-banner-v1-star-color: #f1bd24;
+
+
+// 4. toplist_option_more_info_flip.scss
+$toplist_option_more_info_flip_card_shadow: 0 1px 2px 0 rgba(0,0,0,.3);
+$toplist_option_more_info_flip_card_bg_color: #fff;
+$toplist_option_more_info_flip_card_inner_bg: #f8f8f8;
+$toplist_option_more_info_flip_card_inner_media_height: 180px;
+$toplist_option_more_info_flip_card_inner_2_height: 170px;
+$toplist_option_more_info_flip_card_inner_2_color: #888;
+$toplist_option_more_info_flip_card_flip_anchor_color: rgb(56, 59, 64);
+$toplist_option_more_info_flip_card_flip_anchor_font_size: 20px;
+$toplist_option_more_info_flip_card_star_rating_color: #67B686;
+$toplist_option_more_info_flip_card__status_color: #3C3C3C;
+$toplist_option_more_info_flip_card__status_font_size: 12px;
+$toplist_option_more_info_flip_card__status_inner_color: #FF333A;
+$toplist_option_more_info_flip_card__status_inner_font_size: 22px;
+$toplist_option_more_info_flip_card_flip_anchor_circle_color: #f8f8f8;
+$toplist_option_more_info_flip_card_flip_anchor_circle_bg_color: $toplist_option_more_info_flip_card_flip_anchor_color;
+
+$toplist_option_more_info_flip_sort_box_shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+$toplist_option_more_info_flip_sort_box_bg_color: #fff;
+$toplist_option_more_info_flip_sort_box_font_size: 12px;
+$toplist_option_more_info_flip_sort_box_text_color: #373B40;
+$toplist_option_more_info_flip_nav_bg_color: #fff;
+$toplist_option_more_info_flip_nav_box_shadow: 0 1px 2px 0 rgba(0,0,0,.3);
+$toplist_option_more_info_flip_nav_color: #373b40;
+$toplist_option_more_info_flip_nav_border: 1px solid #eee;
+$toplist_option_more_info_flip_nav_active_color: #888;
+$toplist_option_more_info_flip_nav_active_bg_color: #eee;
+
+
+
+
+// Sidebar: Bonus Offer | _sidebar-bonus-offer.scss | cs101
+$sidebar-bonus-offer-margin: 30px 0;
+$sidebar-bonus-offer-heading-font-size: 15px;
+$sidebar-bonus-offer-heading-font-color: $dark-text-color;
+$sidebar-bonus-offer-heading-bg-color: inherit;
+$sidebar-bonus-offer-item-bg-color: $theme-light-bg;
+$sidebar-bonus-offer-border: $component-border;
+$sidebar-bonus-offer-logo-bg-color: yellow;
+$sidebar-bonus-offer-logo-border-radius: 5px;
+$sidebar-bonus-offer-casino-font-size: 14px;
+$sidebar-bonus-offer-casino-font-weight: 500;
+$sidebar-bonus-offer-casino-font-color: $dark-text-color;
+$sidebar-bonus-offer-bonus-font-size: 20px;
+$sidebar-bonus-offer-bonus-font-color: $dark-text-color;
+$sidebar-bonus-offer-spins-font-size: 16px;
+$sidebar-bonus-offer-spins-font-color: $dark-text-color;
+
+
+
+
+// Sidebar: Bonus Offer | _sidebar-games-new.scss | cs102
+$sidebar-games-new-border: $component-border;
+$sidebar-games-new-heading-font-size: 15px;
+$sidebar-games-new-heading-font-color: $dark-text-color;
+$sidebar-games-new-heading-bg-color: inherit;
+$sidebar-games-new-item-bg-color: $theme-light-bg;
+$sidebar-games-new-name-font-size: 13px;
+$sidebar-games-new-name-font-weight: 600;
+$sidebar-games-new-name-font-color: $dark-text-color;
+$sidebar-games-new-software-font-size: 12px;
+$sidebar-games-new-software-font-weight: 800;
+$sidebar-games-new-software-font-color: brown;
+$sidebar-games-new-margin: 30px 0;
+
+// Sidebar Game Info | _sidebar-game-info.scss | cs103
+$sidebar-game-info-heading-bg-color: inherit;
+$sidebar-game-info-heading-font-size: 15px;
+$sidebar-game-info-item-bg-color: $theme-light-bg;
+$sidebar-game-info-item-font-size: 14px;
+$sidebar-game-info-item-font-color: $dark-text-color;
+$sidebar-game-info-value-font-size: 14px;
+$sidebar-game-info-value-font-color: $dark-text-color;
+
+// Games Thumbs More | _games-thumbs-more.scss | cs104
+$games-thumbs-more-thumbnail-height: 295px;
+
+
+// Games Thumbs Description | _games-thumbs-description.scss | cs105
+$games-thumbs-description-bg-color: $theme-light-bg;
+$games-thumbs-description-name-font-size: 18px;
+$games-thumbs-description-name-font-color: $light-text-color;

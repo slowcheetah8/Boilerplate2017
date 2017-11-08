@@ -1,0 +1,43 @@
+#games-play-demo-v1 {
+  .panel {
+    padding: $games-play-demo-v1-panel-padding;
+    background-color: $games-play-demo-v1-panel-bg-color;
+    .panel-heading {
+      background-color: $games-play-demo-v1-panel-heading-bg-color;
+      .panel-title {
+        font-size: $games-play-demo-v1-game-name-font-size;
+        color: $games-play-demo-v1-game-name-font-color;
+        font-weight: $games-play-demo-v1-game-name-font-weight;
+      }
+      .rating {
+        background-color: $games-play-demo-v1-rating-bg-color;
+        border: $games-play-demo-v1-rating-border;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 2px 10px;
+        margin-top: 8px;
+        box-shadow: $games-play-demo-v1-rating-box-shadow;
+        i {
+          color: $games-play-demo-v1-star-rating-color;
+        }
+      }
+
+
+    }
+    .panel-body {
+      iframe, img {
+        width: 100%;
+      }
+    }
+    .panel-footer {
+      padding: 0;
+      border-top: none;
+      .btn {
+        width: 100%;
+        border-radius: 0;
+      }
+    }
+  }
+
+
+}

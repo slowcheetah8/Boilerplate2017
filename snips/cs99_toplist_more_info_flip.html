@@ -1,0 +1,52 @@
+<div class="row toplist_option_more_info_flip">
+
+		<div class="toplist_option_more_info_flip_list">
+
+      {{#list_4}}
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+				<div class="flip">
+					<div class="card">
+						<div class="face front">
+							<div class="inner">
+								<a href="javascript:;" class="flip-anchor">
+									<i class="fa fa-info-circle" aria-hidden="true"></i>
+								</a>
+								<div class="card__media" style="background-color: lightblue;">
+									{{{image_125x125_100x100}}}
+									<div class="card__rating">
+                    {{{snip_cs28_rating_stars_sm}}}
+										<span class="star-rating-after">{{{rating_decimal}}}</span>
+									</div>
+								</div>
+							</div>
+							<div class="inner-2">
+								<div class="card__desc">
+									<a href="javascript:;" class="h4"> {{{name}}} </a>
+									<p class="card__desc-body"> ${{{signup_bonus_amount}}} Free Up To {{{signup_bonus_percent}}}% </p>
+								</div>
+                <div class="card__action_btn">
+								  <a {{{href}}} class="btn btn-block btn-primary"> Play now </a>
+                </div>
+							</div>
+						</div>
+						<div class="face back">
+							<a href="javascript:;" class="flip-anchor">
+								<i class="fa fa-close" aria-hidden="true"></i>
+							</a>
+							<div class="card__back">
+								<h4>{{{name}}}</h4>
+								<p class="card__desc-body">{{{all_software}}}</p>
+
+								{{#page_yes}}<a {{{page}}} class="card__action"> Read Review </a>{{/page_yes}}
+								{{#page_no}}{{/page_no}}
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+      {{/list_4}}
+
+		</div>
+
+</div>

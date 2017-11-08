@@ -1,5 +1,4 @@
 #toplist-v2 {
-  margin: $toplist-v2-margin;
   .row {
     margin-left: 0;
     margin-right: 0;
@@ -10,6 +9,9 @@
       color: $toplist-v2-heading-font-color;
       font-weight: $toplist-v2-heading-font-weight;
       text-align: center;
+      div:nth-of-type(2) {
+        text-align: left;
+      }
     }
   }
 	.panel {
@@ -51,10 +53,12 @@
       }
       div {
         &:nth-of-type(1) {
-          span {
+          .logo-bg {
             background-color: yellow;
-            padding: 30px 15px;
+            padding: 15px;
             border-radius: 4px;
+            text-align: center;
+            width: 80%;
           }
         }
         &:nth-of-type(2) {
@@ -96,10 +100,13 @@
           }
         }
         &:nth-of-type(6) {
-          padding: $toplist-v2-item-padding;
+          padding: 15px 0 0 0;
           text-align: center;
           .btn {
-            margin-bottom: 10px;
+            //margin-bottom: 10px;
+          }
+          span {
+            display: block;
           }
           span:nth-of-type(2){
             text-transform: $toplist-v2-review-text-transform;
@@ -109,7 +116,7 @@
     }
     .panel-body {
       background-color: none;
-      padding: 15px 0;
+      padding: 25px;
       .row {
 
         .casino-name {
@@ -127,6 +134,7 @@
             background-color: $toplist-v2-collapse-btn-color;
             color: $toplist-v2-collapse-btn-font-color;
             font-size: $toplist-v2-collapse-btn-font-size;
+            width: 100%;
         }
         .review {
           margin-bottom: 20px;
@@ -141,6 +149,8 @@
           img {
             border: $toplist-v2-screenshots-border;
             box-shadow: 0 2px 3px 0 rgba(0,0,0,.3);
+            width: 100%;
+            margin-bottom: 20px;
           }
         }
       }

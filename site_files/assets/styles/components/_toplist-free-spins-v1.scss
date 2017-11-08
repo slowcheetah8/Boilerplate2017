@@ -1,0 +1,115 @@
+#toplist-free-spins-v1 {
+	.heading-wrap {
+
+		background-color: $toplist-free-spins-heading-bg;
+		border: $toplist-free-spins-border;
+
+		div {
+			font-size: $toplist-free-spins-heading-font-size;
+			text-align: center;
+			color: $toplist-free-spins-heading-text-color;
+			padding: $toplist-free-spins-heading-padding;
+		}
+
+
+
+
+	}
+	.item {
+		background-color: $toplist-free-spins-item-bg-color;
+		border-left: $toplist-free-spins-border;
+		border-right: $toplist-free-spins-border;
+		border-bottom: $toplist-free-spins-border;
+		overflow: hidden;
+		text-align: center;
+		padding: $toplist-free-spins-item-padding;
+		&:hover {
+			background-color: darken($toplist-free-spins-item-bg-color, 5%);
+		}
+
+		div {
+			&:nth-of-type(1) {
+				padding: 0;
+				.logo {
+					display: block;
+					width: 100%;
+
+				}
+			}
+			&:nth-of-type(2) {
+				padding: $toplist-free-spins-bonus-padding;
+				.bonus {
+					text-align: center;
+					display: block;
+					text-transform: uppercase;
+					font-size: $toplist-free-spins-bonus-font-size;
+					font-weight: $toplist-free-spins-bonus-weight;
+					color: $toplist-free-spins-bonus-color;
+				}
+			}
+			&:nth-of-type(3) {
+				padding: $toplist-free-spins-amount-padding;
+				.spins {
+					line-height: 1em;
+					text-align: center;
+					display: block;
+					text-transform: uppercase;
+					font-size: $toplist-free-spins-amount-font-size;
+					font-weight: $toplist-free-spins-amount-weight;
+					color: $toplist-free-spins-amount-color;
+				}
+			}
+			&:nth-of-type(4) {
+				padding: $toplist-free-spins-code-padding;
+				.code {
+					font-size: $toplist-free-spins-code-font-size;
+					color: $toplist-free-spins-code-font-color;
+					font-weight: 400;
+					display: block;
+				}
+			}
+			&:nth-of-type(5) {
+				padding: $toplist-free-spins-rating-padding;
+				.rating {
+					font-size: $toplist-free-spins-rating-font-size;
+					font-weight: 400;
+					display: block;
+					i {
+						color: $toplist-free-spins-rating-font-color;
+					}
+				}
+			}
+			&:nth-of-type(6) {
+				padding: $toplist-free-spins-button-padding;
+				.btn {
+					text-align: center;
+					display: block;
+					width: 100%;
+					margin-bottom: 15px;
+				}
+
+			}
+		}
+	}
+	.more {
+		background-color: $toplist-free-spins-heading-bg;
+		padding: 30px;
+		text-align: center;
+		span {
+			font-size: $toplist-free-spins-footer-font-size;
+			cursor: pointer;
+			position: relative;
+			top: 20%;
+			display: block;
+			font-weight: 500;
+		}
+		i {
+			color: $toplist-free-spins-footer-icon-color;
+			margin-left: 5px;
+		}
+		.more-a {
+			color: $toplist-free-spins-footer-icon-color;
+		}
+	}
+
+}

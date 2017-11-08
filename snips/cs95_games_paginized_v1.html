@@ -1,0 +1,33 @@
+<div class="container mush" id="games-paginized-v1">
+
+  {{{text_2}}}
+
+  <select class="mush-sort-control" style="display:none;">
+    <option value="date desc">New Games</option>
+    <option value="name">A-Z</option>
+  </select>
+
+  <div class="row game-sec-prt mush-data list-unstyled five-column">
+    {{#gamelist_100}}
+
+    {{{filter_by_related_game_type}}}
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="thumbnails-content" data-mush="{{#param}}{{{software}}}{{/param}} {{{paylines}}}_paylines {{{reels}}}_reels {{#3d_yes}}3d{{/3d_yes}} {{#progressive_yes}}progressive{{/progressive_yes}} {{#tag_list_feature}} {{{name}}}{{/tag_list_feature}}"
+                      data-mush-sort-date="{{#new_game_yes}}1{{/new_game_yes}}{{#new_game_no}}0{{/new_game_no}} {{{date_format_yyyy}}}{{{date_format_mm}}}{{{date_format_dd}}}"
+                      data-mush-sort-rating="{{{rating}}}"
+                      data-mush-sort-name="{{#limit_5}}{{{name}}}{{/limit_5}}">
+      {{{snip_cs34_thumbs_games_captions}}}
+    </div>
+
+    {{/gamelist_100}}
+  </div>
+
+  <div class="pagination-game text-center">
+    <ul class="pagination mush-pagination" data-per-page="12" data-pages-around="5">
+      <li class="prev"><a href="">&laquo;</a></li>
+      <li class="page-template"><a href="" class="replacetext">1</a></li>
+      <li class="next"><a href="">&raquo;</a></li>
+    </ul>
+  </div>
+
+</div>

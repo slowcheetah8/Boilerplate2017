@@ -45,6 +45,11 @@
             display: block;
           }
         }
+        &:nth-of-type(9) {
+          .btn {
+            width: 100%;
+          }
+        }
 
       }
     }

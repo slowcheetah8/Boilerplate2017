@@ -27,7 +27,8 @@
             </div>
             <div class="col-lg-2 col-md-12 col-sm-12 list">
                 <a {{{href}}} class="btn btn-primary">Claim Now</a>
-                <span class="review"><a>Read Review</a></span>
+                {{#page_yes}}<span class="review"><a {{{page}}}>Read Review</a></span>{{/page_yes}}
+                {{#page_no}}{{/page_no}}
             </div>
 
         </div>

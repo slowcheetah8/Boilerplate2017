@@ -3,6 +3,183 @@
 
 
 
+  #toplist-free-spins-v1 {
+    .toplist {
+      .item {
+        text-align: center;
+        div {
+          padding-top: 15px;
+        }
+      }
+    }
+  }
+
+
+  #thumbnails-content {
+    .thumbnail {
+      height: auto;
+      .caption {
+        .small-review {
+          display: block;
+        }
+        .game-name {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  #item-banner-live-dealer {
+    .panel {
+      .row {
+        height: auto;
+        div:nth-of-type(1) {
+          text-align: center;
+          padding: 15px;
+          .img-dealer {
+            position: relative;
+            top: 0;
+          }
+
+
+        }
+        div:nth-of-type(2) {
+          padding: 15px 30px 30px 30px;
+          h3 {
+            margin-top: 0;
+          }
+        }
+      }
+      .panel-body {
+        .row {
+          div {
+            text-align: left;
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  #back-to-top-v1 {
+    display: none;
+  }
+
+  #item-overview-v2 {
+		#overview-panel-3 {
+			height: auto;
+			text-align: center;
+
+		}
+
+	}
+
+  #games-categories-tabbed-v2 {
+
+	}
+
+  #item-screenshots-modal {
+    div {
+      button {
+        &:hover {
+          .more-plus {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+
+  #item-mast-v3 {
+    text-align: center;
+  }
+
+  #item-text-slider {
+		.carousel-inner {
+      .item {
+
+  			.row {
+  				div {
+  					&:nth-of-type(1) {
+              padding-left: 80px;
+              padding-right: 80px;
+            }
+            &:nth-of-type(2) {
+              padding-left: 80px;
+              padding-right: 80px;
+            }
+  				}
+  			}
+  		}
+    }
+	}
+
+  #item-banner-v4 {
+    text-align: center;
+    .row {
+      div {
+        img {
+          //width: 250px;
+        }
+        .heading {
+          padding: 15px;
+        }
+        .btn {
+          margin-bottom: 20px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  #item-banner-v5 {
+    text-align: center;
+    .row {
+      div {
+        img {
+          //width: 250px;
+        }
+        .heading {
+          padding: 15px;
+        }
+        .btn {
+          //margin-bottom: 20px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  #item-banner-terms {
+    text-align: center;
+    .row {
+      div {
+
+        .heading {
+          padding: 15px;
+        }
+        .btn {
+          margin-bottom: 20px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  #item-all-bonuses {
+    text-align: center;
+    .list-group {
+      .list-group-item {
+        .row {
+          .dashed-box {
+            width: 100%;
+            margin: 15px 0;
+          }
+        }
+      }
+    }
+  }
 
 
   #toplist-games-payout {
@@ -12,6 +189,14 @@
         div {
           text-align: center;
           padding: 15px;
+          &:nth-of-type(5) {
+            .btn {
+              width: 100%;
+              font-size: 16px;
+            }
+          }
+
+
         }
       }
     }
@@ -76,9 +261,12 @@
 
   #toplist-featured-standalone {
     .featured {
+      .btn {
+        width: 100%
+      }
       .list:nth-child(1) {
         img {
-          width: 50%;
+          width: 30%;
         }
       }
       .list:nth-child(2) {
@@ -95,23 +283,16 @@
         }
       }
     }
-    .item {
-      .row {
-        div:nth-of-type(9) {
-          span {
-            a {
-              font-size: 11px;
-            }
-          }
-        }
-      }
-    }
   }
 
   #toplist-best-bonus {
     .item {
       .row {
-        //
+        div {
+          .btn {
+            width: 100%;
+          }
+        }
       }
     }
   }
@@ -126,6 +307,9 @@
         text-align: center;
         div {
           padding: 10px;
+          .btn {
+            width: 100%;
+          }
         }
       }
     }
@@ -142,6 +326,9 @@
   						text-align: center;
   					}
   				}
+          .btn {
+            width: 100%;
+          }
         }
       }
     }
@@ -183,17 +370,24 @@
   #toplist-v2 {
     .panel {
       .item {
+        .more {
+          display: none;
+        }
         div {
+          &:nth-of-type(2) {
+            text-align: center;
+          }
           &:nth-of-type(1) {
-            padding-left: 0;
-
-            span {
-              padding: 25px 7px;
-
-              img {
-                //width: 60%;
-              }
+            padding: 0;
+            .logo-bg {
+              width: 100%;
             }
+          }
+					// buttons
+          &:nth-of-type(6) {
+						.btn {
+							width: 100%;
+						}
           }
         }
       }
@@ -232,5 +426,18 @@
 			}
 		}
 	}
+  #toplist-security-overview {
+    .item {
+      text-align: center;
+      .row {
+        div {
+          padding-bottom: 15px;
+          .btn {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 
 }

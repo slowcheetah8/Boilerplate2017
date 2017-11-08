@@ -1,16 +1,14 @@
-<div class="row">
-	{{#gamelist_20}}
-	{{{game_type_slots}}}
-	<div class="col-xs-6 col-md-3" id="thumbnail-small">
-		<div class="thumbnail-hover">
-			<a class="thumbnail" {{{page}}}>{{{image_150x150}}}</a>
-			<div class="thumbnail-content-prt text-center">
-				<div class="thumbnail-content">
-					<span><a {{{page}}}>{{{name}}}</a></span>
-					<span><a {{{page}}} class="btn btn-primary">Play Now</a></span>
-				</div>
+<div class="col-xs-6 col-md-3" id="thumbnail-small" data-mush="{{#param}}{{{software}}}{{/param}} {{{paylines}}}_paylines {{{reels}}}_reels {{#3d_yes}}3d{{/3d_yes}} {{#progressive_yes}}progressive{{/progressive_yes}} {{#tag_list_feature}} {{{name}}}{{/tag_list_feature}}"
+                  data-mush-sort-date="{{#new_game_yes}}1{{/new_game_yes}}{{#new_game_no}}0{{/new_game_no}} {{{date_format_yyyy}}}{{{date_format_mm}}}{{{date_format_dd}}}"
+                  data-mush-sort-rating="{{{rating}}}"
+                  data-mush-sort-name="{{#limit_5}}{{{name}}}{{/limit_5}}">
+	<div class="thumbnail-hover">
+		<a class="thumbnail" {{{page}}}>{{{image_150x150}}}</a>
+		<div class="thumbnail-content-prt text-center">
+			<div class="thumbnail-content">
+				<span><a {{{page}}}>{{{name}}}</a></span>
+				<span><a {{{page}}} class="btn btn-primary">Play Now</a></span>
 			</div>
 		</div>
 	</div>
-	{{/gamelist_20}}
 </div>

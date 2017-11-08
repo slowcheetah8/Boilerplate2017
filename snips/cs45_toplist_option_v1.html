@@ -26,7 +26,7 @@
         </div>
       </div>
 
-      {{#list_10_list10}}
+      {{#list_[@listsize]}}
       {{#query}} accepts_players = true {{/query}}
       {{{rating_sort}}}
 
@@ -46,9 +46,11 @@
               <span class="bonus">${{{signup_bonus_amount}}} Free</span>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-12">
+              <span class="hidden-md hidden-lg hidden-xl">Signup Bonus Percent: </span>
               <span class="percent">{{{signup_bonus_percent}}}%</span>
             </div>
             <div class="col-lg-2 col-md-2 col-sm-12">
+              <span class="hidden-md hidden-lg hidden-xl">Payout Percent: </span>
               <span class="payout">{{{payout_percent}}}%</span>
             </div>
             <div class="col-lg-2 col-md-2 col-sm-12">
@@ -59,7 +61,7 @@
         </div>
       </div>
 
-      {{/list_10_list10}}
+      {{/list_[@listsize]}}
 
       <div class="col-md-12">
         <div class="row">

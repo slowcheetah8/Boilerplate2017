@@ -1,0 +1,59 @@
+<section id="toplist-free-spins-v1">
+
+
+      <div class="row heading-wrap hidden-md hidden-sm hidden-xs">
+          <div class="col-lg-2 col-md-2 col-sm-2">
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-2">
+            <span>Bonus</span>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-2">
+            <span>Free Spins</span>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-2">
+            <span>Code</span>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-2">
+            <span></span>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-2">
+            <span></span>
+          </div>
+      </div>
+
+      {{#list_[@listsize]}}
+      {{{rating_sort}}}
+
+      {{#free_spins_bonus_yes}}
+        <div class="row item">
+            <div class="col-lg-2 col-md-12 col-sm-12">
+              <span class="logo">{{{image_125x125}}}</span>
+            </div>
+            <div class="col-lg-2 col-md-12 col-sm-12">
+              <span class="bonus">${{{signup_bonus_amount}}} Free</span>
+            </div>
+            <div class="col-lg-2 col-md-12 col-sm-12">
+              <span class="hidden-md hidden-lg hidden-xl">Free Spins: </span>
+              <span class="spins">{{{free_spins_amount}}}</span>
+            </div>
+            <div class="col-lg-2 col-md-12 col-sm-12">
+              <span class="hidden-md hidden-lg hidden-xl">Code: </span>
+              <span class="code">{{{slots_bonus_code}}}</span>
+            </div>
+            <div class="col-lg-2 col-md-12 col-sm-12">
+              <span class="hidden-md hidden-lg hidden-xl"></span>
+              <span class="rating">{{{snip_cs28_rating_stars_sm}}}</span>
+            </div>
+            <div class="col-lg-2 col-md-12 col-sm-12">
+              <a {{{href}}} class="btn btn-primary btn-lg">Claim Bonus <i class="fa fa-caret-right"></i></a>
+            </div>
+        </div>
+      {{/free_spins_bonus_yes}}
+      {{#free_spins_bonus_no}} {{/free_spins_bonus_no}}
+
+      {{/list_[@listsize]}}
+
+
+
+
+</section>

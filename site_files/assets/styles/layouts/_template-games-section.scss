@@ -1,0 +1,29 @@
+.template-games-section-v1 {
+  .container-fluid {
+    //padding: 0;
+    .bg-alt {
+      background-color: $template-games-section-v1-section-alt-bg-color;
+    }
+    .content {
+      padding: $template-games-section-v1-section-padding;
+      color: $template-games-section-v1-section-font-color;
+
+    }
+  }
+
+}
+
+.template-games-section-v2 {
+  .container-fluid {
+    //padding: 0;
+    .bg-alt {
+      background-color: $template-games-section-v2-section-alt-bg-color;
+    }
+    .content {
+      padding: $template-games-section-v2-section-padding;
+      color: $template-games-section-v2-section-font-color;
+
+    }
+  }
+
+}

@@ -1,0 +1,335 @@
+<div id="item-all-bonuses">
+  <ul class="list-group">
+
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-lg-3">
+          <span>Sign-up Bonus</span>
+          <span class="offer">
+            <strong>${{{signup_bonus_amount}}} Free </strong>
+            {{#maybe_all}} + {{{free_spins_amount}}} Free Spins {{/maybe_all}}
+          </span>
+        </div>
+        <div class="col-lg-3">
+
+        </div>
+        <div class="col-lg-3">
+
+        </div>
+        <div class="col-lg-3">
+          <a href="" class="btn btn-primary btn-lg">Claim Now <i class="fa fa-caret-right"></i></a>
+        </div>
+      </div>
+    </li>
+
+    {{#free_spins_bonus_yes}}
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-lg-3">
+          <span>Free Spins Bonus</span>
+          <span class="offer">
+            <strong>{{{free_spins_amount}}} Free Spins on {{{free_spins_game}}} </strong>
+          </span>
+        </div>
+        <div class="col-lg-3">
+          <span class="align">
+
+          </span>
+        </div>
+        <div class="col-lg-3">
+
+        </div>
+        <div class="col-lg-3">
+          <a href="" class="btn btn-primary btn-lg">Claim Now <i class="fa fa-caret-right"></i></a>
+        </div>
+      </div>
+    </li>
+    {{/free_spins_bonus_yes}}
+    {{#free_spins_bonus_no}} {{/free_spins_bonus_no}}
+
+    {{#free_play_time_yes}}
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-lg-3">
+          <span>Free Spins Bonus</span>
+          <span class="offer">
+            <strong>${{{free_time_bonus_amount}}} Free</strong>
+          </span>
+        </div>
+        <div class="col-lg-3">
+
+        </div>
+        <div class="col-lg-3">
+
+        </div>
+        <div class="col-lg-3">
+          <a href="" class="btn btn-primary btn-lg">Claim Now <i class="fa fa-caret-right"></i></a>
+        </div>
+      </div>
+    </li>
+    {{/free_play_time_yes}}
+    {{#free_play_time_no}} {{/free_play_time_no}}
+
+    {{#no_deposit_bonus_yes}}
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-lg-3">
+          <span>No Deposit Bonus</span>
+          <span class="offer">
+            <strong>${{{no_deposit_bonus_amount}}} Free</strong>
+            {{#maybe_all}} + {{{free_spins_amount}}} Free Spins {{/maybe_all}}
+          </span>
+        </div>
+        <div class="col-lg-3">
+          <span class="align">
+            <span class="wagering">x{{{no_deposit_bonus_wr}}}</span> Wagering
+          </span>
+        </div>
+        <div class="col-lg-3">
+          <div class="dashed-box">
+            <span>Bonus Code: </span>
+            <span class="code">{{{no_deposit_bonus_code}}}</span>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <a href="" class="btn btn-primary btn-lg">Claim Now <i class="fa fa-caret-right"></i></a>
+        </div>
+      </div>
+    </li>
+    {{/no_deposit_bonus_yes}}
+    {{#no_deposit_bonus_no}} {{/no_deposit_bonus_no}}
+
+
+    {{#roulette_bonus_yes}}
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-lg-3">
+          <span>Roulette Bonus</span>
+          <span class="offer">
+            <strong>${{{roulette_bonus_amount}}} Free </strong>
+            {{#maybe_all}} + {{{free_spins_amount}}} Free Spins {{/maybe_all}}
+          </span>
+        </div>
+        <div class="col-lg-3">
+          <span class="align">
+            <span class="wagering">x{{{roulette_bonus_wr}}}</span> Wagering
+          </span>
+        </div>
+        <div class="col-lg-3">
+          <div class="dashed-box">
+            <span>Bonus Code: </span>
+            <span class="code">{{{roulette_bonus_code}}}</span>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <a href="" class="btn btn-primary btn-lg">Claim Now <i class="fa fa-caret-right"></i></a>
+        </div>
+      </div>
+    </li>
+    {{/roulette_bonus_yes}}
+
+    {{#roulette_bonus_no}}  {{/roulette_bonus_no}}
+
+
+    {{#video_poker_bonus_yes}}
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-lg-3">
+          <span>Video Poker Bonus</span>
+          <span class="offer">
+            <strong>${{{video_poker_bonus_amount}}} Free </strong>
+            {{#maybe_all}} + {{{free_spins_amount}}} Free Spins {{/maybe_all}}
+          </span>
+        </div>
+        <div class="col-lg-3">
+          <span class="align">
+            <span class="wagering">x{{{video_poker_bonus_wr}}}</span> Wagering
+          </span>
+        </div>
+        <div class="col-lg-3">
+          <div class="dashed-box">
+            <span>Bonus Code: </span>
+            <span class="code">{{{video_poker_bonus_code}}}</span>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <a href="" class="btn btn-primary btn-lg">Claim Now <i class="fa fa-caret-right"></i></a>
+        </div>
+      </div>
+    </li>
+    {{/video_poker_bonus_yes}}
+    {{#video_poker_bonus_no}} {{/video_poker_bonus_no}}
+
+    {{#slots_bonus_yes}}
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-lg-3">
+          <span>Slots Bonus</span>
+          <span class="offer">
+            <strong>${{{slots_bonus_amount}}} Free </strong>
+            {{#maybe_all}} + {{{free_spins_amount}}} Free Spins {{/maybe_all}}
+          </span>
+        </div>
+        <div class="col-lg-3">
+          <span class="align">
+            <span class="wagering">x{{{slots_bonus_wr}}}</span> Wagering
+          </span>
+        </div>
+        <div class="col-lg-3">
+          <div class="dashed-box">
+            <span>Bonus Code: </span>
+            <span>{{{slots_bonus_code}}}</span>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <a href="" class="btn btn-primary btn-lg">Claim Now <i class="fa fa-caret-right"></i></a>
+        </div>
+      </div>
+    </li>
+    {{/slots_bonus_yes}}
+    {{#slots_bonus_no}} {{/slots_bonus_no}}
+
+    {{#blackjack_bonus_yes}}
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-lg-3">
+          <span>Blackjack Bonus</span>
+          <span class="offer">
+            <strong>${{{blackjack_bonus_amount}}} Free </strong>
+            {{#maybe_all}} + {{{free_spins_amount}}} Free Spins {{/maybe_all}}
+          </span>
+        </div>
+        <div class="col-lg-3">
+          <span class="align">
+            <span class="wagering">x{{{blackjack_bonus_wr}}}</span> Wagering
+          </span>
+        </div>
+        <div class="col-lg-3">
+          <div class="dashed-box">
+            <span>Bonus Code: </span>
+            <span class="code">{{{blackjack_bonus_code}}}</span>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <a href="" class="btn btn-primary btn-lg">Claim Now <i class="fa fa-caret-right"></i></a>
+        </div>
+      </div>
+    </li>
+    {{/blackjack_bonus_yes}}
+    {{#blackjack_bonus_no}} {{/blackjack_bonus_no}}
+
+    {{#baccarat_bonus_yes}}
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-lg-3">
+          <span>Baccarat Bonus</span>
+          <span class="offer">
+            <strong>${{{baccarat_bonus_amount}}} Free </strong>
+            {{#maybe_all}} + {{{free_spins_amount}}} Free Spins {{/maybe_all}}
+          </span>
+        </div>
+        <div class="col-lg-3">
+          <span class="align">
+            <span class="wagering">x{{{baccarat_bonus_wr}}}</span> Wagering
+          </span>
+        </div>
+        <div class="col-lg-3">
+          <div class="dashed-box">
+            <span>Bonus Code: </span>
+            <span class="code">{{{baccarat_bonus_code}}}</span>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <a href="" class="btn btn-primary btn-lg">Claim Now <i class="fa fa-caret-right"></i></a>
+        </div>
+      </div>
+    </li>
+    {{/baccarat_bonus_yes}}
+    {{#baccarat_bonus_no}} {{/baccarat_bonus_no}}
+
+    {{#cashback_bonus_yes}}
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-lg-3">
+          <span>Cashback Bonus</span>
+          <span class="offer">
+            <strong>${{{cashback_bonus_amount}}} Free </strong>
+            {{#maybe_all}} + {{{free_spins_amount}}} Free Spins {{/maybe_all}}
+          </span>
+        </div>
+        <div class="col-lg-3">
+          <span class="align">
+            <span class="wagering">x{{{cashback_bonus_wr}}}</span> Wagering
+          </span>
+        </div>
+        <div class="col-lg-3">
+          <div class="dashed-box">
+            <span>Bonus Code: </span>
+            <span class="code">{{{cashback_bonus_code}}}</span>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <a href="" class="btn btn-primary btn-lg">Claim Now <i class="fa fa-caret-right"></i></a>
+        </div>
+      </div>
+    </li>
+    {{/cashback_bonus_yes}}
+    {{#cashback_bonus_no}} {{/cashback_bonus_no}}
+
+    {{#high_roller_bonus_yes}}
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-lg-3">
+          <span>High Roller Bonus</span>
+          <span class="offer">
+            <strong>${{{high_roller_bonus_amount}}} Free </strong>
+            {{#maybe_all}} + {{{free_spins_amount}}} Free Spins {{/maybe_all}}
+          </span>
+        </div>
+        <div class="col-lg-3">
+          <span class="align">
+            <span class="wagering">x{{{high_roller_bonus_wr}}}</span> Wagering
+          </span>
+        </div>
+        <div class="col-lg-3">
+          <div class="dashed-box">
+            <span>Bonus Code: </span>
+            <span class="code">{{{high_roller_bonus_code}}}</span>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <a href="" class="btn btn-primary btn-lg">Claim Now <i class="fa fa-caret-right"></i></a>
+        </div>
+      </div>
+    </li>
+    {{/high_roller_bonus_yes}}
+    {{#high_roller_bonus_no}} {{/high_roller_bonus_no}}
+
+    {{#refer_a_friend_bonus_yes}}
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-lg-3">
+          <span>Refer-A-Friend Bonus</span>
+          <span class="offer">
+            <strong>${{{refer_a_friend_bonus_amt}}} Free </strong>
+            {{#maybe_all}} + {{{free_spins_amount}}} Free Spins {{/maybe_all}}
+          </span>
+        </div>
+        <div class="col-lg-3">
+        </div>
+
+        <div class="col-lg-3">
+        </div>
+
+        <div class="col-lg-3">
+          <a href="" class="btn btn-primary btn-lg">Claim Now <i class="fa fa-caret-right"></i></a>
+        </div>
+      </div>
+    </li>
+    {{/refer_a_friend_bonus_yes}}
+    {{#refer_a_friend_bonus_no}} {{/refer_a_friend_bonus_no}}
+
+
+
+  </ul>
+</div>

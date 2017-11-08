@@ -7,7 +7,9 @@
 				<div class="thumbnail-casino-content-prt text-center">
 					<div class="thumbnail-casino-content">
 						<div class="space-ten"><a {{{href}}} class="btn btn-primary">Play Now</a></div>
-						<a {{{page}}} class="btn btn-default">Read Review</a>
+
+						{{#page_yes}}<span class="review"><a {{{page}}} class="btn btn-default">Read Review</a></span>{{/page_yes}}
+						{{#page_no}}{{/page_no}}
 					</div>
 				</div>
 			</div>

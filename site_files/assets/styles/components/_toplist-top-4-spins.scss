@@ -1,0 +1,61 @@
+#toplist-top-4-spins {
+  .item {
+    padding: 15px 35px;
+    .panel {
+      text-align: center;
+      position: relative;
+      //background-color: orange;
+      border: $toplist-top-4-spins-border;
+      box-shadow: $toplist-top-4-spins-box-shadow;
+      border-radius: 10px;
+      height: 320px;
+      background-color: $toplist-top-4-spins-bg-color;
+      margin: $toplist-top-4-spins-margin;
+      .logo-bg {
+        position: absolute;
+        z-index: 10;
+        top: -25px;
+        left: -25px;
+        padding: 15px;
+        border-radius: 50%;
+        background-color: $toplist-top-4-spins-logo-bg;
+      }
+
+      .panel-heading {
+        text-align: right;
+        .casino-name {
+
+          font-size: $toplist-top-4-spins-casino-font-size;
+          color: $toplist-top-4-spins-casino-font-color;
+        }
+      }
+
+      .panel-body {
+        span {
+          display: block;
+        }
+        height: 223px;
+        .bonus {
+          display: block;
+          padding: 15px 55px;
+          font-size: $toplist-top-4-spins-bonus-font-size;
+          color: $toplist-top-4-spins-bonus-font-color;
+        }
+        .spins {
+          display: block;
+          font-size: $toplist-top-4-spins-amount-font-size;
+          color: $toplist-top-4-spins-amount-font-color;
+        }
+      }
+     .panel-footer {
+       .btn {
+         width: 100%;
+       }
+     }
+
+
+    }
+
+  }
+
+}

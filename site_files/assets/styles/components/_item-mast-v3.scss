@@ -1,0 +1,74 @@
+#item-mast-v3 {
+  padding: 50px;
+  background-color: $item-mast-v3-bg-color;
+  margin-bottom: 0;
+  .row {
+    .logo-bg {
+      background-color: yellow;
+      text-align: center;
+      padding: 30px 15px;
+      margin-bottom: 10px;
+      border-radius: $item-mast-v3-logo-border-radius;
+    }
+    div {
+
+      &:nth-of-type(2) {
+        color: $item-mast-v3-description-font-color;
+        // heading
+        span:nth-of-type(1) {
+          h1 {
+            font-size: $item-mast-v3-heading-font-size;
+            color: $item-mast-v3-heading-font-color;
+            display: inline;
+          }
+        }
+
+        // star rating
+        span:nth-of-type(2) {
+          i {
+            color: $item-mast-v3-rating-color;
+            margin-top: 5px;
+          }
+        }
+
+        //status snip
+        span:nth-of-type(3) {
+          padding: 15px 0;
+          display: inline-block;
+        }
+
+        // flag snip
+        span:nth-of-type(4) {
+          padding: 15px;
+          display: inline-block;
+        }
+
+        p {
+          font-size: $item-mast-v3-description-font-size;
+
+        }
+
+
+
+      }
+      &:nth-of-type(3) {
+
+        text-align: center;
+        span:nth-of-type(1) {
+          text-transform: uppercase;
+          color: $item-mast-v3-sign-up-font-color;
+          font-size: $item-mast-v3-sign-up-font-size;
+        }
+        span:nth-of-type(2) {
+          color: $item-mast-v3-bonus-font-color;
+          font-size: $item-mast-v3-bonus-font-size;
+        }
+        .btn {
+          width: 100%;
+        }
+
+      }
+    }
+  }
+
+}

@@ -1,0 +1,45 @@
+#sticky-menu {
+  background-color: $sticky-menu-bg-color;
+  z-index: 50;
+  position: relative;
+  //height: 55px;
+  box-shadow: $wrapper-box-shadow;
+  ul {
+    margin-bottom: 0;
+    .active {
+      a {
+        border-bottom: $sticky-menu-border-bottom;
+      }
+    }
+    li {
+      display: inline-block;
+      padding: 15px 25px;
+      box-sizing: border-box;
+      a {
+        color: $sticky-menu-link-font-color;
+        font-size: $sticky-menu-link-font-size;
+        font-weight: $sticky-menu-link-font-weight;
+        text-decoration: none;
+        padding-bottom: $sticky-menu-link-padding-bottom;
+        &:focus {
+
+        }
+      }
+
+      &:hover {
+        a {
+          border-bottom: $sticky-menu-border-bottom;
+        }
+      }
+
+
+    }
+  }
+}
+
+#sticky-menu.affix {
+  position: fixed;
+  top: 84px;
+  z-index: 50;
+  width: inherit;
+}

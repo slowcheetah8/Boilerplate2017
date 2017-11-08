@@ -1,0 +1,70 @@
+<div id="item-overview-v2">
+
+		<div class="row item_quick_overview_list">
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="item-list" id="overview-panel-1">
+
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<img class="" src="{{{root}}}dist/images/cards.png" width="40px" height="40px">
+							</div>
+							<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+								<span class="heading"><strong>Casino Selection</strong></span>
+								<span>
+									Over <span class="value">{{{software_total_game_count}}}</span> Casino Games
+								</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<img src="{{{root}}}dist/images/cash.png" width="40px" height="40px">
+							</div>
+							<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+								<span class="heading"><strong>Payout</strong></span>
+								<span class="value">{{{payout_percent}}}%</span>
+							</div>
+						</div>
+
+
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="item-list" id="overview-panel-2">
+					<div class="text-center">
+						<span>Our Overall Rating</span>
+						{{{snip_cs26_rating_stars_lg}}}
+						<div>
+							<span class="rating-color">{{{rating}}}</span>/5
+						</div>
+					</div>
+					<div class="text-center">
+
+							{{#rating_5}}<span style="color: gold;">Excellent</span>{{/rating_5}}
+							{{#rating_4_5}}<span style="color: gold;">Excellent</span>{{/rating_4_5}}
+							{{#rating_4}}<span style="color: green;">Best</span>{{/rating_4}}
+							{{#rating_3_5}}<span style="color: green;">Best</span>{{/rating_3_5}}
+							{{#rating_3}}<span style="color: green;">Good</span>{{/rating_3}}
+							{{#rating_2_5}}<span style="color: green;">Good</span>{{/rating_2_5}}
+							{{#rating_2}}<span style="color: green;">Good</span>{{/rating_2}}
+							{{#rating_1_5}}<span style="color: red;">Poor</span>{{/rating_1_5}}
+							{{#rating_1}}<span style="color: red;">Poor</span>{{/rating_1}} Online Casino
+
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 col-sm-12">
+				<div class="item-list" id="overview-panel-3">
+					<div class="row">
+						<div class="col-lg-5 col-md-5 col-sm-12 logo-div">
+							<span class="logo-bg" style="background-color: lightblue;">{{{image_125x125_70x70}}}</span>
+						</div>
+						<div class="col-lg-7 col-md-7 col-sm-12">
+							<span>Welcome Bonus</span>
+							<span>${{{signup_bonus_amount}}}</span>
+							<a {{{href}}} class="btn btn-primary">Play Now <i class="fa fa-caret-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>

@@ -1,0 +1,45 @@
+#item-banner-v5 {
+  margin: 20px 0;
+  .row {
+    background-color: $item-banner-v4-bg-color;
+    padding: 30px 30px 0 30px;
+    border: $item-banner-v5-border;
+    border-radius: $item-banner-v5-border-radius;
+
+    div:nth-of-type(1) {
+      
+    }
+    .heading {
+
+      display: block;
+      font-size: 30px;
+      color: white;
+    }
+    .devices {
+      //padding: 0 0 20px 0;
+      font-size: $item-banner-v5-bonus-font-size;
+      color: $item-banner-v5-bonus-font-color;
+      display: block;
+      .item {
+        font-size: 13px;
+        display: inline-block;
+        text-align: center;
+        padding: 15px;
+        margin-bottom: -15px;
+        .icon-bg {
+          width: 71px;
+          display: block;
+          text-align: center;
+          background-color: $item-banner-v5-icon-bg-color;
+          padding: 15px;
+          margin-bottom: -15px;
+          i {
+            font-size: $item-banner-v5-icon-size;
+            color: $item-banner-v5-icon-color;
+          }
+        }
+
+      }
+    }
+  }
+}

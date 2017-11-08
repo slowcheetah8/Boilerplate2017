@@ -32,7 +32,8 @@
           {{#traffic_ca_no}} {{/traffic_ca_no}}
 				</div>
         <a {{{href}}} class="btn btn-primary btn-lg">Play Now</a><br>
-        <a {{{page}}} class="btn btn-block">Read Review</a>
+				{{#page_yes}}<a {{{page}}} class="btn btn-block">Read Review</a>{{/page_yes}}
+				{{#page_no}}{{/page_no}}
       </div>
     </div>
 	</div>

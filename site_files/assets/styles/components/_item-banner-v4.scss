@@ -1,0 +1,31 @@
+#item-banner-v4 {
+  margin: 20px 0;
+  .row {
+    background-color: $item-banner-v4-bg-color;
+    padding: $item-banner-v4-row-padding;
+    border: $item-banner-v4-border;
+    border-radius: $item-banner-v4-border-radius;
+
+    div:nth-of-type(1) {
+      position: relative;
+    }
+
+    div:nth-of-type(2) {
+      text-align: left;
+      .heading {
+        padding: $item-banner-v4-caption-padding;
+        display: block;
+        font-size: $item-banner-v4-heading-font-size;
+        color: $item-banner-v4-heading-font-color;
+      }
+      .bonus {
+        padding: 0 0 20px;
+        font-size: $item-banner-v4-bonus-font-size;
+        color: $item-banner-v4-bonus-font-color;
+        display: block;
+        line-height: 1em;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,64 @@
+#item-text-slider {
+  margin: $text-slider-margin;
+  .left {
+    background-image: none;
+    .fa-caret-left{
+      position: absolute;
+  		top: 50%;
+  		display: inline-block;
+  		margin-top: -13px; /* fix */
+      left: 20px;
+      font-size: 30px;
+    }
+  }
+
+	.right {
+    background-image: none;
+    .fa-caret-right {
+  		position: absolute;
+  		top: 50%;
+  		display: inline-block;
+  		margin-top: -13px; /* fix */
+      right: 20px;
+      font-size: 30px;
+  	}
+  }
+
+  .carousel-inner {
+    //padding: 15px;
+    background-color: $text-slider-bg-color;
+    border-radius: 5px;
+    min-height: $text-slider-min-height;
+
+    .item {
+      text-align: center;
+      padding: 20px 0;
+      border-radius: 5px;
+      color: $text-slider-font-color;
+
+      .active {
+        width: 100%;
+        height: auto;
+      }
+      .row {
+        div {
+
+          &:nth-of-type(1) {
+            padding: $text-slider-headings-padding;
+            .jackpot-amount {
+              font-size: $text-slider-jackpot-font-size;
+              font-weight: $text-slider-jackpot-font-weight;
+              color: $text-slider-jackpot-font-color;
+            }
+          }
+          &:nth-of-type(2) {
+            text-align: left;
+            font-size: $text-slider-font-size;
+            padding: $text-slider-right-text-padding;
+
+          }
+        }
+      }
+    }
+  }
+}

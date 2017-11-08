@@ -1,29 +1,37 @@
 .footer-wrap {
 	background-color: $footer-bg-color;
 	margin-top: $footer-margin-top;
-}
-.footer-links {
-	background-color: $footer-bg-color;
-	height: $footer-links-height;
-	padding: $footer-links-padding;
-	font-size: $footer-links-font-size;
-	ol {
-		li {
-			padding: $footer-links-spacing;
+	.footer-links {
+		background-color: $footer-bg-color;
+		height: $footer-links-height;
+		padding: $footer-links-padding;
+
+		ul {
+			li {
+				font-size: $footer-links-font-size;
+				font-weight: $footer-links-font-weight;
+				display: inline;
+				margin-right: 60px;
+			}
 		}
-		margin-left: 40px;
+
+
+		a {
+			color: $footer-links-color;
+
+		}
 	}
-
-
-	a {
-		color: $footer-links-color;
-
+	.footer-sub {
+		background-color: $footer-sub-bg-color;
+		min-height: $footer-sub-min-height;
+		margin-top: $footer-sub-margin-top;
+		font-size: $footer-sub-font-size;
+		padding-top: $footer-sub-padding-top;
+		i {
+			font-size: $footer-sub-back-icon-size;
+			padding: $footer-sub-back-icon-padding;
+			background-color: $footer-sub-back-icon-bg-color;
+			color: $footer-sub-back-icon-color;
+		}
 	}
-}
-.footer-sub {
-	background-color: $footer-sub-bg-color;
-	min-height: $footer-sub-min-height;
-	margin-top: $footer-sub-margin-top;
-	font-size: $footer-sub-font-size;
-	padding-top: $footer-sub-padding-top;
 }

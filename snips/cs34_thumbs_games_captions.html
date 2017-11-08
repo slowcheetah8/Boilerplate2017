@@ -1,24 +1,24 @@
-<div class="row">
-	{{#gamelist_6}}
-	{{{game_type_slots}}}
-	<div class="col-sm-6 col-md-4" id="thumbnails-content">
-		<div class="thumbnail">
+	<!-- place this snip inside a col-* div with id="thumbnails-content" -->
+	<div class="thumbnail">
 
-			<div class="thumbnail-hover">
-				<a {{{page}}}>{{{image_250x150}}}</a>
-				<div class="thumbnail-content-prt text-center">
-					<div class="thumbnail-content">
-						<a {{{href}}} class="btn btn-primary">Play Now</a><br>
-						<br>
-						<a {{{page}}} class="review">Read Review</a>
-					</div>
-				</div>
-			</div>
-			<div class="caption">
-				<a {{{page}}}>{{{name}}}</a><br>
-				{{{snip_cs28_rating_stars_sm}}}
+		<div class="thumbnail-hover">
+			<a {{{page}}}>{{{image_575x471}}}</a>
+			<div class="thumbnail-content text-center">
+				<a {{{href}}} class="btn btn-primary">Play Now</a>
+				{{#page_yes}}<span class="review"><a {{{page}}} class="btn btn-default">Read Review</a></span>{{/page_yes}}
+				{{#page_no}}{{/page_no}}
 			</div>
 		</div>
+		<div class="caption">
+			<a {{{page}}} class="game-name">{{{name}}}</a><br>
+			<span class="star-sm">
+				{{#rating_5}}<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>{{/rating_5}}
+				{{#rating_4}}<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i>{{/rating_4}}
+				{{#rating_3}}<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>{{/rating_3}}
+				{{#rating_2}}<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>{{/rating_2}}
+				{{#rating_1}}<i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>{{/rating_1}}
+			</span><br>
+			{{#page_yes}}<a {{{page}}} class="small-review pull-right">Read Review</a>{{/page_yes}}
+			{{#page_no}}{{/page_no}}
+		</div>
 	</div>
-	{{/gamelist_6}}
-</div>

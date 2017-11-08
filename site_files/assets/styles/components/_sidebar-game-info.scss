@@ -1,0 +1,20 @@
+#sidebar-game-info {
+  box-shadow: $wrapper-box-shadow;
+  .list-group {
+    .list-group-item {
+      background-color: $sidebar-game-info-item-bg-color;
+      font-size: $sidebar-game-info-item-font-size;
+      color: $sidebar-game-info-item-font-color;
+      .value {
+        float: right;
+        font-size: $sidebar-game-info-value-font-size;
+        color: $sidebar-game-info-value-font-color;
+      }
+      &:first-of-type {
+        background-color: $sidebar-game-info-heading-bg-color;
+        font-size: $sidebar-game-info-heading-font-size;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

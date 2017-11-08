@@ -8,21 +8,22 @@
       width: 100%;
       margin-bottom: 20px;
       &:hover {
-        .more {
+        .more-plus {
           display: block;
         }
         img {
+          z-index: 49;
           filter: $item-screenshots-modal-hover-color;
           transition: 0.3s;
         }
       }
-      .more {
+      .more-plus {
         position: absolute;
         text-align: center;
         top: calc(50% - #{$item-screenshots-modal-plus-icon-height / 2} - 10px;);
         left: calc(50% - #{$item-screenshots-modal-plus-icon-width / 2});
         display: none;
-        z-index: 10;
+        z-index: 54;
         i {
           font-size: $item-screenshots-modal-plus-icon-font-size;
           color: $item-screenshots-modal-plus-icon-color;
@@ -63,14 +64,14 @@
             color: $item-screenshots-modal-close-button-color;
             opacity: 0.8;
             border-radius: 10px;
-            z-index: 2;
+            z-index: 51;
           }
           /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
-          width:inherit;
-          height:inherit;
+          width: 60%;
+          height: inherit;
           /* To center horizontally */
           margin: 0 auto;
-          pointer-events:all;
+          pointer-events: all;
         }
       }
     }

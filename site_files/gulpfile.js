@@ -1,4 +1,4 @@
-var 
+var
   gulp = require('gulp'),
 	sass = require('gulp-sass');
 	uglify = require('gulp-uglify');
@@ -40,7 +40,7 @@ gulp.task('fa', function () {
 
 // Uglify Plugins
 gulp.task('uglifyPlugins', function() {
-  return gulp.src(['assets/libs/bootstrap-sass/assets/javascripts/bootstrap.js', 'assets/scripts/main.js', 'assets/scripts/modernizr-custom.js'])
+  return gulp.src(['assets/libs/bootstrap-sass/assets/javascripts/bootstrap.js', 'assets/scripts/main.js', 'assets/scripts/modernizr-custom.js', 'assets/scripts/mush.js'])
     .pipe(uglify())
     .pipe(concat('scripts.min.js'))
     .pipe(gulp.dest('dist/js'));
@@ -79,8 +79,6 @@ gulp.task('watch', function() {
 
 
 });
- 
+
 // Run these tasks as default
 gulp.task('default', ['watch']);
-
-

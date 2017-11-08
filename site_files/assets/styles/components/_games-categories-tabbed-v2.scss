@@ -1,0 +1,107 @@
+#games-categories-tabbed-v2 {
+	margin: 20px 0 40px 0;
+	.tab-wrap {
+		margin: 15px 0 0 0;
+		border: $games-tabbed-v2-border;
+		border-radius: 2px;
+		clear: both;
+		width: 100%;
+		.nav-tabs {
+			background-color: $games-tabbed-v2-heading-bg-color;
+			padding-left: 15px;
+			li {
+				padding: 10px 0 0;
+
+				a {
+					border-radius: 0;
+					border: none;
+					border-bottom: $games-tabbed-v2-border;
+					margin-right: 0;
+					color: $games-tabbed-v2-heading-font-color;
+					font-weight: bold;
+					text-decoration: $games-tabbed-v2-heading-text-decoration;
+					font-size: $games-tabbed-v2-title-font-size;
+					&:after {
+						content: "";
+						background: $games-tabbed-v2-link-hover-color;
+						height: 2px;
+						position: absolute;
+						width: 100%;
+						left: 0;
+						bottom: -1px;
+						transition: all 250ms ease 0s;
+						transform: scale(0);
+					}
+					&:hover,
+					&:focus {
+						background: $games-tabbed-v2-link-bg-hover-color;
+					}
+				}
+				&.active>a {
+					color: $games-tabbed-v2-link-hover-color;
+					border-bottom: $games-tabbed-v2-border;
+					&:after {
+						transform: scale(1);
+					}
+					&:hover,
+					&:focus {
+						border: none;
+						border-bottom: $games-tabbed-v2-border;
+					}
+				}
+			}
+		}
+
+		.tab-content {
+			display: block;
+			//width: 100%;
+			padding: 0 30px 15px;
+			background-color: $games-tabbed-v2-content-bg-color;
+
+			.tab-pane {
+				h3, h4 {
+					font-size: $games-tabbed-v2-content-heading-size;
+					color: $games-tabbed-v2-content-heading-color;
+				}
+
+				p {
+					font-size: $games-tabbed-v2-content-p-size;
+					color: $games-tabbed-v2-content-p-color;
+				}
+
+
+
+				#footer-games {
+					list-style: none;
+					padding-left: 0;
+					width: 100%;
+					display: block;
+					li {
+						display: inline;
+						//padding-right: 20px;
+
+						a {
+							font-size: $games-tabbed-v2-content-footer-links-font-size;
+							color: $games-tabbed-v2-content-footer-links-font-color;
+							font-weight: $games-tabbed-v2-content-footer-links-font-weight;
+
+							&:hover {
+								color: $games-tabbed-v2-content-footer-links-hover-font-color;
+								text-decoration: none;
+							}
+						}
+						.divider {
+							font-weight: $games-tabbed-v2-content-footer-links-divider-font-weight;
+						}
+						&:last-of-type {
+							.divider {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+}

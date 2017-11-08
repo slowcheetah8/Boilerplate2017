@@ -1,0 +1,27 @@
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="games-play-demo-v1">
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+	    <span class="panel-title">{{{name}}}</span>
+			<span class="rating pull-right">{{{snip_cs28_rating_stars_sm}}}</span>
+	  </div>
+	  <div class="panel-body embed-responsive embed-responsive-16by9">
+	    {{{external_800x600}}}
+	  </div>
+		<div class="panel-footer">
+			<a {{{href}}} class="btn btn-primary btn-lg">Play For Real Money Up To ${{{signup_bonus_amount}}}</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12">
+			<h4>You Might Like These Games Too</h4>
+		</div>
+		{{#gamelist_8}}
+		{{{game_type_slots}}}
+
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="thumbnails-content">
+			{{{snip_cs34_thumbs_games_captions}}}
+		</div>
+
+		{{/gamelist_8}}
+	</div>
+</div>

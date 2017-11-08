@@ -8,7 +8,7 @@
       {{#maybe_all}}
         <div class="media-left media-top">
           <a {{{href}}}>
-            <img class="media-object" src="{{{pageimage_150x100}}}">
+            <img class="media-object" src="{{{pageimage_100x100}}}">
           </a>
         </div>
         {{/maybe_all}}
@@ -16,7 +16,8 @@
           <span class="media-heading"><a {{{href}}}>{{{title}}}</a></span><br>
           <span class="date">{{{date}}}</span><br>
           <span class="description">{{{description}}}</span><br>
-          <a {{{page}}} class="review">Read Review</a>
+          {{#page_yes}}<a {{{page}}} class="review">Read Review</a>{{/page_yes}}
+  				{{#page_no}}{{/page_no}}
         </div>
       </div>
   </div>

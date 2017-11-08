@@ -1,0 +1,27 @@
+<section id="sidebar-games-new">
+
+  <div class="row">
+    <span><strong>Latest New Slots</strong></span>
+  </div>
+
+  {{#gamelist_[@listsize]}}
+  {{#query}} new_game = true {{/query}}
+
+  <div class="row">
+
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 logo-bg">
+      <span>{{{image_90x70}}}</span>
+    </div>
+
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 item">
+
+      <span class="name"><a {{{page}}}>{{{name}}}</a></span>
+      <span class="software">{{{software}}}</span>
+
+    </div>
+
+  </div>
+
+  {{/gamelist_[@listsize]}}
+
+</section>
